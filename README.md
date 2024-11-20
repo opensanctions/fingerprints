@@ -1,6 +1,6 @@
 # fingerprints
 
-![package](https://github.com/alephdata/fingerprints/workflows/package/badge.svg)
+![package](https://github.com/opensanctions/fingerprints/workflows/package/badge.svg)
 
 This library helps with the generation of fingerprints for entity data. A fingerprint
 in this context is understood as a simplified entity identifier, derived from it's

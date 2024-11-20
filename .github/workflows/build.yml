@@ -1,6 +1,7 @@
 name: package
-
 on: [push]
+permissions:
+  id-token: write
 
 jobs:
   build:
@@ -8,9 +9,8 @@ jobs:
     strategy:
       matrix:
         python:
-          - "3.9"
-          - "3.10"
           - "3.11"
+          - "3.12"
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python
@@ -20,8 +20,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get install -y libicu-dev
-          python -m pip install --upgrade pip wheel
-          pip install pyicu
+          python -m pip install --upgrade pip wheel pyicu setuptools
           pip install -e ".[dev]"
       - name: Generate data file
         run: |
@@ -37,8 +36,7 @@ jobs:
           python setup.py sdist bdist_wheel
       - name: Publish a Python distribution to PyPI
         if: github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags')
-        uses: pypa/gh-action-pypi-publish@master
+        uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          user: __token__
-          password: ${{ secrets.pypi_password }}
-          skip_existing: true
+          skip-existing: true
+          verbose: true
