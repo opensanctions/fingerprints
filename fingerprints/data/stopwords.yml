@@ -1,0 +1,63 @@
+person_name_prefixes:
+  - "Mr"
+  - "Ms"
+  - "Mrs"
+  - "Mister"
+  - "Miss"
+  - "Madam"
+  - "Madame"
+  - "Monsieur"
+  - "Honorable"
+  - "Honourable"
+  - "Mme"
+  - "Mmme"
+  - "Herr"
+  - "Hr"
+  - "Frau"
+  - "Fr"
+  - "The"
+  - "Fräulein"
+  - "Senor"
+  - "Senorita"
+  - "Sheik"
+  - "Sheikh"
+  - "Shaikh"
+  - "Sr"
+  - "Sir"
+  - "Lady"
+  - "The"
+basic_stopwords:
+  - "de"
+  - "of"
+  - "and"
+  - "&"
+company_stopwords:
+  - Company
+  - Business
+  - Management
+  - International
+  - Intl
+  - Corporation
+  - Corp
+  - Fund
+  - Holding
+  - Holdings
+  - Trading
+  - Import
+  - Export
+  - Trust
+  - Services
+  - Industries
+  - Consulting
+  - Partner
+  - Partners
+  - Solutions
+  - Group
+  - Foundation
+  # - Fdn
+  - Commercial
+company_stopwords_broad:
+  - Development
+  - Financial
+  - Investment
+  - Investments

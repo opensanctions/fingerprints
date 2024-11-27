@@ -1,0 +1,39 @@
+company_types:
+  - normal: GmbH
+    global: Ltd
+    aliases:
+      - Gesellschaft mit beschränkter Haftung
+      - g.m.b.h
+      - Gesellschaft mit besch Haftung
+      - Gesellschaft mit besch. Haftung
+      - Gesellschaft mit beschr Haftung
+      - Gesellschaft mit beschr. Haftung
+      - Gesellschaft mit beschränkter Haftung
+      - mit besch haftung
+      - mit beschr haftung
+      - mit beschränkter haftung
+      - гмбх
+  - normal: GmbH & Co. KG
+    broader: GmbH
+    aliases:
+      - gmbh & co.
+      - gmbh & co. kg
+      - gmbh and сo. kg
+      - gmbh und co. kg
+      - гмбх енд ко. кг
+  - normal: AG
+    global: Plc
+    aliases:
+      - Aktiengesellschaft
+  - normal: KG
+    global: LP
+    aliases:
+      - Kommanditgesellschaft
+  - normal: KGaA
+    broader: KG
+  - normal: JSC
+    broader: AO
+    aliases:
+      - Joint Stock Company
+      - Joint-Stock Company
+      - Public Stock Company
