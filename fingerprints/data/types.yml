@@ -1,37 +1,235 @@
-#TODO:  "lang:" and "countries:[]"
 company_types: 
-  - normal: GmbH
-    global: Ltd
-    aliases:
-      - Gesellschaft mit beschränkter Haftung
-      - g.m.b.h
-      - Gesellschaft mit besch Haftung
-      - Gesellschaft mit besch. Haftung
-      - Gesellschaft mit beschr Haftung
-      - Gesellschaft mit beschr. Haftung
-      - Gesellschaft mit beschränkter Haftung
-      - mit besch haftung
-      - mit beschr haftung
-      - mit beschränkter haftung
-      - гмбх
-  - normal: GmbH & Co. KG
-    broader: GmbH
-    aliases:
-      - gmbh & co.
-      - gmbh & co. kg
-      - gmbh and сo. kg
-      - gmbh und co. kg
-      - гмбх енд ко. кг
-  - normal: AG
-    global: Plc
-    aliases:
-      - Aktiengesellschaft
-  - normal: KG
-    global: LP
-    aliases:
-      - Kommanditgesellschaft
-  - normal: KGaA
-    broader: KG
+  # Albanian company types
+  lang: sqi
+  countries: al
+    - normal: Sh.p.k.
+      global: Ltd
+      aliases:
+        - Shoqëri me përgjegjësi të kufizuar
+    - normal: Sh.A.
+      global: PLC
+      aliases:
+        - Shoqëri Aksionere
+    - normal: Sh.K.
+      global: limited partnership
+      aliases:
+        - Shoqëri komandite
+  # Argentine company types
+  lang: spa
+  countries: ar
+    - normal: S.A.
+      global: plc
+      aliases:
+        - Sociedad Anónima
+    - normal: S.R.L.
+      global: Ltd
+      aliases:
+        - Sociedad de Responsabilidad Limitada
+    - normal: S.C.S.
+      global: limited partnership
+      aliases:
+        - Sociedad en Comandita Simple
+    - normal: S.C.p.A.
+      global: limited partnership with shares
+      aliases:
+        - Sociedad en Comandita por Acciones
+    - normal: Soc.Col.
+      global: general partnership
+      aliases:
+        - Sociedad Colectiva
+    - normal: S.C.e I.
+      aliases:
+        - Sociedad de Capital e Industria
+    - normal: S.E.
+      global: state-owned enterprise
+      aliases:
+        - Sociedad del Estado
+    - normal: S.G.R.
+      aliases:
+        - Sociedad de Garantía Reciproca
+    - normal: S.A.S.
+      aliases:
+        - Sociedad por Acciones Simplificada
+    - normal: S.A.U.
+      global: Sole proprietorship
+      aliases:
+        - Sociedad Anónima Unipersonal
+    - normal: S.A.I.C.A.
+      aliases:
+        - Sociedades anónimas inscritas de capital abierto
+    - normal: S.A.C.I. y F.
+      aliases:
+        - Sociedad Anónima Comercial Industrial y Financiera
+    - normal: S.A.C.I.F.I.
+      aliases:
+        - Sociedad Anónima, Comercial, Industrial, Financiera e Inmobiliaria
+    - normal: S.A.C.I.F.I. y A.
+      aliases:
+        - Sociedad Anónima, Comercial, Industrial, Financiera, Inmobiliaria y Agropecuaria
+  # Australian company types
+  lang: eng
+  countries: au
+    - normal: LLP
+      global: limited liability partnership
+      aliases:
+        - Limited liability partnership
+    - normal: ILP
+      aliases:
+        - Incorporated limited partnership
+    - normal: Inc.
+      aliases:
+        - Incorporated
+    - normal: Ltd.
+      global: plc
+      aliases:
+        - Limited
+    - normal: NL
+      aliases:
+        - No liability
+    - normal: Pty. Ltd.
+      global: Ltd
+      aliases:
+        - Proprietary Limited Company
+    - normal: Pty.
+      aliases:
+        - Unlimited Proprietary
+  # Belarusian company types
+  lang: bel
+  countries: by
+    - normal: ААТ
+      global: plc (open)
+      aliases:
+        - Адкрытае акцыянернае таварыства
+    - normal: ЗАТ
+      global: plc (closed)
+      aliases:
+        - Закрытае акцыянернае таварыства
+    - normal: ІП
+      aliases:
+        - Індывідуальны прадпрымальнік
+    - normal: ПУП
+      aliases:
+        - Прыватнае унітарнае прадпрыемства
+    - normal: ТАА
+      global: Ltd
+      aliases:
+        - Таварыства з абмежаванай адказнасцю
+  # Bosnia and Herzegovina company types
+  lang: bos
+  countries: ba
+    - normal: d.d.
+      global: plc
+      aliases:
+        - dioničko društvo
+    - normal: a.d.
+      global: plc
+      aliases:
+        - akcionarsko društvo
+    - normal: d.n.o.
+      aliases:
+        - društvo s neograničenom solidarnom odgovornošću
+    - normal: d.o.o.
+      global: Ltd
+      aliases:
+        - društvo s ograničenom odgovornošću
+    - normal: k.d.
+      aliases:
+        - komanditno društvo
+    - normal: s.p.
+      aliases:
+        - samostalni preduzetnik
+  # Brazil company types
+  lang: por
+  countries: br
+    - normal: Ltda.
+      global: Ltd.
+      aliases: 
+        - Sociedade limitada
+    - normal: S.A.
+      global: plc
+      aliases:
+        - Sociedade anônima
+    - normal: EIRELI
+      global: Ltd.
+      aliases:
+        - Empresa Individual de Responsabilidade Limitada
+  # Cambodia company types
+  lang: eng
+  countries: kh
+    - normal: SP
+      aliases:
+        - Sole Proprietorship
+    - normal: GP
+      aliases:
+        - General Partnership
+    - normal: LP
+      aliases:
+        - Limited Partnership
+    - normal: SM Pte Ltd.
+      aliases:
+        - Single Member Private Limited Company
+    - normal: Pte Ltd.
+      aliases:
+        - Private Limited Company
+    - normal: Plc Ltd.
+      aliases:
+        - Public Limited Company
+    - normal: PEEC
+      aliases:
+        - Public Establishment with Economic characteristics
+  # Canada company types
+  lang: eng
+  countries: Canada
+    - normal: SP
+      aliases:
+        - Sole Proprietorship
+    - normal: GP
+      aliases:
+        - General Partnership
+    - normal: LP
+      aliases:
+        - Limited Partnership
+
+
+
+  # German company types
+  lang: deu
+  countries: de
+    - normal: GmbH
+      global: Ltd
+      aliases:
+        - Gesellschaft mit beschränkter Haftung
+        - g.m.b.h
+        - Gesellschaft mit besch Haftung
+        - Gesellschaft mit besch. Haftung
+        - Gesellschaft mit beschr Haftung
+        - Gesellschaft mit beschr. Haftung
+        - Gesellschaft mit beschränkter Haftung
+        - mit besch haftung
+        - mit beschr haftung
+        - mit beschränkter haftung
+        - гмбх
+    - normal: GmbH & Co. KG
+      broader: GmbH
+      aliases:
+        - gmbh & co.
+        - gmbh & co. kg
+        - gmbh and сo. kg
+        - gmbh und co. kg
+        - гмбх енд ко. кг
+    - normal: AG
+      global: Plc
+      aliases:
+        - Aktiengesellschaft
+    - normal: KG
+      global: LP
+      aliases:
+        - Kommanditgesellschaft
+    - normal: KGaA
+      broader: KG
+    
+
+  # to be reviewed
   - normal: JSC
     broader: AO
     aliases:
@@ -39,17 +237,19 @@ company_types:
       - Joint-Stock Company
       - Public Stock Company
   - normal: Sp. z o.o.
-    global: Ltd
-    aliases:
-      - spzoo
-      - sp zoo
-      - sp. z o.o.
-      - sp. z o.o. sp.k
-      - sp. z oo
-      - sp. zoo
-      - spolka z ograniczona odpowiedzialnoscia
-      - spółka z ograniczoną odpowiedzialnością
-      - Spółka z ograniczoną odpowiedzialnością
+    lang: pol
+    countires: pl
+      global: Ltd
+      aliases:
+        - spzoo
+        - sp zoo
+        - sp. z o.o.
+        - sp. z o.o. sp.k
+        - sp. z oo
+        - sp. zoo
+        - spolka z ograniczona odpowiedzialnoscia
+        - spółka z ograniczoną odpowiedzialnością
+        - Spółka z ograniczoną odpowiedzialnością
   - normal: 3at
     aliases:
       - закрытае ацыянернае таварыства
@@ -623,7 +823,7 @@ company_types:
       - openbare aandelenvennootschap
       - otkrytoe akcionernoe obshchestvo
       - otkrytoe aktsionernoe obshchestvo
-      - otwarta spółka akcyjna
+      # - otwarta spółka akcyjna
       - sociedad limitada por acciones abierta
       - sociedade por ações aberta
       - société par actions ouverte
@@ -805,7 +1005,7 @@ company_types:
       - société anonyme
       - société par actions de régime fédéral
       - société par actions par loi sur les sociétés par actions
-      - spółka akcyjna
+      #- spółka akcyjna
       - شركة خفية الإسم
   - normal: sad
     aliases:
