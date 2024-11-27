@@ -49,3 +49,1145 @@ company_types:
       - spolka z ograniczona odpowiedzialnoscia
       - spółka z ograniczoną odpowiedzialnością
       - Spółka z ograniczoną odpowiedzialnością
+  - normal: 3at
+    aliases:
+      - закрытае ацыянернае таварыства
+  - normal: aat
+    aliases:
+      - adkritaye aktsiyanernaye tavaristva
+      - adkrytae akcyyanernae tavarystva
+      - аат
+      - адкрытае акцыянернае таварыства
+  - normal: ab
+    aliases:
+      - abp
+      - aktiebolag
+      - publikt aktiebolag
+  - normal: abv
+    aliases:
+      - aandeelhouder-bestuurde vennootschap
+  - normal: ad
+    aliases:
+      - a.d
+      - a.d.
+      - akcionarsko društvo
+      - aktsionerno druzhestvo
+      - а.д
+      - ад
+      - акционарско друштво
+      - акционерно дружество
+  - normal: adsic
+    aliases:
+      - adsitz
+      - aktsionerno druzhestvo sas spetsialna investitsionna tsel
+      - адсиц
+      - акционерно дружество със специална инвестиционна цел
+  - normal: ae
+    aliases:
+      - anónimi etería
+      - ανώνυμη εταιρεία
+  - normal: ag
+    aliases:
+      - aksiyadorlik jamiyati
+      - aktiengesellschaft
+      - акциядорлик жамияти
+  - normal: amba
+    aliases:
+      - andelsselskab med begrænset ansvar
+  - normal: anl
+    aliases:
+      - andelslag
+  - normal: ano
+    aliases:
+      - автономная некоммерческая организация
+      - ано
+  - normal: anpo
+    aliases:
+      - autonomous non-profit organization
+  - normal: ao
+    aliases:
+      - aktsionernoe obschestvo
+      - anonim ortaklık
+      - joint stock company
+      - joint-stock company
+      - jsc
+      - public stock company
+      - акционерная компания с ограниченной ответственностью
+      - акционерное общество
+      - акціонерне товариство
+      - акціонерного товариства
+  - normal: aps
+    aliases:
+      - anpartsselskab
+  - normal: as
+    aliases:
+      - akciju sabiedrība
+      - akciová společnost
+      - akciová spoločnosť
+      - aktieselskab
+      - aktieselskabet
+      - aktsiaselts
+      - anonim şirket
+  - normal: asbl
+    aliases:
+      - aisbl
+      - association internationale sans but lucratif
+      - association sans but lucratif
+  - normal: asc
+    aliases:
+      - açıq səhmdar cəmiyyəti
+  - normal: ay
+    aliases:
+      - avoin yhtiö
+  - normal: bhd
+    aliases:
+      - berhad
+  - normal: bv
+    aliases:
+      - besloten vennootschap
+  - normal: bvba
+    aliases:
+      - besloten vennootschap met beperkte aansprakelijkheid
+  - normal: ca
+    aliases:
+      - compañía anónima
+  - normal: co
+    aliases:
+      - company
+      - компания
+  - normal: co ltd
+    aliases:
+      - cia ltda
+      - co., ltd.
+      - co.ltd
+      - compañía limitada
+  - normal: coop
+    aliases:
+      - co-op
+      - cooperation
+      - cooperative
+      - coopératif
+      - coopération
+      - coopérative
+      - kooperatsia
+      - sociedad cooperativa
+      - spółdzielni
+      - кооперация
+  - normal: corp
+    aliases:
+      - corporation
+  - normal: cp
+    aliases:
+      - fond commun de placement
+  - normal: cs
+    aliases:
+      - ህብረት ስራ ማህበራት
+  - normal: cty cp
+    aliases:
+      - công ty cổ phần
+  - normal: cty tnhh
+    aliases:
+      - công ty trách nhiệm hữu hạn
+  - normal: cty tnhh mtv
+    aliases:
+      - công ty trách nhiệm hữu hạn một thành viên
+  - normal: cv
+    aliases:
+      - comm. v
+      - commanditaire vennootschap
+      - gewone commanditaire vennootschap
+  - normal: cva
+    aliases:
+      - comm. va
+      - commanditaire vennootschap op aandelen
+  - normal: cvba
+    aliases:
+      - coöperatieve vennootschap met beperkte aansprakelijkheid
+  - normal: cvoa
+    aliases:
+      - coöperatieve vennootschap met onbeperkte aansprakelijkheid
+  - normal: cía
+    aliases:
+      - compañía
+  - normal: dd
+    aliases:
+      - d.d.
+      - dioničko društvo
+  - normal: dis tic ltd
+    aliases:
+      - dis.tic.ltd
+  - normal: dnnn
+    aliases:
+      - doanh nghiệp nhà nước
+  - normal: dno
+    aliases:
+      - d.n.o.
+      - društvo s neograničenom solidarnom odgovornošću
+  - normal: dntn
+    aliases:
+      - doanh nghiệp tư nhân
+  - normal: doo
+    aliases:
+      - d.o.o.
+      - društvo s ograničenom odgovornošću
+      - društvo sa ograničenom odgovornošću
+      - д.о.о.
+      - доо
+      - друштво са ограниченом одговорношћу
+  - normal: dp
+    aliases:
+      - društveno preduzeće
+      - дп
+      - друштвено предузеће
+  - normal: dtnn
+    aliases:
+      - doanh nghiệp có vốn đầu tư nước ngoài
+  - normal: dzzd
+    aliases:
+      - druzhestvo uchredeno po zakona za zadalzheniyata i dogovorite
+      - дззд
+      - дружество учредено по закона за задълженията и договорите
+  - normal: ead
+    aliases:
+      - ednolichno aktsionerno druzhestvo
+      - еад
+      - еднолично акционерно дружество
+  - normal: ebvba
+    aliases:
+      - eenpersoons besloten vennootschap met beperkte aansprakelijkheid
+  - normal: ed
+    aliases:
+      - evropeysko druzhestvo
+      - eвропейско дружество
+      - ед
+  - normal: eeig
+    aliases:
+      - european economic interest grouping
+      - evropeysko obedinenie po ikonomicheski interesi
+      - европейско обединение по икономически интереси
+      - еоии
+  - normal: eg
+    aliases:
+      - eingetragene genossenschaft
+      - genossenschaft
+  - normal: ehf
+    aliases:
+      - einkahlutafélag
+  - normal: ei
+    aliases:
+      - entreprise individuelle
+  - normal: eireli
+    aliases:
+      - empresa individual de responsabilidade limitada
+  - normal: eirl
+    aliases:
+      - empresa individual de responsabilidad limitada
+  - normal: ek. för.
+    aliases:
+      - ekonomisk förening
+  - normal: ekd
+    aliases:
+      - evropeysko kooperativno druzhestvo
+      - eвропейско кооперативно дружество
+      - екд
+  - normal: ent.
+    aliases:
+      - enterprise
+  - normal: eood
+    aliases:
+      - ednolichno druzhestvo s ogranichena otgovornost
+      - еднолично дружество с ограничена отговорност
+      - еоод
+  - normal: ep
+    aliases:
+      - empresa pública
+  - normal: esv
+    aliases:
+      - economisch samenwerkingsverband
+  - normal: et
+    aliases:
+      - ednolichen targovets
+      - едноличен търговец
+      - ет
+  - normal: eu
+    aliases:
+      - eingetragenes einzelunternehmen
+      - empresa unipersonal
+  - normal: eurl
+    aliases:
+      - entreprise unipersonnelle à responsabilité limitée
+  - normal: ev
+    aliases:
+      - eingetragener verein
+  - normal: exp
+    aliases:
+      - export
+  - normal: exp corp
+    aliases:
+      - exp.corp
+  - normal: f:ma
+    aliases:
+      - enskild näringsidkare
+  - normal: fa
+    aliases:
+      - firma
+  - normal: fie
+    aliases:
+      - füüsilisest isikust ettevõtja
+  - normal: fmba
+    aliases:
+      - forening med begrænset ansvar
+  - normal: fze
+    aliases:
+      - free zone establishment
+  - normal: gbr
+    aliases:
+      - gesbr
+      - gesellschaft des bürgerlichen rechts
+  - normal: gie
+    aliases:
+      - groupement d'intérêt économique
+  - normal: giu
+    aliases:
+      - gospodarsko interesno udruženje
+  - normal: gk
+    aliases:
+      - 合同会社
+  - normal: gmbh
+    aliases:
+      - g.m.b.h
+      - gesellschaft mit besch haftung
+      - gesellschaft mit besch. haftung
+      - gesellschaft mit beschr haftung
+      - gesellschaft mit beschr. haftung
+      - gesellschaft mit beschränkter haftung
+      - gmbh & co.
+      - gmbh & co. kg
+      - gmbh and сo. kg
+      - gmbh und co. kg
+      - mit besch haftung
+      - mit beschr haftung
+      - mit beschränkter haftung
+      - гмбх
+      - гмбх енд ко. кг
+  - normal: gmk
+    aliases:
+      - 合名会社
+  - normal: gnpp
+    aliases:
+      - gosudarstvennoe nauchno proizvodstvennoe predpriyatie
+      - scientific & production enterprise
+      - scientific and production enterprise
+      - государственное научно-производственное предприятие
+      - державне науково-виробниче підприємство
+  - normal: gp
+    aliases:
+      - general partnership
+  - normal: gs
+    aliases:
+      - gensidigt selskab
+  - normal: gsk
+    aliases:
+      - 合資会社
+  - normal: haao
+    aliases:
+      - halka açık anonim ortaklık
+  - normal: hf
+    aliases:
+      - hlutafélag
+  - normal: htx
+    aliases:
+      - hợp tác xã
+  - normal: huf
+    aliases:
+      - hindu undivided family
+  - normal: ii
+    aliases:
+      - inteprinderea individuala
+      - interprinderea individuală
+      - intreprindere individuala
+      - intreprindere individuală
+      - intreprinderea ibdividuala
+      - intreprinderea individuala
+      - intreprinderea individuală
+      - intreprinderea indiviuala
+      - intreprinzator individual
+      - înterprinderea individuală
+      - întreprindera individuală
+      - întreprindere individuală
+      - întreprinderea individualî
+      - întreprinderea individuală
+      - întreprindserea individuală
+      - întreprinzător individual
+      - întreprinzătorul individual
+  - normal: ik
+    aliases:
+      - individuālais komersants
+  - normal: im
+    aliases:
+      - întreprinderea municipală
+  - normal: imp
+    aliases:
+      - import
+  - normal: imp and
+    aliases:
+      - imp.and
+  - normal: inc
+    aliases:
+      - incorp
+      - incorporated
+      - incorporée
+  - normal: ins
+    aliases:
+      - insaat
+  - normal: ins oto san tic
+    aliases:
+      - ins.oto.san.tic
+  - normal: intl
+    aliases:
+      - international
+      - internationale
+      - інтернейшнл
+  - normal: is
+    aliases:
+      - interessentskab
+      - intreprindere de stat alimentatiei publice
+      - intreprinderea de stat
+      - întreprinderea de stat
+  - normal: ivs
+    aliases:
+      - iværksætterselskab
+  - normal: jdoo
+    aliases:
+      - j.d.o.o
+      - jednostavno društvo s ograničenom odgovornošću
+  - normal: jp
+    aliases:
+      - javno preduzeće
+      - јавно предузеће
+      - јп
+  - normal: jscb
+    aliases:
+      - joint stock commercial bank
+  - normal: jtd
+    aliases:
+      - j.t.d.
+      - javno trgovačko društvo
+  - normal: ju
+    aliases:
+      - (ju)
+      - jusikhoesa
+      - ㈜
+      - 주식회사
+  - normal: jv
+    aliases:
+      - joint venture
+  - normal: kb
+    aliases:
+      - kommanditbolag
+  - normal: kd
+    aliases:
+      - k.d.
+      - komanditno druzhestvo
+      - komanditno društvo
+      - к.д
+      - кд
+      - командитно дружество
+      - командитно друштво
+  - normal: kda
+    aliases:
+      - komanditno druzhestvo s aktsii
+      - кда
+      - командитно дружество с акции
+  - normal: keg
+    aliases:
+      - kommanditerwerbsgesellschaft
+  - normal: kft
+    aliases:
+      - korlatolt felelossegu tarsasag
+      - korlátolt felelősségü társaság, organizační složka
+      - korlátolt felelősségű társaság
+  - normal: kg
+    aliases:
+      - kommanditgesellschaft
+  - normal: kk
+    aliases:
+      - 株式会社
+  - normal: koll. şti.
+    aliases:
+      - kolektif şirket
+  - normal: kom. şti
+    aliases:
+      - komandit şirket
+  - normal: koop
+    aliases:
+      - kooperatif şirket
+  - normal: ks
+    aliases:
+      - komanditní společnost
+      - komandītsabiedrība
+      - kommanditselskab
+  - normal: ky
+    aliases:
+      - kommandiittiyhtiö
+  - normal: llc
+    aliases:
+      - limited liability company
+      - tavaristva z abmezhavanaj adkaznastsiu
+      - tob
+      - тзов
+      - тов
+      - товариство з обмеженою відповідальністю
+  - normal: llp
+    aliases:
+      - limited liability partnership
+      - 有限責任事業組合
+  - normal: lo
+    aliases:
+      - limited ortaklık
+  - normal: loj
+    aliases:
+      - lojistik
+  - normal: lp
+    aliases:
+      - limited partnership
+      - 兩合公司
+  - normal: ltd
+    aliases:
+      - lda.
+      - limitada
+      - limited
+      - limited by guarantee
+      - limited by shares
+      - limited company
+      - limitée
+      - ltd.
+      - ltd. co.
+      - ltda
+      - private company with limited liability
+      - private limited company
+      - private limited liability company
+      - pte ltd.
+      - sociedada limitada
+      - sociedade limitada
+      - компания с ограниченной ответственностью
+      - лимитед
+      - בע"מ
+      - 有限公司
+  - normal: ltd sti
+    aliases:
+      - limited şirket
+      - ltd.sti
+  - normal: mchj
+    aliases:
+      - mas'uliyati cheklangan jamiyat
+      - масъулияти чекланган жамият
+  - normal: mmc
+    aliases:
+      - məhdud məsuliyyətli cəmiyyət
+  - normal: mtü
+    aliases:
+      - mittetulundusühing
+  - normal: na
+    aliases:
+      - national association
+  - normal: nk
+    aliases:
+      - nin'i kumiai
+      - 任意組合
+  - normal: nl
+    aliases:
+      - no liability
+  - normal: np
+    aliases:
+      - некоммерческое партнерство
+      - некоммерческое партнёрство
+      - нп
+  - normal: nv
+    aliases:
+      - naamloze vennootschap
+  - normal: oaj
+    aliases:
+      - ochiq aksiyadorlik jamiyati
+      - очиқ акциядорлик жамияти
+  - normal: oao
+    aliases:
+      - atviroji akcinė bendrovė
+      - avatud aktsiaselts
+      - avoin osakeyhtiö
+      - cuideachta comhstoic oscailte
+      - offene aktiengesellschaft
+      - ojsc
+      - open joint stock company
+      - openbare aandelenvennootschap
+      - otkrytoe akcionernoe obshchestvo
+      - otkrytoe aktsionernoe obshchestvo
+      - otwarta spółka akcyjna
+      - sociedad limitada por acciones abierta
+      - sociedade por ações aberta
+      - société par actions ouverte
+      - veřejná akciová společnost
+      - відкрите акціонерне товариство
+      - оао
+      - открытое акционерное общество
+  - normal: od
+    aliases:
+      - o.d.
+      - ortačko društvo
+      - о.д.
+      - од
+      - ортачко друштво
+  - normal: odo
+    aliases:
+      - obshchestvo s dopolnitel'noj otvetstvennost'yu
+      - общество с дополнительной ответственностью
+      - одо
+  - normal: oeg
+    aliases:
+      - offene erwerbsgesellschaft
+  - normal: og
+    aliases:
+      - offene gesellschaft
+  - normal: ok
+    aliases:
+      - oilaviy korxona
+      - оилавий корхона
+  - normal: ong
+    aliases:
+      - organização não governamental
+  - normal: ood
+    aliases:
+      - drujestvo s ogranichena otgovornost
+      - druzhestvo s ogranichena otgovornost
+      - дружество с ограничена отговорност
+      - оод
+  - normal: ooo
+    aliases:
+      - obshchestvo s ogranichennoj otvetstvennost'yu
+      - oсoo
+      - ликвидационная комиссия общества с ограниченной ответственностью
+      - ликвидационная комиссия общество с ограниченной ответственностью
+      - ликвидационная комиссия ооо
+      - общество с ограниченной ответственностью
+      - общество с ограниченной ответственностью строительная компания
+      - общество с ограниченной ответственностью торговый дом
+      - общество с ограниченной ответственностью управляющая компания
+      - общество с ограниченной ответственностью фирма
+      - общество с ограниченной ответственностью частная охранная организация
+      - общество с ограниченной ответственностью частное охранное предприятие
+      - ооо
+  - normal: opg
+    aliases:
+      - obiteljsko poljoprivredno gospodarstvo
+  - normal: ops
+    aliases:
+      - obecně prospěšná společnost
+  - normal: os
+    aliases:
+      - občanské sdružení.
+  - normal: oscip
+    aliases:
+      - organização da sociedade civil de interesse público
+  - normal: osk
+    aliases:
+      - osuuskunta
+  - normal: owm
+    aliases:
+      - onderlinge waarborgmaatschappij
+  - normal: oy
+    aliases:
+      - osakeyhtiö
+  - normal: oyj
+    aliases:
+      - julkinen osakeyhtiö
+  - normal: oü
+    aliases:
+      - osaühing
+  - normal: pc
+    aliases:
+      - ኮርፖሬሽን
+  - normal: pe
+    aliases:
+      - የመንግስት ልማት ድርጅቶች
+  - normal: peec
+    aliases:
+      - public establishment with economic characteristics
+  - normal: plc
+    aliases:
+      - public limited company
+      - ሃላፊነቱ የተወሰነ የግል ማህበር
+      - 股份有限公司
+  - normal: plt
+    aliases: []
+  - normal: pp
+    aliases:
+      - приватне підприємство
+  - normal: pr
+    aliases:
+      - preduzetnik
+      - пр
+      - предузетник
+  - normal: ps
+    aliases:
+      - partnerselskab
+      - pilnsabiedrība
+  - normal: pse
+    aliases:
+      - public sector enterprise
+  - normal: psu
+    aliases:
+      - public sector undertaking
+  - normal: pt
+    aliases:
+      - perseroan terbatas
+  - normal: pt tbk
+    aliases:
+      - perseroan terbatas terbuka
+  - normal: pty
+    aliases:
+      - proprietary limited
+      - proprietary limited company
+      - pty ltd
+  - normal: qk
+    aliases:
+      - qo'shma korxona
+      - қўшма корхона
+  - normal: qmj
+    aliases:
+      - qo'shimcha ma'suliyatli jamiyat
+      - қўшимча масъулиятли жамият
+  - normal: qsc
+    aliases:
+      - qapalı səhmdar cəmiyyəti
+      - qapalı tipli səhmdar cəmiyyəti
+  - normal: rao
+    aliases:
+      - pao
+      - pjsc
+      - private joint stock company
+      - пао
+      - приватне акціонерне товариство
+      - публичное акционерное общество
+  - normal: rp
+    aliases:
+      - rekisteröity puolue
+  - normal: rs
+    aliases:
+      - säätiö
+  - normal: ry
+    aliases:
+      - rekisteröity yhdistys
+  - normal: s. en c.
+    aliases:
+      - comandita simple
+  - normal: s.cra.
+    aliases:
+      - sociedad comanditaria
+  - normal: sa
+    aliases:
+      - s.a.
+      - sarf
+      - sociedad anonima
+      - sociedad anónima
+      - sociedad en comandita por acciones
+      - sociedad por acciones
+      - sociedada anonima
+      - sociedade anónima
+      - sociedade anônima
+      - sociedá anónima
+      - societat anònima
+      - societate pe acțiuni
+      - societatea pe actiuni
+      - societatea pe acţiuni
+      - societateare pe actiuni
+      - società anonima
+      - société anonyme
+      - société par actions de régime fédéral
+      - société par actions par loi sur les sociétés par actions
+      - spółka akcyjna
+      - شركة خفية الإسم
+  - normal: sad
+    aliases:
+      - sociedad anónima deportiva
+  - normal: sae
+    aliases:
+      - sharikat al-mossahamah
+  - normal: san
+    aliases:
+      - sanayi
+  - normal: san as
+    aliases:
+      - san.a.s
+  - normal: san tic
+    aliases:
+      - san.tic
+  - normal: san tic ltd
+    aliases:
+      - san.tic.ltd.
+  - normal: san tic ltd sti
+    aliases:
+      - san.tic.ltd.sti
+  - normal: san ve
+    aliases:
+      - san.ve
+  - normal: saoc
+    aliases:
+      - société anonyme omanaise close
+  - normal: saog
+    aliases:
+      - société anonyme omanaise générale
+  - normal: sapa
+    aliases:
+      - società in accomandita per azioni
+  - normal: sarl
+    aliases:
+      - société à responsabilité limitée
+      - شّركة ذات مسؤوليّات محدودة ش.م.م
+  - normal: sas
+    aliases:
+      - sociedades por acciones simplificada
+      - société par actions simplifiée
+  - normal: sc
+    aliases:
+      - compania comerciala si de productie societatea cu responsabilitate limitata
+      - sociedad colectiva
+      - societatea comercială
+      - አክሲዩን ማህበር
+  - normal: sca
+    aliases:
+      - comandita por acciones
+      - société en commandite par actions
+  - normal: scc
+    aliases:
+      - société commerciale canadienne
+  - normal: sce
+    aliases:
+      - societas cooperativa europaea
+  - normal: scei
+    aliases:
+      - sociedad de capital e industria
+  - normal: scop
+    aliases:
+      - société coopérative de production
+  - normal: scpa
+    aliases:
+      - sociedad civil privada
+  - normal: scs
+    aliases:
+      - secs
+      - sociedad en comandita simple
+      - société en commandite simple
+  - normal: sd
+    aliases:
+      - s-ie
+      - sabiratelno druzhestvo (sd)/sadruzhie
+      - sd/s-ie
+      - с-ие
+      - сд
+      - събирателно дружество
+      - събирателно дружество (сд)/съдружие
+  - normal: sdn bhd
+    aliases:
+      - sendirian berhad
+  - normal: se
+    aliases:
+      - sociedad del estado
+      - societas europaea
+  - normal: sem
+    aliases:
+      - société d'économie mixte
+  - normal: sep
+    aliases:
+      - société en participation
+  - normal: sf
+    aliases:
+      - sameignarfélag
+  - normal: sgr
+    aliases:
+      - sociedad de garantia reciproca
+      - sociedad de garantía reciproca
+  - normal: sh.a
+    aliases:
+      - shoqëri aksionere
+  - normal: shpk
+    aliases:
+      - sh.p.k
+      - shoqëri me përgjegjësi të kufizuar
+  - normal: sia
+    aliases:
+      - sabiedrība ar ierobežotu atbildību
+      - сиа
+  - normal: sicaf
+    aliases:
+      - société d'investissement à capital fixe
+  - normal: sicav
+    aliases:
+      - société d'investissement à capital variable
+  - normal: sjsc  # ?
+    aliases:
+      - дат
+      - державне акціонерне товариство
+  - normal: sll
+    aliases:
+      - sociedad limitada laboral
+  - normal: slne
+    aliases:
+      - s.l.n.e.
+      - sociedad limitada nueva empresa
+  - normal: sm pte ltd.
+    aliases:
+      - single member private limited company
+  - normal: smba
+    aliases:
+      - selskab med begrænset ansvar
+  - normal: snc
+    aliases:
+      - société en nom collectif
+  - normal: snt
+    aliases:
+      - садоводческое некоммерческое товарищество
+  - normal: sp
+    aliases:
+      - s.p.
+      - samostalni preduzetnik
+      - sole proprietorship
+      - státní podnik
+  - normal: spa
+    aliases:
+      - società per azioni
+  - normal: spe
+    aliases:
+      - societas privata europaea
+  - normal: spf
+    aliases:
+      - stichting particulier fonds
+  - normal: sprl
+    aliases:
+      - société privée à responsabilité limitée
+      - société privée à responsabilité limitée unipersonnelle
+  - normal: spzoo
+    aliases:
+      - sp zoo
+      - sp. z o.o.
+      - sp. z o.o. sp.k
+      - sp. z oo
+      - sp. zoo
+      - spolka z ograniczona odpowiedzialnoscia
+      - spółka z ograniczoną odpowiedzialnością
+  - normal: srl
+    aliases:
+      - intreprinderea cu responsabilitate limitata
+      - s.r.l
+      - s.r.l.
+      - sicietatea de raspundere limitata
+      - sociedad de responsabilidad limitada
+      - societata cu raspundere limitata
+      - societate cu rasponbilitate limitata
+      - societate cu raspundere limitata
+      - societate cu responsabilitate limiiata
+      - societate cu responsabilitate limitata
+      - societate cu răspundere limitată
+      - societate cu răspundre limitată
+      - societatea cu rasdpundere limitata
+      - societatea cu rasponsabilitate limitata
+      - societatea cu raspundere
+      - societatea cu raspundere limitata
+      - societatea cu raspundere limitate
+      - societatea cu responsabilitate limitata
+      - societatea cu responsabilitatea limitata
+      - societatea cu respundere limitata
+      - societatea cu răspundere
+      - societatea cu răspundere limitată
+      - societatii cu raspunderea limitata
+      - societete cu răspundere limitată
+      - società a responsabilità limitata
+      - socitate cu responsabilitate limitata
+  - normal: sro
+    aliases:
+      - s.r.o
+      - společnost s ručením omezeným
+  - normal: stg
+    aliases:
+      - stille gesellschaft
+  - normal: sti
+    aliases:
+      - sirketi
+  - normal: suarl
+    aliases:
+      - شّركة فردية ذات مسؤوليّات محدودة
+  - normal: t:mi
+    aliases:
+      - oiminimi
+  - normal: tes
+    aliases:
+      - tesisat
+  - normal: tes tek dis
+    aliases:
+      - tes.tek.dis
+  - normal: tic
+    aliases:
+      - ticaret
+  - normal: tic as
+    aliases:
+      - tic.a.s.
+  - normal: tic ltd sti
+    aliases:
+      - tic.ltd.sti
+  - normal: tk
+    aliases:
+      - tokumei kumiai
+      - 匿名組合
+  - normal: too
+    aliases:
+      - товарищество с ограниченной ответственностью
+  - normal: tpb
+    aliases:
+      - corporația de rachete balistice tactice
+      - društvo za taktičke projektile
+      - tactical missile company
+      - tactical missile corporation
+      - takticheskoe raketnoe vooruzhenie
+      - тактическое ракетное вооружение
+      - тактичне ракетне озброєння
+  - normal: tü
+    aliases:
+      - täisühing
+  - normal: uab
+    aliases:
+      - uždaroji akcinė bendrovė
+      - uždarosios akcinės bendrovės
+  - normal: ud
+    aliases:
+      - usaha dagang
+  - normal: uk
+    aliases:
+      - unitar korxona
+      - унитар корхона
+  - normal: ultd
+    aliases:
+      - unlimited
+      - unlimited company
+      - unlimited proprietary
+      - unltd
+      - 無限公司
+  - normal: up
+    aliases:
+      - consorzio statale
+      - den føderale statsejede budgetinstitution
+      - empresa orçamental do estado federal
+      - empresa unitaria estatal de la
+      - empresa unitária estatal
+      - entità statali
+      - entreprise unitaire d’état
+      - federal state budgetary enterprise
+      - federal state budgetary institution
+      - federal state institution
+      - federal state unitary enterprise
+      - federalna budżetowa instytucja
+      - federalnoe gosudarstvennoe byudzhetnoe uchrezhdenie
+      - föderales staatseigenes unternehmen
+      - gosudarstvennoe unitarnoe predpriyatie
+      - impresa unitaria statale
+      - staatliches einheitsunternehmen
+      - staatskonzern
+      - state concern
+      - state enterprise
+      - state unitary enterprise
+      - state unitary enterprise of the
+      - státní jednotný podnik
+      - státní koncern
+      - unitarnoe predpriyatie
+      - unіtarnae pradpryemstva
+      - štátny unitárny podnik
+      - государственного унитарного предприятия
+      - государственное унитарное предприятие
+      - гп
+      - гуп
+      - державного унітарного підприємства
+      - унитарное предприятие
+      - унітарнае прадпрыемства
+      - уп
+  - normal: uü
+    aliases:
+      - usaldusühing
+  - normal: vof
+    aliases:
+      - vennootschap onder firma
+  - normal: vos
+    aliases:
+      - veřejná obchodní společnost
+  - normal: vzw
+    aliases:
+      - internationale vereniging zonder winstoogmerk
+      - ivzw
+      - vereinigung ohne gewinnerzielungsabsicht
+      - vereniging zonder winstoogmerk
+      - vog
+  - normal: xk
+    aliases:
+      - xususiy korxona
+      - хусусий корхона
+  - normal: xt
+    aliases:
+      - xususiy tadbirkorlik
+      - хусусий тадбиркорлик
+  - normal: yk
+    aliases:
+      - 有限会社
+  - normal: yoaj
+    aliases:
+      - yopiq aksiyadorlik jamiyati
+      - ёпиқ акциядорлик жамияти
+  - normal: yu
+    aliases:
+      - (yu)
+      - (유)
+      - yuhanhoesa
+      - 유한회사
+  - normal: zao
+    aliases:
+      - cjsc
+      - closed joint stock company
+      - zakrytoe akcionernoe obshchestvo
+      - zaо
+      - закрите акціонерне товариство
+      - закрытое акционерное общество
+      - зао
+  - normal: zat
+    aliases:
+      - zakritaye aktsiyanernaye tavaristva
+      - zakrytae akcyyanernae tavarystva
+      - закрытае акцыянернае таварыства
+      - зат
+  - normal: zs
+    aliases:
+      - z.s.
+      - zapsaný spolek
+  - normal: şb
+    aliases:
+      - şube
+  - normal: пуп
+    aliases:
+      - прыватнае унітарнае прадпрыемства
+  - normal: тda
+    aliases:
+      - tavarystva z dadatkovaj adkaznascyu
+      - таварыства з дадатковай адказнасцю
+      - тда
+  - normal: таа
+    aliases:
+      - tavarystva z abmezhavanaj adkaznascyu
+      - таварыства з абмежаванай адказнасцю
+  - normal: тбб
+    aliases:
+      - төрийн бус байгууллага
+  - normal: тсж
+    aliases:
+      - товарищество собственников жилья
+      - товарищество собственников недвижимости
+  - normal: хк
+    aliases:
+      - хувьцаат компани
+  - normal: ххк
+    aliases:
+      - хязгаарлагдмал хариуцлагатай компани
