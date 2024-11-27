@@ -189,8 +189,61 @@ company_types:
     - normal: LP
       aliases:
         - Limited Partnership
+  # Chilean company types
+  lang: spa
+  countries: cl
+    - normal: SpA
+      aliases:
+        - Sociedad por acciones
+    - normal: SRL
+      global: LLC
+      aliases:
+      - Sociedad de Responsabilidad Limitada
+    - normal: EIRL
+      aliases:
+        - Empresa Individual de Responsabilidad Limitada
+    - normal: S.A.
+      global: plc
+      aliases:
+        - Sociedad Anónima
+    - normal: S.G.R.
+      aliases:
+        - Sociedad de Garantia Reciproca
+    - normal: LTDA.
+      global: Ltd
+      aliases:
+        - Sociedad de responsabilidad limitada
+  # Chinese company types
 
-
+  # Colombian company types
+  lang: spa
+  countries: co
+    - normal: S.A.
+      global: plc
+      aliases:
+        - Sociedad Anónima
+    - normal: S.A.S.
+      aliases:
+        - Sociedades por Acciones Simplificada
+    - normal: Ltda.
+      global: [Ltd, LLC] #  Ltd. (UK), LLC (US)
+      aliases:
+        - Sociedad de Responsabilidad Limitada
+    - normal: S.C.
+      global: General partnership
+      aliases:
+        - Sociedad Colectiva
+    - normal: S. en C.
+      global: Limited partnership
+      aliases:
+        - Comandita Simple
+    - normal: S.C.A.
+      global: Publicly traded partnership
+      aliases:
+        - Comandita por Acciones
+    - normal: E.U.
+      aliases:
+        - Empresa Unipersonal
 
   # German company types
   lang: deu
