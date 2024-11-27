@@ -37,3 +37,15 @@ company_types:
       - Joint Stock Company
       - Joint-Stock Company
       - Public Stock Company
+  - normal: Sp. z o.o.
+    global: Ltd
+    aliases:
+      - spzoo
+      - sp zoo
+      - sp. z o.o.
+      - sp. z o.o. sp.k
+      - sp. z oo
+      - sp. zoo
+      - spolka z ograniczona odpowiedzialnoscia
+      - spółka z ograniczoną odpowiedzialnością
+      - Spółka z ograniczoną odpowiedzialnością
