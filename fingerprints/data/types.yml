@@ -2,6 +2,7 @@ company_types:
   # Albanian company types
   lang: sqi
   countries: al
+  types:
     - normal: Sh.p.k.
       global: Ltd
       aliases:
@@ -17,6 +18,7 @@ company_types:
   # Argentine company types
   lang: spa
   countries: ar
+  types:
     - normal: S.A.
       global: plc
       aliases:
@@ -69,6 +71,7 @@ company_types:
   # Australian company types
   lang: eng
   countries: au
+  types:
     - normal: LLP
       global: limited liability partnership
       aliases:
@@ -96,6 +99,7 @@ company_types:
   # Belarusian company types
   lang: bel
   countries: by
+  types:
     - normal: ААТ
       global: plc (open)
       aliases:
@@ -117,6 +121,7 @@ company_types:
   # Bosnia and Herzegovina company types
   lang: bos
   countries: ba
+  types:
     - normal: d.d.
       global: plc
       aliases:
@@ -141,6 +146,7 @@ company_types:
   # Brazil company types
   lang: por
   countries: br
+  types:
     - normal: Ltda.
       global: Ltd.
       aliases: 
@@ -156,6 +162,7 @@ company_types:
   # Cambodia company types
   lang: eng
   countries: kh
+  types:
     - normal: SP
       aliases:
         - Sole Proprietorship
@@ -180,6 +187,7 @@ company_types:
   # Canada company types
   lang: eng
   countries: Canada
+  types:
     - normal: SP
       aliases:
         - Sole Proprietorship
@@ -192,6 +200,7 @@ company_types:
   # Chilean company types
   lang: spa
   countries: cl
+  types:
     - normal: SpA
       aliases:
         - Sociedad por acciones
@@ -218,6 +227,7 @@ company_types:
   # Colombian company types
   lang: spa
   countries: co
+  types:
     - normal: S.A.
       global: plc
       aliases:
@@ -248,6 +258,7 @@ company_types:
   # German company types
   lang: deu
   countries: de
+  types:
     - normal: GmbH
       global: Ltd
       aliases:
