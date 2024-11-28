@@ -1,4 +1,19 @@
 company_types: 
+  # Language of the company type (e.g., "en" for English, "fr" for French). Must be a single language code.
+  lang: en
+  # List of countries where these company types are relevant. Use ISO 3166-1 alpha-2 country codes (e.g., "US", "UK").
+  countries: [UK]
+  # Definition of company types
+  types:
+    - normal: PLC # The local abbreviation or term (e.g., "LLC"). Must be a single string.
+      global: PLC # The universal/global term. Must be a single string.
+      lei: B6ES # The ISO 20275 Entity Legal Form (ELF) code. Must be a single string.
+      aliases: # List of alternative names for the company type.
+        - Public Limited Company
+        - Public Limited Co.
+
+
+company_types: 
   # Albanian company types
   lang: sqi
   countries: al
@@ -223,6 +238,7 @@ company_types:
       aliases:
         - Sociedad de responsabilidad limitada
   # Chinese company types
+  # to be added later
 
   # Colombian company types
   lang: spa
@@ -254,6 +270,73 @@ company_types:
     - normal: E.U.
       aliases:
         - Empresa Unipersonal
+
+  # Costa Rican company types
+  lang: spa
+  countries: cr
+  types:
+    - normal: S.A.
+      global: plc
+      aliases:
+        - Sociedad Anónima
+    - normal: S.R.L.
+      global: Ltd.
+      aliases:
+        - Sociedad de Responsabilidad Limitada
+
+  # Dominican Republic company types
+  lang: spa
+  countries: do
+  types:
+    - normal: C. por A.
+      global: plc
+      aliases:
+        - Compañía por Acciones
+    - normal: S.A.
+      global: public limited company
+      aliases:
+        - Sociedad Anónima
+    - normal: S.A.S
+      global: Simplified public limited company
+      aliases:
+        - Sociedad Anónima Simplificada
+    - normal: SRL.
+      global: Limited Liability Company
+      aliases:
+        - Sociedad de Responsabilidad Limitada
+    - normal: EIRL.
+      global: Sole proprietor Limited Liability Company
+      aliases:
+        - Empresa Individual de Responsabilidad Limitada
+
+  # Ecuadorian company types
+  lang: spa
+  countries: ec
+  types:
+    - normal: S.A.
+      global: public limited company
+      aliases:
+        - Sociedad Anónima
+    - normal: S.A.S.
+      global: public limited company
+      aliases:
+        - Sociedad por Acciones Simplificada
+    - normal: Cía. Ltda.
+      global: Limited Liability Company
+      aliases:
+        - Compañía Limitada
+    - normal: EP
+      aliases:
+        - Empresa Pública
+
+  # Egypt
+  # to be added later
+
+  # Ethiopia
+  # to be added later
+
+  # European Union and European Economic Area
+  # to be added later
 
   # German company types
   lang: deu
