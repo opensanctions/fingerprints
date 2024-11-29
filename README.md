@@ -36,7 +36,7 @@ Wikipedia also maintains an index of [types of business entity](https://en.wikip
 
 * [Clustering in Depth](https://github.com/OpenRefine/OpenRefine/wiki/Clustering-In-Depth), part of the OpenRefine documentation discussing how to create collisions in data clustering.
 * [probablepeople](https://github.com/datamade/probablepeople), parser for western names made by the brilliant folks at datamade.us.
-* The study [Developing a Legal Form Classification and Extraction Approach For Company Entity Matching]([https://www.tib-op.org/ojs/index.php/bis/article/view/44/190](https://www.tib-op.org/ojs/index.php/bis/article/view/44)) by Kruse et al. (2021) investigates four approaches for identifying and classifying legal forms in company names.
+* The study [Developing a Legal Form Classification and Extraction Approach For Company Entity Matching](https://www.tib-op.org/ojs/index.php/bis/article/view/44) by Kruse et al. (2021) investigates four approaches for identifying and classifying legal forms in company names.
 * List of Legal Forms from [AnaCredit dataset](https://www.ecb.europa.eu/stats/ecb_statistics/anacredit/html/index.en.html) by ECB (one of the Annexes).
 * [Transformer-based Entity Legal Form Classification](https://arxiv.org/pdf/2310.12766) by Arimond et al. (2023).
 
