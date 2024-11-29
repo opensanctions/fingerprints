@@ -1,333 +1,440 @@
 company_types: 
-  # Language of the company type (e.g., "en" for English, "fr" for French). Must be a single language code.
-  lang: en
-  # List of countries where these company types are relevant. Use ISO 3166-1 alpha-2 country codes (e.g., "US", "UK").
-  countries: [UK]
-  # Definition of company types
-  types:
-    - normal: PLC # The local abbreviation or term (e.g., "LLC"). Must be a single string.
-      global: PLC # The universal/global term. Must be a single string.
-      lei: B6ES # The ISO 20275 Entity Legal Form (ELF) code. Must be a single string.
-      aliases: # List of alternative names for the company type.
-        - Public Limited Company
-        - Public Limited Co.
+    # The local abbreviation or term (e.g., "LLC"). 
+    # Must be a single string.
+  - normal: PLC 
+    # Language of the company type (e.g., "en" for English). 
+    #Must be a single language code.
+    lang: en
+    # List of countries where these company types are relevant. 
+    # Use ISO 3166-1 alpha-2 country codes (e.g., "US", "UK").
+    countries: [UK]
+    # The universal/global term. Must be a single string.
+    global: PLC 
+    # The ISO 20275 Entity Legal Form (ELF) code. Must be a single string.
+    lei: B6ES
+    # List of alternative names for the company type.
+    aliases: 
+      - Public Limited Company
+      - Public Limited Co.
 
 
 company_types: 
-  # Albanian company types
-  lang: sqi
-  countries: al
-  types:
-    - normal: Sh.p.k.
-      global: Ltd
-      aliases:
-        - Shoqëri me përgjegjësi të kufizuar
-    - normal: Sh.A.
-      global: PLC
-      aliases:
-        - Shoqëri Aksionere
-    - normal: Sh.K.
-      global: limited partnership
-      aliases:
-        - Shoqëri komandite
-  # Argentine company types
-  lang: spa
-  countries: ar
-  types:
-    - normal: S.A.
-      global: plc
-      aliases:
-        - Sociedad Anónima
-    - normal: S.R.L.
-      global: Ltd
-      aliases:
-        - Sociedad de Responsabilidad Limitada
-    - normal: S.C.S.
-      global: limited partnership
-      aliases:
-        - Sociedad en Comandita Simple
-    - normal: S.C.p.A.
-      global: limited partnership with shares
-      aliases:
-        - Sociedad en Comandita por Acciones
-    - normal: Soc.Col.
-      global: general partnership
-      aliases:
-        - Sociedad Colectiva
-    - normal: S.C.e I.
-      aliases:
-        - Sociedad de Capital e Industria
-    - normal: S.E.
-      global: state-owned enterprise
-      aliases:
-        - Sociedad del Estado
-    - normal: S.G.R.
-      aliases:
-        - Sociedad de Garantía Reciproca
-    - normal: S.A.S.
-      aliases:
-        - Sociedad por Acciones Simplificada
-    - normal: S.A.U.
-      global: Sole proprietorship
-      aliases:
-        - Sociedad Anónima Unipersonal
-    - normal: S.A.I.C.A.
-      aliases:
-        - Sociedades anónimas inscritas de capital abierto
-    - normal: S.A.C.I. y F.
-      aliases:
-        - Sociedad Anónima Comercial Industrial y Financiera
-    - normal: S.A.C.I.F.I.
-      aliases:
-        - Sociedad Anónima, Comercial, Industrial, Financiera e Inmobiliaria
-    - normal: S.A.C.I.F.I. y A.
-      aliases:
-        - Sociedad Anónima, Comercial, Industrial, Financiera, Inmobiliaria y Agropecuaria
-  # Australian company types
-  lang: eng
-  countries: au
-  types:
-    - normal: LLP
-      global: limited liability partnership
-      aliases:
-        - Limited liability partnership
-    - normal: ILP
-      aliases:
-        - Incorporated limited partnership
-    - normal: Inc.
-      aliases:
-        - Incorporated
-    - normal: Ltd.
-      global: plc
-      aliases:
-        - Limited
-    - normal: NL
-      aliases:
-        - No liability
-    - normal: Pty. Ltd.
-      global: Ltd
-      aliases:
-        - Proprietary Limited Company
-    - normal: Pty.
-      aliases:
-        - Unlimited Proprietary
-  # Belarusian company types
-  lang: bel
-  countries: by
-  types:
-    - normal: ААТ
-      global: plc (open)
-      aliases:
-        - Адкрытае акцыянернае таварыства
-    - normal: ЗАТ
-      global: plc (closed)
-      aliases:
-        - Закрытае акцыянернае таварыства
-    - normal: ІП
-      aliases:
-        - Індывідуальны прадпрымальнік
-    - normal: ПУП
-      aliases:
-        - Прыватнае унітарнае прадпрыемства
-    - normal: ТАА
-      global: Ltd
-      aliases:
-        - Таварыства з абмежаванай адказнасцю
-  # Bosnia and Herzegovina company types
-  lang: bos
-  countries: ba
-  types:
-    - normal: d.d.
-      global: plc
-      aliases:
-        - dioničko društvo
-    - normal: a.d.
-      global: plc
-      aliases:
-        - akcionarsko društvo
-    - normal: d.n.o.
-      aliases:
-        - društvo s neograničenom solidarnom odgovornošću
-    - normal: d.o.o.
-      global: Ltd
-      aliases:
-        - društvo s ograničenom odgovornošću
-    - normal: k.d.
-      aliases:
-        - komanditno društvo
-    - normal: s.p.
-      aliases:
-        - samostalni preduzetnik
-  # Brazil company types
-  lang: por
-  countries: br
-  types:
-    - normal: Ltda.
-      global: Ltd.
-      aliases: 
-        - Sociedade limitada
-    - normal: S.A.
-      global: plc
-      aliases:
-        - Sociedade anônima
-    - normal: EIRELI
-      global: Ltd.
-      aliases:
-        - Empresa Individual de Responsabilidade Limitada
-  # Cambodia company types
-  lang: eng
-  countries: kh
-  types:
-    - normal: SP
-      aliases:
-        - Sole Proprietorship
-    - normal: GP
-      aliases:
-        - General Partnership
-    - normal: LP
-      aliases:
-        - Limited Partnership
-    - normal: SM Pte Ltd.
-      aliases:
-        - Single Member Private Limited Company
-    - normal: Pte Ltd.
-      aliases:
-        - Private Limited Company
-    - normal: Plc Ltd.
-      aliases:
-        - Public Limited Company
-    - normal: PEEC
-      aliases:
-        - Public Establishment with Economic characteristics
-  # Canada company types
-  lang: eng
-  countries: Canada
-  types:
-    - normal: SP
-      aliases:
-        - Sole Proprietorship
-    - normal: GP
-      aliases:
-        - General Partnership
-    - normal: LP
-      aliases:
-        - Limited Partnership
-  # Chilean company types
-  lang: spa
-  countries: cl
-  types:
-    - normal: SpA
-      aliases:
-        - Sociedad por acciones
-    - normal: SRL
-      global: LLC
-      aliases:
+# Albanian company types
+  - normal: Sh.p.k.
+    lang: sqi
+    countries: al
+    global: Ltd
+    aliases:
+      - Shoqëri me përgjegjësi të kufizuar
+  - normal: Sh.A.
+    lang: sqi
+    countries: al
+    global: PLC
+    aliases:
+      - Shoqëri Aksionere
+  - normal: Sh.K.
+    lang: sqi
+    countries: al
+    global: limited partnership
+    aliases:
+      - Shoqëri komandite
+# Argentine company types
+  - normal: S.A.
+    lang: spa
+    countries: ar
+    global: plc
+    aliases:
+      - Sociedad Anónima
+  - normal: S.R.L.
+    lang: spa
+    countries: ar
+    global: Ltd
+    aliases:
       - Sociedad de Responsabilidad Limitada
-    - normal: EIRL
-      aliases:
-        - Empresa Individual de Responsabilidad Limitada
-    - normal: S.A.
-      global: plc
-      aliases:
-        - Sociedad Anónima
-    - normal: S.G.R.
-      aliases:
-        - Sociedad de Garantia Reciproca
-    - normal: LTDA.
-      global: Ltd
-      aliases:
-        - Sociedad de responsabilidad limitada
+  - normal: S.C.S.
+    lang: spa
+    countries: ar
+    global: limited partnership
+    aliases:
+      - Sociedad en Comandita Simple
+  - normal: S.C.p.A.
+    lang: spa
+    countries: ar
+    global: limited partnership with shares
+    aliases:
+      - Sociedad en Comandita por Acciones
+  - normal: Soc.Col.
+    lang: spa
+    countries: ar
+    global: general partnership
+    aliases:
+      - Sociedad Colectiva
+  - normal: S.C.e I.
+    lang: spa
+    countries: ar
+    aliases:
+      - Sociedad de Capital e Industria
+  - normal: S.E.
+    lang: spa
+    countries: ar
+    global: state-owned enterprise
+    aliases:
+      - Sociedad del Estado
+  - normal: S.G.R.
+    lang: spa
+    countries: ar
+    aliases:
+      - Sociedad de Garantía Reciproca
+  - normal: S.A.S.
+    lang: spa
+    countries: ar
+    aliases:
+      - Sociedad por Acciones Simplificada
+  - normal: S.A.U.
+    lang: spa
+    countries: ar
+    global: Sole proprietorship
+    aliases:
+      - Sociedad Anónima Unipersonal
+  - normal: S.A.I.C.A.
+    lang: spa
+    countries: ar
+    aliases:
+      - Sociedades anónimas inscritas de capital abierto
+  - normal: S.A.C.I. y F.
+    lang: spa
+    countries: ar
+    aliases:
+      - Sociedad Anónima Comercial Industrial y Financiera
+  - normal: S.A.C.I.F.I.
+    lang: spa
+    countries: ar
+    aliases:
+      - Sociedad Anónima, Comercial, Industrial, Financiera e Inmobiliaria
+  - normal: S.A.C.I.F.I. y A.
+    lang: spa
+    countries: ar
+    aliases:
+      - Sociedad Anónima, Comercial, Industrial, Financiera, Inmobiliaria y Agropecuaria
+# Australian company types
+  - normal: LLP
+    lang: eng
+    countries: au
+    global: limited liability partnership
+    aliases:
+      - Limited liability partnership
+  - normal: ILP
+    lang: eng
+    countries: au
+    aliases:
+      - Incorporated limited partnership
+  - normal: Inc.
+    lang: eng
+    countries: au
+    aliases:
+      - Incorporated
+  - normal: Ltd.
+    lang: eng
+    countries: au
+    global: plc
+    aliases:
+      - Limited
+  - normal: NL
+    lang: eng
+    countries: au
+    aliases:
+      - No liability
+  - normal: Pty. Ltd.
+    lang: eng
+    countries: au
+    global: Ltd
+    aliases:
+      - Proprietary Limited Company
+  - normal: Pty.
+    lang: eng
+    countries: au
+    aliases:
+      - Unlimited Proprietary
+# Belarusian company types
+  - normal: ААТ
+    lang: bel
+    countries: by
+    global: plc (open)
+    aliases:
+      - Адкрытае акцыянернае таварыства
+  - normal: ЗАТ
+    lang: bel
+    countries: by
+    global: plc (closed)
+    aliases:
+      - Закрытае акцыянернае таварыства
+  - normal: ІП
+    lang: bel
+    countries: by
+    aliases:
+      - Індывідуальны прадпрымальнік
+  - normal: ПУП
+    lang: bel
+    countries: by
+    aliases:
+      - Прыватнае унітарнае прадпрыемства
+  - normal: ТАА
+    lang: bel
+    countries: by
+    global: Ltd
+    aliases:
+      - Таварыства з абмежаванай адказнасцю
+# Bosnia and Herzegovina company types
+  - normal: d.d.
+    lang: bos
+    countries: ba
+    global: plc
+    aliases:
+      - dioničko društvo
+  - normal: a.d.
+    lang: bos
+    countries: ba
+    global: plc
+    aliases:
+      - akcionarsko društvo
+  - normal: d.n.o.
+    lang: bos
+    countries: ba
+    aliases:
+      - društvo s neograničenom solidarnom odgovornošću
+  - normal: d.o.o.
+    lang: bos
+    countries: ba
+    global: Ltd
+    aliases:
+      - društvo s ograničenom odgovornošću
+  - normal: k.d.
+    lang: bos
+    countries: ba
+    aliases:
+      - komanditno društvo
+  - normal: s.p.
+    lang: bos
+    countries: ba
+    aliases:
+      - samostalni preduzetnik
+# Brazil company types
+  - normal: Ltda.
+    lang: por
+    countries: br
+    global: Ltd.
+    aliases: 
+      - Sociedade limitada
+  - normal: S.A.
+    lang: por
+    countries: br
+    global: plc
+    aliases:
+      - Sociedade anônima
+  - normal: EIRELI
+    lang: por
+    countries: br
+    global: Ltd.
+    aliases:
+      - Empresa Individual de Responsabilidade Limitada
+# Cambodia company types
+  - normal: SP
+    lang: eng
+    countries: kh
+    aliases:
+      - Sole Proprietorship
+  - normal: GP
+    lang: eng
+    countries: kh
+    aliases:
+      - General Partnership
+  - normal: LP
+    lang: eng
+    countries: kh
+    aliases:
+      - Limited Partnership
+  - normal: SM Pte Ltd.
+    lang: eng
+    countries: kh
+    aliases:
+      - Single Member Private Limited Company
+  - normal: Pte Ltd.
+    lang: eng
+    countries: kh
+    aliases:
+      - Private Limited Company
+  - normal: Plc Ltd.
+    lang: eng
+    countries: kh
+    aliases:
+      - Public Limited Company
+  - normal: PEEC
+    lang: eng
+    countries: kh
+    aliases:
+      - Public Establishment with Economic characteristics
+# Canada company types
+  - normal: SP
+    lang: eng
+    countries: ca
+    aliases:
+      - Sole Proprietorship
+  - normal: GP
+    lang: eng
+    countries: ca
+    aliases:
+      - General Partnership
+  - normal: LP
+    lang: eng
+    countries: ca
+    aliases:
+      - Limited Partnership
+# Chilean company types
+  - normal: SpA
+    lang: spa
+    countries: cl
+    aliases:
+      - Sociedad por acciones
+  - normal: SRL
+    lang: spa
+    countries: cl
+    global: LLC
+    aliases:
+    - Sociedad de Responsabilidad Limitada
+  - normal: EIRL
+    lang: spa
+    countries: cl
+    aliases:
+      - Empresa Individual de Responsabilidad Limitada
+  - normal: S.A.
+    lang: spa
+    countries: cl
+    global: plc
+    aliases:
+      - Sociedad Anónima
+  - normal: S.G.R.
+    lang: spa
+    countries: cl
+    aliases:
+      - Sociedad de Garantia Reciproca
+  - normal: LTDA.
+    lang: spa
+    countries: cl
+    global: Ltd
+    aliases:
+      - Sociedad de responsabilidad limitada
   # Chinese company types
   # to be added later
 
-  # Colombian company types
-  lang: spa
-  countries: co
-  types:
-    - normal: S.A.
-      global: plc
-      aliases:
-        - Sociedad Anónima
-    - normal: S.A.S.
-      aliases:
-        - Sociedades por Acciones Simplificada
-    - normal: Ltda.
-      global: [Ltd, LLC] #  Ltd. (UK), LLC (US)
-      aliases:
-        - Sociedad de Responsabilidad Limitada
-    - normal: S.C.
-      global: General partnership
-      aliases:
-        - Sociedad Colectiva
-    - normal: S. en C.
-      global: Limited partnership
-      aliases:
-        - Comandita Simple
-    - normal: S.C.A.
-      global: Publicly traded partnership
-      aliases:
-        - Comandita por Acciones
-    - normal: E.U.
-      aliases:
-        - Empresa Unipersonal
-
-  # Costa Rican company types
-  lang: spa
-  countries: cr
-  types:
-    - normal: S.A.
-      global: plc
-      aliases:
-        - Sociedad Anónima
-    - normal: S.R.L.
-      global: Ltd.
-      aliases:
-        - Sociedad de Responsabilidad Limitada
-
-  # Dominican Republic company types
-  lang: spa
-  countries: do
-  types:
-    - normal: C. por A.
-      global: plc
-      aliases:
-        - Compañía por Acciones
-    - normal: S.A.
-      global: public limited company
-      aliases:
-        - Sociedad Anónima
-    - normal: S.A.S
-      global: Simplified public limited company
-      aliases:
-        - Sociedad Anónima Simplificada
-    - normal: SRL.
-      global: Limited Liability Company
-      aliases:
-        - Sociedad de Responsabilidad Limitada
-    - normal: EIRL.
-      global: Sole proprietor Limited Liability Company
-      aliases:
-        - Empresa Individual de Responsabilidad Limitada
-
-  # Ecuadorian company types
-  lang: spa
-  countries: ec
-  types:
-    - normal: S.A.
-      global: public limited company
-      aliases:
-        - Sociedad Anónima
-    - normal: S.A.S.
-      global: public limited company
-      aliases:
-        - Sociedad por Acciones Simplificada
-    - normal: Cía. Ltda.
-      global: Limited Liability Company
-      aliases:
-        - Compañía Limitada
-    - normal: EP
-      aliases:
-        - Empresa Pública
+# Colombian company types
+  - normal: S.A.
+    lang: spa
+    countries: co
+    global: plc
+    aliases:
+      - Sociedad Anónima
+  - normal: S.A.S.
+    lang: spa
+    countries: co
+    aliases:
+      - Sociedades por Acciones Simplificada
+  - normal: Ltda.
+    lang: spa
+    countries: co
+    global: [Ltd, LLC] #  Ltd. (UK), LLC (US)
+    aliases:
+      - Sociedad de Responsabilidad Limitada
+  - normal: S.C.  
+    lang: spa
+    countries: co
+    global: General partnership
+    aliases:
+      - Sociedad Colectiva
+  - normal: S. en C.
+    lang: spa
+    countries: co
+    global: Limited partnership
+    aliases:
+      - Comandita Simple
+  - normal: S.C.A.
+    lang: spa
+    countries: co
+    global: Publicly traded partnership
+    aliases:
+      - Comandita por Acciones
+  - normal: E.U.
+    lang: spa
+    countries: co
+    aliases:
+      - Empresa Unipersonal
+# Costa Rican company types
+  - normal: S.A.
+    lang: spa
+    countries: cr
+    global: plc
+    aliases:
+      - Sociedad Anónima
+  - normal: S.R.L.
+    lang: spa
+    countries: cr
+    global: Ltd.
+    aliases:
+      - Sociedad de Responsabilidad Limitada
+# Dominican Republic company types
+  - normal: C. por A.
+    lang: spa
+    countries: do
+    global: plc
+    aliases:
+      - Compañía por Acciones
+  - normal: S.A.
+    lang: spa
+    countries: do
+    global: public limited company
+    aliases:
+      - Sociedad Anónima
+  - normal: S.A.S
+    lang: spa
+    countries: do
+    global: Simplified public limited company
+    aliases:
+      - Sociedad Anónima Simplificada
+  - normal: SRL.
+    lang: spa
+    countries: do
+    global: Limited Liability Company
+    aliases:
+      - Sociedad de Responsabilidad Limitada
+  - normal: EIRL.
+    lang: spa
+    countries: do
+    global: Sole proprietor Limited Liability Company
+    aliases:
+      - Empresa Individual de Responsabilidad Limitada
+# Ecuadorian company types
+  - normal: S.A.
+    lang: spa
+    countries: ec
+    global: public limited company
+    aliases:
+      - Sociedad Anónima
+  - normal: S.A.S.
+    lang: spa
+    countries: ec
+    global: public limited company
+    aliases:
+      - Sociedad por Acciones Simplificada
+  - normal: Cía. Ltda.
+    lang: spa
+    countries: ec
+    global: Limited Liability Company
+    aliases:
+      - Compañía Limitada
+  - normal: EP
+    lang: spa
+    countries: ec
+    aliases:
+      - Empresa Pública
 
   # Egypt
   # to be added later
