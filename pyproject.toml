@@ -27,6 +27,7 @@ Issues = "https://github.com/opensanctions/fingerprints/issues"
 [project.optional-dependencies]
 dev = [
     "bump2version",
+    "pyyaml >= 5.0.0, < 7.0.0",
     "mypy",
     "ruff",
     "build",
