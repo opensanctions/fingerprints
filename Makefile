@@ -4,7 +4,7 @@ all: generate clean test
 generate:
 	python fingerprints/types/check.py
 	python fingerprints/types/compile.py
-	black fingerprints/types/data.py
+	ruff format fingerprints/types/data.py
 
 test:
 	pytest --cov=fingerprints --cov-report html --cov-report term
