@@ -6,7 +6,6 @@ company_types:
       - Public Limited Company
       - Public Limited Co.
       - Public Ltd. Co.
-    # Albanian company types
   - normal: Sh.p.k.
     generic: Ltd
     aliases:
@@ -38,8 +37,6 @@ company_types:
     aliases:
       - Sociedad de Responsabilidad Limitada
   - normal: S.C.S.
-    lang: spa
-    countries: ar
     generic: LP
     aliases:
       - Sociedad en Comandita Simple
@@ -50,14 +47,10 @@ company_types:
     aliases:
       - Sociedad en Comandita por Acciones
   - normal: Soc.Col.
-    lang: spa
-    countries: ar
     generic: GP
     aliases:
       - Sociedad Colectiva
   - normal: S.C.e I.
-    lang: spa
-    countries: ar
     aliases:
       - Sociedad de Capital e Industria
   - normal: S.E.
@@ -94,7 +87,6 @@ company_types:
     aliases:
       - Sociedad Anónima, Comercial, Industrial, Financiera, Inmobiliaria y Agropecuaria
   - normal: LLP
-    # broader: LP
     aliases:
       - Limited liability partnership
   - normal: ILP
@@ -110,6 +102,7 @@ company_types:
       - N.A.
       - National Association
   - normal: NT&SA
+    broader: Inc.
     aliases:
       - National Trust and Savings Association
   - normal: Ltd.
@@ -137,35 +130,25 @@ company_types:
     aliases:
       - Закрытае акцыянернае таварыства
   - normal: ІП
-    lang: bel
-    countries: by
+    generic: SP
     aliases:
       - Індывідуальны прадпрымальнік
   - normal: ПУП
-    lang: bel
-    countries: by
     aliases:
       - Прыватнае унітарнае прадпрыемства
   - normal: ТАА
     generic: Ltd
     aliases:
       - Таварыства з абмежаванай адказнасцю
-  # Bosnia and Herzegovina company types
   - normal: d.d.
-    lang: bos
-    countries: ba
-    generic: plc
+    generic: PLC
     aliases:
       - dioničko društvo
   - normal: a.d.
-    lang: bos
-    countries: ba
-    generic: plc
+    generic: PLC
     aliases:
       - akcionarsko društvo
   - normal: d.n.o.
-    lang: bos
-    countries: ba
     aliases:
       - društvo s neograničenom solidarnom odgovornošću
   - normal: d.o.o.
@@ -173,13 +156,9 @@ company_types:
     aliases:
       - društvo s ograničenom odgovornošću
   - normal: k.d.
-    lang: bos
-    countries: ba
     aliases:
       - komanditno društvo
   - normal: s.p.
-    lang: bos
-    countries: ba
     aliases:
       - samostalni preduzetnik
   # Brazil company types
@@ -189,29 +168,20 @@ company_types:
       - Sociedade limitada
       - Sociedad de responsabilidad limitada
   - normal: S.A.
-    lang: por
-    countries: br
-    generic: plc
+    generic: PLC
     aliases:
       - Sociedade anônima
   - normal: EIRELI
-    lang: por
-    countries: br
-    generic: Ltd.
+    generic: Ltd
     aliases:
       - Empresa Individual de Responsabilidade Limitada
-  # Cambodia company types
   - normal: SP
     aliases:
       - Sole Proprietorship
   - normal: GP
-    lang: eng
-    countries: kh
     aliases:
       - General Partnership
   - normal: LP
-    lang: eng
-    countries: kh
     aliases:
       - Limited Partnership
   - normal: SM Pte Ltd.
@@ -223,16 +193,12 @@ company_types:
     aliases:
       - Private Limited Company
   - normal: Plc Ltd.
-    lang: eng
-    countries: kh
     aliases:
       - Public Limited Company
+      - Plc. Ltd.
   - normal: PEEC
-    lang: eng
-    countries: kh
     aliases:
       - Public Establishment with Economic characteristics
-  # Canada company types
   - normal: SP
     aliases:
       - Sole Proprietorship
@@ -242,7 +208,6 @@ company_types:
   - normal: LP
     aliases:
       - Limited Partnership
-  # Chilean company types
   - normal: SpA
     aliases:
       - Sociedad por acciones
@@ -260,29 +225,17 @@ company_types:
     aliases:
       - Sociedad Anónima
   - normal: S.G.R.
-    lang: spa
-    countries: cl
     aliases:
       - Sociedad de Garantia Reciproca
   - normal: LTDA.
-    lang: spa
-    countries: cl
     generic: Ltd
     aliases:
       - Sociedad de responsabilidad limitada
-  # Chinese company types
-  # to be added later
-
-  # Colombian company types
   - normal: S.A.
-    lang: spa
-    countries: co
-    generic: plc
+    generic: PLC
     aliases:
       - Sociedad Anónima
   - normal: S.A.S.
-    lang: spa
-    countries: co
     aliases:
       - Sociedades por Acciones Simplificada
   - normal: Ltda.
@@ -293,14 +246,10 @@ company_types:
     aliases:
       - Sociedad Colectiva
   - normal: S. en C.
-    lang: spa
-    countries: co
-    generic: Limited partnership
+    generic: LP
     aliases:
       - Comandita Simple
   - normal: S.C.A.
-    lang: spa
-    countries: co
     generic: Publicly traded partnership
     aliases:
       - Comandita por Acciones
@@ -313,7 +262,7 @@ company_types:
     aliases:
       - Sociedad Anónima
   - normal: S.R.L.
-    generic: Ltd.
+    generic: Ltd
     aliases:
       - Sociedad de Responsabilidad Limitada
   - normal: C. por A.
@@ -369,6 +318,16 @@ company_types:
       - mit beschr haftung
       - mit beschränkter haftung
       - гмбх
+  - normal: gGmbH
+    aliases:
+      - gGmbH
+      - gemeinnützige GmbH
+  - normal: UG
+    broader: GmbH
+    aliases:
+      - UG (haftungsbeschränkt)
+      - Unternehmergesellschaft haftungsbeschränkt
+      - Unternehmergesellschaft
   - normal: GmbH & Co. KG
     broader: GmbH
     aliases:
@@ -378,13 +337,19 @@ company_types:
       - gmbh und co. kg
       - гмбх енд ко. кг
   - normal: AG
-    generic: Plc
+    generic: PLC
     aliases:
       - Aktiengesellschaft
+      - AG & Co. KG
+      - AG & Co KG
   - normal: KG
     generic: LP
     aliases:
       - Kommanditgesellschaft
+  - normal: e.K.
+    aliases:
+      - e. K.
+      - eingetragener Kaufmann
   - normal: KGaA
     broader: KG
 
@@ -416,7 +381,7 @@ company_types:
       - adkrytae akcyyanernae tavarystva
       - аат
       - адкрытае акцыянернае таварыства
-  - normal: ab
+  - normal: AB
     aliases:
       - abp
       - aktiebolag
@@ -462,7 +427,7 @@ company_types:
   - normal: anpo
     aliases:
       - autonomous non-profit organization
-  - normal: ao
+  - normal: AO
     aliases:
       - aktsionernoe obschestvo
       - anonim ortaklık
@@ -521,7 +486,7 @@ company_types:
       - co., ltd.
       - co.ltd
       - compañía limitada
-  - normal: coop
+  - normal: Coop.
     aliases:
       - co-op
       - cooperation
@@ -586,9 +551,8 @@ company_types:
   - normal: dntn
     aliases:
       - doanh nghiệp tư nhân
-  - normal: doo
+  - normal: d.o.o.
     aliases:
-      - d.o.o.
       - društvo s ograničenom odgovornošću
       - društvo sa ograničenom odgovornošću
       - д.о.о.
@@ -620,20 +584,21 @@ company_types:
       - evropeysko druzhestvo
       - eвропейско дружество
       - ед
-  - normal: eeig
+  - normal: EEIG
     aliases:
       - european economic interest grouping
       - evropeysko obedinenie po ikonomicheski interesi
       - европейско обединение по икономически интереси
       - еоии
-  - normal: eg
+  - normal: e.G.
     aliases:
       - eingetragene genossenschaft
       - genossenschaft
-  - normal: ehf
+  - normal: ehf.
     aliases:
       - einkahlutafélag
   - normal: ei
+    generic: SP
     aliases:
       - entreprise individuelle
   - normal: eireli
@@ -650,7 +615,7 @@ company_types:
       - evropeysko kooperativno druzhestvo
       - eвропейско кооперативно дружество
       - екд
-  - normal: ent.
+  - broader: Company
     aliases:
       - enterprise
   - normal: eood
@@ -680,10 +645,10 @@ company_types:
   - normal: ev
     aliases:
       - eingetragener verein
-  - normal: exp
+  - broader: Exp.
     aliases:
       - export
-  - normal: exp corp
+  - broader: exp corp
     aliases:
       - exp.corp
   - normal: f:ma
@@ -701,7 +666,8 @@ company_types:
   - normal: FZE
     aliases:
       - free zone establishment
-  - normal: gbr
+  - normal: GbR
+    generic: SP
     aliases:
       - gesbr
       - gesellschaft des bürgerlichen rechts
@@ -736,7 +702,8 @@ company_types:
   - normal: haao
     aliases:
       - halka açık anonim ortaklık
-  - normal: hf
+  - normal: Hf.
+    broader: Ltd
     aliases:
       - hlutafélag
   - normal: htx
@@ -782,7 +749,7 @@ company_types:
       - incorp
       - incorporated
       - incorporée
-  - normal: ins
+  - normal: Ins
     aliases:
       - insaat
   - normal: ins oto san tic
@@ -794,6 +761,7 @@ company_types:
       - internationale
       - інтернейшнл
   - normal: IS
+    generic: SOE
     aliases:
       - interessentskab
       - intreprindere de stat alimentatiei publice
@@ -910,6 +878,8 @@ company_types:
       - limitée
       - ltd.
       - ltd. co.
+      - CO.,LTD
+      - CO., LTD
       - ltda
       - private company with limited liability
       - private limited company
@@ -921,7 +891,8 @@ company_types:
       - лимитед
       - בע"מ
       - 有限公司
-  - normal: ltd sti
+  - normal: Ltd. Sti.
+    broader: Ltd
     aliases:
       - limited şirket
       - ltd.sti
@@ -1091,11 +1062,13 @@ company_types:
   - normal: pt tbk
     aliases:
       - perseroan terbatas terbuka
-  - normal: pty
+  - normal: Pty Ltd
+    broader: Ltd
     aliases:
       - proprietary limited
       - proprietary limited company
       - pty ltd
+      - Pty Limited
   - normal: qk
     aliases:
       - qo'shma korxona
@@ -1264,6 +1237,7 @@ company_types:
   - normal: sia
     aliases:
       - sabiedrība ar ierobežotu atbildību
+      - Sabiedrība ar ierobežotu atbildību
       - сиа
   - normal: sicaf
     aliases:
@@ -1354,7 +1328,7 @@ company_types:
     aliases:
       - s.r.o
       - společnost s ručením omezeným
-  - normal: stg
+  - normal: StG
     aliases:
       - stille gesellschaft
   - normal: sti
@@ -1411,7 +1385,7 @@ company_types:
     aliases:
       - unitar korxona
       - унитар корхона
-  - normal: ultd
+  - normal: Ultd
     aliases:
       - unlimited
       - unlimited company
@@ -1419,6 +1393,7 @@ company_types:
       - unltd
       - 無限公司
   - normal: up
+    generic: SOE
     aliases:
       - consorzio statale
       - den føderale statsejede budgetinstitution
