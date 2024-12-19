@@ -1,0 +1,2121 @@
+company_types:
+  # The local abbreviation or term (e.g., "LLC").
+  # Must be a single string.
+  - normal: PLC
+    aliases:
+      - Public Limited Company
+      - Public Limited Co.
+      - Public Ltd. Co.
+  - normal: Sh.p.k.
+    generic: Ltd
+    aliases:
+      - Shpk
+      - Shoqëri me përgjegjësi të kufizuar
+  - normal: Sh.A.
+    generic: PLC
+    aliases:
+      - Shoqëri Aksionere
+  - normal: Sh.K.
+    generic: LP
+    aliases:
+      - Shoqëri komandite
+  - normal: S.A.
+    generic: PLC
+    aliases:
+      - Sociedad Anónima
+  - normal: Fdn
+    aliases:
+      - Foundation
+      - Fondacion
+      - Fondacioni
+      - Fundación
+  - generic: Fdn
+    aliases:
+      - Stiftung
+  - normal: S.R.L.
+    broader: Ltd
+    aliases:
+      - Sociedad de Responsabilidad Limitada
+  - normal: S.C.S.
+    generic: LP
+    aliases:
+      - Sociedad en Comandita Simple
+  - normal: S.C.p.A.
+    lang: spa
+    countries: ar
+    generic: LP
+    aliases:
+      - Sociedad en Comandita por Acciones
+  - normal: Soc.Col.
+    generic: GP
+    aliases:
+      - Sociedad Colectiva
+  - normal: S.C.e I.
+    aliases:
+      - Sociedad de Capital e Industria
+  - normal: S.E.
+    generic: SOE
+    aliases:
+      - Sociedad del Estado
+  - normal: S.G.R.
+    lang: spa
+    countries: ar
+    aliases:
+      - Sociedad de Garantía Reciproca
+  - normal: S.A.S.
+    generic: LLC
+    aliases:
+      - Sociedad por Acciones Simplificada
+  - normal: S.A.U.
+    generic: SP
+    aliases:
+      - Sociedad Anónima Unipersonal
+  - normal: S.A.I.C.A.
+    broader: S.A.
+    aliases:
+      - Sociedades anónimas inscritas de capital abierto
+  - normal: S.A.C.I. y F.
+    broader: S.A.
+    aliases:
+      - Sociedad Anónima Comercial Industrial y Financiera
+  - normal: S.A.C.I.F.I.
+    broader: S.A.
+    aliases:
+      - Sociedad Anónima, Comercial, Industrial, Financiera e Inmobiliaria
+  - normal: S.A.C.I.F.I. y A.
+    broader: S.A.
+    aliases:
+      - Sociedad Anónima, Comercial, Industrial, Financiera, Inmobiliaria y Agropecuaria
+  - normal: LLP
+    aliases:
+      - Limited liability partnership
+  - normal: ILP
+    broader: LP
+    aliases:
+      - Incorporated limited partnership
+  - normal: Inc.
+    generic: Ltd
+    aliases:
+      - Incorporated
+  - normal: NA
+    aliases:
+      - N.A.
+      - National Association
+  - normal: NT&SA
+    broader: Inc.
+    aliases:
+      - National Trust and Savings Association
+  - normal: Ltd.
+    aliases:
+      - Limited
+      - Ltd
+  - normal: NL
+    aliases:
+      - No liability
+  - normal: Pty. Ltd.
+    broader: Ltd
+    aliases:
+      - Proprietary Limited Company
+      - Proprietary Limited
+  - normal: Pty.
+    broader: GP
+    aliases:
+      - Unlimited Proprietary
+  - normal: ААТ
+    broader: OJSC
+    aliases:
+      - Адкрытае акцыянернае таварыства
+  - normal: ЗАТ
+    broader: CJSC
+    aliases:
+      - Закрытае акцыянернае таварыства
+  - normal: ІП
+    generic: SP
+    aliases:
+      - Індывідуальны прадпрымальнік
+  - normal: ПУП
+    aliases:
+      - Прыватнае унітарнае прадпрыемства
+  - normal: ТАА
+    generic: Ltd
+    aliases:
+      - Таварыства з абмежаванай адказнасцю
+  - normal: d.d.
+    generic: PLC
+    aliases:
+      - dioničko društvo
+  - normal: a.d.
+    generic: PLC
+    aliases:
+      - akcionarsko društvo
+  - normal: d.n.o.
+    aliases:
+      - društvo s neograničenom solidarnom odgovornošću
+  - normal: d.o.o.
+    generic: Ltd
+    aliases:
+      - društvo s ograničenom odgovornošću
+  - normal: k.d.
+    aliases:
+      - komanditno društvo
+  - normal: s.p.
+    aliases:
+      - samostalni preduzetnik
+  # Brazil company types
+  - normal: Ltda.
+    broader: Ltd.
+    aliases:
+      - Sociedade limitada
+      - Sociedad de responsabilidad limitada
+  - normal: S.A.
+    generic: PLC
+    aliases:
+      - Sociedade anônima
+  - normal: EIRELI
+    generic: Ltd
+    aliases:
+      - Empresa Individual de Responsabilidade Limitada
+  - normal: SP
+    aliases:
+      - Sole Proprietorship
+  - normal: GP
+    aliases:
+      - General Partnership
+  - normal: LP
+    aliases:
+      - Limited Partnership
+  - normal: SM Pte Ltd.
+    broader: Pte Ltd.
+    aliases:
+      - Single Member Private Limited Company
+  - normal: Pte Ltd.
+    broader: Ltd
+    aliases:
+      - Private Limited Company
+  - normal: Plc Ltd.
+    aliases:
+      - Public Limited Company
+      - Plc. Ltd.
+  - normal: PEEC
+    aliases:
+      - Public Establishment with Economic characteristics
+  - normal: SP
+    aliases:
+      - Sole Proprietorship
+  - normal: GP
+    aliases:
+      - General Partnership
+  - normal: LP
+    aliases:
+      - Limited Partnership
+  - normal: SpA
+    aliases:
+      - Sociedad por acciones
+  - normal: SRL
+    broader: Ltd
+    aliases:
+      - Sociedad de Responsabilidad Limitada
+  - normal: EIRL
+    lang: spa
+    countries: cl
+    aliases:
+      - Empresa Individual de Responsabilidad Limitada
+  - normal: S.A.
+    generic: PLC
+    aliases:
+      - Sociedad Anónima
+  - normal: S.G.R.
+    aliases:
+      - Sociedad de Garantia Reciproca
+  - normal: LTDA.
+    generic: Ltd
+    aliases:
+      - Sociedad de responsabilidad limitada
+  - normal: S.A.
+    generic: PLC
+    aliases:
+      - Sociedad Anónima
+  - normal: S.A.S.
+    aliases:
+      - Sociedades por Acciones Simplificada
+  - normal: Ltda.
+    aliases:
+      - Sociedad de Responsabilidad Limitada
+  - normal: S.C.
+    generic: GP
+    aliases:
+      - Sociedad Colectiva
+  - normal: S. en C.
+    generic: LP
+    aliases:
+      - Comandita Simple
+  - normal: S.C.A.
+    generic: Publicly traded partnership
+    aliases:
+      - Comandita por Acciones
+  - normal: E.U.
+    generic: SP
+    aliases:
+      - Empresa Unipersonal
+  - normal: S.A.
+    generic: PLC
+    aliases:
+      - Sociedad Anónima
+  - normal: S.R.L.
+    generic: Ltd
+    aliases:
+      - Sociedad de Responsabilidad Limitada
+  - normal: C. por A.
+    generic: PLC
+    aliases:
+      - Compañía por Acciones
+  - normal: S.A.
+    aliases:
+      - Sociedad Anónima
+  - normal: S.A.S
+    broader: S.A.
+    generic: PLC
+    aliases:
+      - Sociedad Anónima Simplificada
+  - normal: SRL.
+    generic: LLC
+    aliases:
+      - Sociedad de Responsabilidad Limitada
+  - normal: EIRL.
+    generic: SP
+    aliases:
+      - Empresa Individual de Responsabilidad Limitada
+  - normal: S.A.
+    generic: PLC
+    aliases:
+      - Sociedad Anónima
+  - normal: S.A.S.
+    lang: spa
+    countries: ec
+    generic: PLC
+    aliases:
+      - Sociedad por Acciones Simplificada
+  - normal: Cía. Ltda.
+    broader: Ltda.
+    generic: LLC
+    aliases:
+      - Compañía Limitada
+  - normal: EP
+    generic: SOE
+    aliases:
+      - Empresa Pública
+  - normal: GmbH
+    generic: Ltd
+    aliases:
+      - Gesellschaft mit beschränkter Haftung
+      - g.m.b.h
+      - Gesellschaft mit besch Haftung
+      - Gesellschaft mit besch. Haftung
+      - Gesellschaft mit beschr Haftung
+      - Gesellschaft mit beschr. Haftung
+      - Gesellschaft mit beschränkter Haftung
+      - mit besch haftung
+      - mit beschr haftung
+      - mit beschränkter haftung
+      - гмбх
+  - normal: gGmbH
+    aliases:
+      - gGmbH
+      - gemeinnützige GmbH
+  - normal: UG
+    broader: GmbH
+    aliases:
+      - UG (haftungsbeschränkt)
+      - Unternehmergesellschaft haftungsbeschränkt
+      - Unternehmergesellschaft
+  - normal: GmbH & Co. KG
+    broader: GmbH
+    aliases:
+      - gmbh & co.
+      - gmbh & co. kg
+      - gmbh and сo. kg
+      - gmbh und co. kg
+      - гмбх енд ко. кг
+  - normal: AG
+    generic: PLC
+    aliases:
+      - Aktiengesellschaft
+      - AG & Co. KG
+      - AG & Co KG
+  - normal: KG
+    generic: LP
+    aliases:
+      - Kommanditgesellschaft
+  - normal: e.K.
+    aliases:
+      - e. K.
+      - eingetragener Kaufmann
+  - normal: KGaA
+    broader: KG
+
+  # to be reviewed
+  - normal: JSC
+    broader: AO
+    aliases:
+      - Joint Stock Company
+      - Joint-Stock Company
+      - Public Stock Company
+  - normal: Sp. z o.o.
+    generic: Ltd
+    aliases:
+      - spzoo
+      - sp zoo
+      - sp. z o.o.
+      - sp. z o.o. sp.k
+      - sp. z oo
+      - sp. zoo
+      - spolka z ograniczona odpowiedzialnoscia
+      - spółka z ograniczoną odpowiedzialnością
+      - Spółka z ograniczoną odpowiedzialnością
+  - normal: 3AT
+    aliases:
+      - закрытае ацыянернае таварыства
+  - normal: AAT
+    aliases:
+      - adkritaye aktsiyanernaye tavaristva
+      - adkrytae akcyyanernae tavarystva
+      - аат
+      - адкрытае акцыянернае таварыства
+  - normal: AB
+    aliases:
+      - abp
+      - aktiebolag
+      - publikt aktiebolag
+  - normal: abv
+    aliases:
+      - aandeelhouder-bestuurde vennootschap
+  - normal: ad
+    aliases:
+      - a.d
+      - a.d.
+      - akcionarsko društvo
+      - aktsionerno druzhestvo
+      - а.д
+      - ад
+      - акционарско друштво
+      - акционерно дружество
+  - normal: adsic
+    aliases:
+      - adsitz
+      - aktsionerno druzhestvo sas spetsialna investitsionna tsel
+      - адсиц
+      - акционерно дружество със специална инвестиционна цел
+  - normal: ae
+    aliases:
+      - anónimi etería
+      - ανώνυμη εταιρεία
+  - normal: ag
+    aliases:
+      - aksiyadorlik jamiyati
+      - aktiengesellschaft
+      - акциядорлик жамияти
+  - normal: amba
+    aliases:
+      - andelsselskab med begrænset ansvar
+  - normal: anl
+    aliases:
+      - andelslag
+  - normal: ano
+    aliases:
+      - автономная некоммерческая организация
+      - ано
+  - normal: anpo
+    aliases:
+      - autonomous non-profit organization
+  - normal: AO
+    aliases:
+      - aktsionernoe obschestvo
+      - anonim ortaklık
+      - joint stock company
+      - joint-stock company
+      - jsc # 2 blocks
+      - public stock company (PJSC)
+      - акционерная компания с ограниченной ответственностью
+      - акционерное общество
+      - акціонерне товариство
+      - акціонерного товариства
+  - normal: aps
+    aliases:
+      - anpartsselskab
+  - normal: as
+    aliases:
+      - akciju sabiedrība
+      - akciová společnost
+      - akciová spoločnosť
+      - aktieselskab
+      - aktieselskabet
+      - aktsiaselts
+      - anonim şirket
+  - normal: ASBL
+    aliases:
+      - aisbl
+      - A.S.B.L.
+      - association internationale sans but lucratif
+      - association sans but lucratif
+  - normal: asc
+    aliases:
+      - açıq səhmdar cəmiyyəti
+  - normal: ay
+    aliases:
+      - avoin yhtiö
+  - normal: bhd
+    aliases:
+      - berhad
+  - normal: bv
+    aliases:
+      - besloten vennootschap
+  - normal: bvba
+    aliases:
+      - besloten vennootschap met beperkte aansprakelijkheid
+  - normal: ca
+    aliases:
+      - compañía anónima
+  - normal: co
+    aliases:
+      - company
+      - компания
+  - normal: Co. Ltd.
+    broader: Ltd.
+    aliases:
+      - cia ltda
+      - co., ltd.
+      - co.ltd
+      - compañía limitada
+  - normal: Coop.
+    aliases:
+      - co-op
+      - cooperation
+      - cooperative
+      - coopératif
+      - coopération
+      - coopérative
+      - kooperatsia
+      - sociedad cooperativa
+      - spółdzielni
+      - кооперация
+  - normal: Corp.
+    aliases:
+      - corporation
+  - normal: cp
+    aliases:
+      - fond commun de placement
+  - normal: cs
+    aliases:
+      - ህብረት ስራ ማህበራት
+  - normal: cty cp
+    aliases:
+      - công ty cổ phần
+  - normal: cty tnhh
+    aliases:
+      - công ty trách nhiệm hữu hạn
+  - normal: cty tnhh mtv
+    aliases:
+      - công ty trách nhiệm hữu hạn một thành viên
+  - normal: cv
+    aliases:
+      - comm. v
+      - commanditaire vennootschap
+      - gewone commanditaire vennootschap
+  - normal: cva
+    aliases:
+      - comm. va
+      - commanditaire vennootschap op aandelen
+  - normal: cvba
+    aliases:
+      - coöperatieve vennootschap met beperkte aansprakelijkheid
+  - normal: cvoa
+    aliases:
+      - coöperatieve vennootschap met onbeperkte aansprakelijkheid
+  - normal: cía
+    aliases:
+      - compañía
+  - normal: dd
+    aliases:
+      - d.d.
+      - dioničko društvo
+  - normal: dis tic ltd
+    aliases:
+      - dis.tic.ltd
+  - normal: dnnn
+    aliases:
+      - doanh nghiệp nhà nước
+  - normal: dno
+    aliases:
+      - d.n.o.
+      - društvo s neograničenom solidarnom odgovornošću
+  - normal: dntn
+    aliases:
+      - doanh nghiệp tư nhân
+  - normal: d.o.o.
+    aliases:
+      - društvo s ograničenom odgovornošću
+      - društvo sa ograničenom odgovornošću
+      - д.о.о.
+      - доо
+      - друштво са ограниченом одговорношћу
+  - normal: dp
+    aliases:
+      - društveno preduzeće
+      - дп
+      - друштвено предузеће
+  - normal: dtnn
+    aliases:
+      - doanh nghiệp có vốn đầu tư nước ngoài
+  - normal: dzzd
+    aliases:
+      - druzhestvo uchredeno po zakona za zadalzheniyata i dogovorite
+      - дззд
+      - дружество учредено по закона за задълженията и договорите
+  - normal: ead
+    aliases:
+      - ednolichno aktsionerno druzhestvo
+      - еад
+      - еднолично акционерно дружество
+  - normal: ebvba
+    aliases:
+      - eenpersoons besloten vennootschap met beperkte aansprakelijkheid
+  - normal: ed
+    aliases:
+      - evropeysko druzhestvo
+      - eвропейско дружество
+      - ед
+  - normal: EEIG
+    aliases:
+      - european economic interest grouping
+      - evropeysko obedinenie po ikonomicheski interesi
+      - европейско обединение по икономически интереси
+      - еоии
+  - normal: e.G.
+    aliases:
+      - eingetragene genossenschaft
+      - genossenschaft
+  - normal: ehf.
+    aliases:
+      - einkahlutafélag
+  - normal: ei
+    generic: SP
+    aliases:
+      - entreprise individuelle
+  - normal: eireli
+    aliases:
+      - empresa individual de responsabilidade limitada
+  - normal: eirl
+    aliases:
+      - empresa individual de responsabilidad limitada
+  - normal: ek. för.
+    aliases:
+      - ekonomisk förening
+  - normal: ekd
+    aliases:
+      - evropeysko kooperativno druzhestvo
+      - eвропейско кооперативно дружество
+      - екд
+  - broader: Company
+    aliases:
+      - enterprise
+  - normal: eood
+    aliases:
+      - ednolichno druzhestvo s ogranichena otgovornost
+      - еднолично дружество с ограничена отговорност
+      - еоод
+  - normal: ep
+    aliases:
+      - empresa pública
+  - normal: esv
+    aliases:
+      - economisch samenwerkingsverband
+  - normal: et
+    aliases:
+      - ednolichen targovets
+      - едноличен търговец
+      - ет
+  - normal: EU
+    generic: SP
+    aliases:
+      - eingetragenes einzelunternehmen
+      - empresa unipersonal
+  - normal: eurl
+    aliases:
+      - entreprise unipersonnelle à responsabilité limitée
+  - normal: ev
+    aliases:
+      - eingetragener verein
+  - broader: Exp.
+    aliases:
+      - export
+  - broader: exp corp
+    aliases:
+      - exp.corp
+  - normal: f:ma
+    aliases:
+      - enskild näringsidkare
+  - normal: fa
+    aliases:
+      - firma
+  - normal: fie
+    aliases:
+      - füüsilisest isikust ettevõtja
+  - normal: fmba
+    aliases:
+      - forening med begrænset ansvar
+  - normal: FZE
+    aliases:
+      - free zone establishment
+  - normal: GbR
+    generic: SP
+    aliases:
+      - gesbr
+      - gesellschaft des bürgerlichen rechts
+  - normal: gie
+    aliases:
+      - groupement d'intérêt économique
+  - normal: giu
+    aliases:
+      - gospodarsko interesno udruženje
+  - normal: gk
+    aliases:
+      - 合同会社
+  - normal: gmk
+    aliases:
+      - 合名会社
+  - normal: gnpp
+    aliases:
+      - gosudarstvennoe nauchno proizvodstvennoe predpriyatie
+      - scientific & production enterprise
+      - scientific and production enterprise
+      - государственное научно-производственное предприятие
+      - державне науково-виробниче підприємство
+  - normal: gp
+    aliases:
+      - general partnership
+  - normal: gs
+    aliases:
+      - gensidigt selskab
+  - normal: gsk
+    aliases:
+      - 合資会社
+  - normal: haao
+    aliases:
+      - halka açık anonim ortaklık
+  - normal: Hf.
+    broader: Ltd
+    aliases:
+      - hlutafélag
+  - normal: htx
+    aliases:
+      - hợp tác xã
+  - normal: huf
+    aliases:
+      - hindu undivided family
+  - normal: II
+    generic: SP
+    aliases:
+      - inteprinderea individuala
+      - interprinderea individuală
+      - intreprindere individuala
+      - intreprindere individuală
+      - intreprinderea ibdividuala
+      - intreprinderea individuala
+      - intreprinderea individuală
+      - intreprinderea indiviuala
+      - intreprinzator individual
+      - înterprinderea individuală
+      - întreprindera individuală
+      - întreprindere individuală
+      - întreprinderea individualî
+      - întreprinderea individuală
+      - întreprindserea individuală
+      - întreprinzător individual
+      - întreprinzătorul individual
+  - normal: ik
+    aliases:
+      - individuālais komersants
+  - normal: im
+    aliases:
+      - întreprinderea municipală
+  - normal: imp
+    aliases:
+      - import
+  - normal: imp and
+    aliases:
+      - imp.and
+  - normal: Inc
+    aliases:
+      - incorp
+      - incorporated
+      - incorporée
+  - normal: Ins
+    aliases:
+      - insaat
+  - normal: ins oto san tic
+    aliases:
+      - ins.oto.san.tic
+  - normal: Intl
+    aliases:
+      - international
+      - internationale
+      - інтернейшнл
+  - normal: IS
+    generic: SOE
+    aliases:
+      - interessentskab
+      - intreprindere de stat alimentatiei publice
+      - intreprinderea de stat
+      - întreprinderea de stat
+  - normal: ivs
+    aliases:
+      - iværksætterselskab
+  - normal: jdoo
+    aliases:
+      - j.d.o.o
+      - jednostavno društvo s ograničenom odgovornošću
+  - normal: jp
+    aliases:
+      - javno preduzeće
+      - јавно предузеће
+      - јп
+  - normal: JSCB
+    broader: JSC
+    aliases:
+      - joint stock commercial bank
+  - normal: jtd
+    aliases:
+      - j.t.d.
+      - javno trgovačko društvo
+  - normal: ju
+    aliases:
+      - (ju)
+      - jusikhoesa
+      - ㈜
+      - 주식회사
+  - normal: jv
+    aliases:
+      - joint venture
+  - normal: kb
+    aliases:
+      - kommanditbolag
+  - normal: kd
+    aliases:
+      - k.d.
+      - komanditno druzhestvo
+      - komanditno društvo
+      - к.д
+      - кд
+      - командитно дружество
+      - командитно друштво
+  - normal: kda
+    aliases:
+      - komanditno druzhestvo s aktsii
+      - кда
+      - командитно дружество с акции
+  - normal: keg
+    aliases:
+      - kommanditerwerbsgesellschaft
+  - normal: Kft.
+    aliases:
+      - kft
+      - korlatolt felelossegu tarsasag
+      - korlátolt felelősségü társaság, organizační složka
+      - korlátolt felelősségű társaság
+  - normal: kg
+    aliases:
+      - kommanditgesellschaft
+  - normal: kk
+    aliases:
+      - 株式会社
+  - normal: koll. şti.
+    aliases:
+      - kolektif şirket
+  - normal: kom. şti
+    aliases:
+      - komandit şirket
+  - normal: koop
+    aliases:
+      - kooperatif şirket
+  - normal: ks
+    aliases:
+      - komanditní společnost
+      - komandītsabiedrība
+      - kommanditselskab
+  - normal: ky
+    aliases:
+      - kommandiittiyhtiö
+  - normal: LLC
+    aliases:
+      - limited liability company
+      - tavaristva z abmezhavanaj adkaznastsiu
+      - tob
+      - тзов
+      - тов
+      - товариство з обмеженою відповідальністю
+  - normal: LLP
+    aliases:
+      - limited liability partnership
+      - 有限責任事業組合
+  - normal: lo
+    aliases:
+      - limited ortaklık
+  - normal: loj
+    aliases:
+      - lojistik
+  - normal: LP
+    aliases:
+      - limited partnership
+      - 兩合公司
+  - normal: Ltd.
+    aliases:
+      - lda.
+      - limitada
+      - limited
+      - limited by guarantee
+      - limited by shares
+      - limited company
+      - limitée
+      - ltd.
+      - ltd. co.
+      - CO.,LTD
+      - CO., LTD
+      - ltda
+      - private company with limited liability
+      - private limited company
+      - private limited liability company
+      - pte ltd.
+      - sociedada limitada
+      - sociedade limitada
+      - компания с ограниченной ответственностью
+      - лимитед
+      - בע"מ
+      - 有限公司
+  - normal: Ltd. Sti.
+    broader: Ltd
+    aliases:
+      - limited şirket
+      - ltd.sti
+  - normal: mchj
+    aliases:
+      - mas'uliyati cheklangan jamiyat
+      - масъулияти чекланган жамият
+  - normal: mmc
+    aliases:
+      - məhdud məsuliyyətli cəmiyyət
+  - normal: mtü
+    aliases:
+      - mittetulundusühing
+  - normal: na
+    aliases:
+      - national association
+  - normal: nk
+    aliases:
+      - nin'i kumiai
+      - 任意組合
+  - normal: nl
+    aliases:
+      - no liability
+  - normal: нп
+    aliases:
+      - некоммерческое партнерство
+      - некоммерческое партнёрство
+      - нп
+  - normal: NV
+    aliases:
+      - N.V.
+      - naamloze vennootschap
+  - normal: oaj
+    aliases:
+      - ochiq aksiyadorlik jamiyati
+      - очиқ акциядорлик жамияти
+  - normal: OAO
+    aliases:
+      - atviroji akcinė bendrovė
+      - avatud aktsiaselts
+      - avoin osakeyhtiö
+      - cuideachta comhstoic oscailte
+      - offene aktiengesellschaft
+      - ojsc
+      - open joint stock company
+      - openbare aandelenvennootschap
+      - otkrytoe akcionernoe obshchestvo
+      - otkrytoe aktsionernoe obshchestvo
+      # - otwarta spółka akcyjna
+      - sociedad limitada por acciones abierta
+      - sociedade por ações aberta
+      - société par actions ouverte
+      - veřejná akciová společnost
+      - відкрите акціонерне товариство
+      - оао
+      - открытое акционерное общество
+  - normal: od
+    aliases:
+      - o.d.
+      - ortačko društvo
+      - о.д.
+      - од
+      - ортачко друштво
+  - normal: odo
+    aliases:
+      - obshchestvo s dopolnitel'noj otvetstvennost'yu
+      - общество с дополнительной ответственностью
+      - одо
+  - normal: oeg
+    aliases:
+      - offene erwerbsgesellschaft
+  - normal: og
+    aliases:
+      - offene gesellschaft
+  - normal: ok
+    aliases:
+      - oilaviy korxona
+      - оилавий корхона
+  - normal: ong
+    aliases:
+      - organização não governamental
+  - normal: ood
+    aliases:
+      - drujestvo s ogranichena otgovornost
+      - druzhestvo s ogranichena otgovornost
+      - дружество с ограничена отговорност
+      - оод
+  - normal: ooo
+    aliases:
+      - obshchestvo s ogranichennoj otvetstvennost'yu
+      - oсoo
+      - ликвидационная комиссия общества с ограниченной ответственностью
+      - ликвидационная комиссия общество с ограниченной ответственностью
+      - ликвидационная комиссия ооо
+      - общество с ограниченной ответственностью
+      - общество с ограниченной ответственностью строительная компания
+      - общество с ограниченной ответственностью торговый дом
+      - общество с ограниченной ответственностью управляющая компания
+      - общество с ограниченной ответственностью фирма
+      - общество с ограниченной ответственностью частная охранная организация
+      - общество с ограниченной ответственностью частное охранное предприятие
+      - ооо
+  - normal: opg
+    aliases:
+      - obiteljsko poljoprivredno gospodarstvo
+  - normal: ops
+    aliases:
+      - obecně prospěšná společnost
+  - normal: os
+    aliases:
+      - občanské sdružení.
+  - normal: oscip
+    aliases:
+      - organização da sociedade civil de interesse público
+  - normal: osk
+    aliases:
+      - osuuskunta
+  - normal: owm
+    aliases:
+      - onderlinge waarborgmaatschappij
+  - normal: oy
+    aliases:
+      - osakeyhtiö
+  - normal: oyj
+    aliases:
+      - julkinen osakeyhtiö
+  - normal: oü
+    aliases:
+      - osaühing
+  - normal: pc
+    aliases:
+      - ኮርፖሬሽን
+  - normal: pe
+    aliases:
+      - የመንግስት ልማት ድርጅቶች
+  - normal: peec
+    aliases:
+      - public establishment with economic characteristics
+  - normal: plc
+    aliases:
+      - public limited company
+      - ሃላፊነቱ የተወሰነ የግል ማህበር
+      - 股份有限公司
+  - normal: plt
+    aliases: []
+  - normal: pp
+    aliases:
+      - приватне підприємство
+  - normal: pr
+    aliases:
+      - preduzetnik
+      - пр
+      - предузетник
+  - normal: ps
+    aliases:
+      - partnerselskab
+      - pilnsabiedrība
+  - normal: pse
+    aliases:
+      - public sector enterprise
+  - normal: psu
+    aliases:
+      - public sector undertaking
+  - normal: pt
+    aliases:
+      - perseroan terbatas
+  - normal: pt tbk
+    aliases:
+      - perseroan terbatas terbuka
+  - normal: Pty Ltd
+    broader: Ltd
+    aliases:
+      - proprietary limited
+      - proprietary limited company
+      - pty ltd
+      - Pty Limited
+  - normal: qk
+    aliases:
+      - qo'shma korxona
+      - қўшма корхона
+  - normal: qmj
+    aliases:
+      - qo'shimcha ma'suliyatli jamiyat
+      - қўшимча масъулиятли жамият
+  - normal: qsc
+    aliases:
+      - qapalı səhmdar cəmiyyəti
+      - qapalı tipli səhmdar cəmiyyəti
+  - normal: rao
+    aliases:
+      - pao
+      - pjsc
+      - private joint stock company
+      - пао
+      - приватне акціонерне товариство
+      - публичное акционерное общество
+  - normal: rp
+    aliases:
+      - rekisteröity puolue
+  - normal: rs
+    aliases:
+      - säätiö
+  - normal: ry
+    aliases:
+      - rekisteröity yhdistys
+  - normal: s. en c.
+    aliases:
+      - comandita simple
+  - normal: s.cra.
+    aliases:
+      - sociedad comanditaria
+  - normal: sa
+    aliases:
+      - s.a.
+      - sarf
+      - sociedad anonima
+      - sociedad anónima
+      - sociedad en comandita por acciones
+      - sociedad por acciones
+      - sociedada anonima
+      - sociedade anónima
+      - sociedade anônima
+      - sociedá anónima
+      - societat anònima
+      - societate pe acțiuni
+      - societatea pe actiuni
+      - societatea pe acţiuni
+      - societateare pe actiuni
+      - società anonima
+      - société anonyme
+      - société par actions de régime fédéral
+      - société par actions par loi sur les sociétés par actions
+      #- spółka akcyjna
+      - شركة خفية الإسم
+  - normal: sad
+    aliases:
+      - sociedad anónima deportiva
+  - normal: sae
+    aliases:
+      - sharikat al-mossahamah
+  - normal: san
+    aliases:
+      - sanayi
+  - normal: san as
+    aliases:
+      - san.a.s
+  - normal: san tic
+    aliases:
+      - san.tic
+  - normal: san tic ltd
+    aliases:
+      - san.tic.ltd.
+  - normal: san tic ltd sti
+    aliases:
+      - san.tic.ltd.sti
+  - normal: san ve
+    aliases:
+      - san.ve
+  - normal: saoc
+    aliases:
+      - société anonyme omanaise close
+  - normal: saog
+    aliases:
+      - société anonyme omanaise générale
+  - normal: sapa
+    aliases:
+      - società in accomandita per azioni
+  - normal: sarl
+    aliases:
+      - société à responsabilité limitée
+      - شّركة ذات مسؤوليّات محدودة ش.م.م
+  - normal: sas
+    aliases:
+      - sociedades por acciones simplificada
+      - société par actions simplifiée
+  - normal: sc
+    aliases:
+      - compania comerciala si de productie societatea cu responsabilitate limitata
+      - sociedad colectiva
+      - societatea comercială
+      - አክሲዩን ማህበር
+  - normal: sca
+    aliases:
+      - comandita por acciones
+      - société en commandite par actions
+  - normal: scc
+    aliases:
+      - société commerciale canadienne
+  - normal: sce
+    aliases:
+      - societas cooperativa europaea
+  - normal: scei
+    aliases:
+      - sociedad de capital e industria
+  - normal: scop
+    aliases:
+      - société coopérative de production
+  - normal: scpa
+    aliases:
+      - sociedad civil privada
+  - normal: scs
+    aliases:
+      - secs
+      - sociedad en comandita simple
+      - société en commandite simple
+  - normal: sd
+    aliases:
+      - s-ie
+      - sabiratelno druzhestvo (sd)/sadruzhie
+      - sd/s-ie
+      - с-ие
+      - сд
+      - събирателно дружество
+      - събирателно дружество (сд)/съдружие
+  - normal: sdn bhd
+    aliases:
+      - sendirian berhad
+  - normal: se
+    aliases:
+      - sociedad del estado
+      - societas europaea
+  - normal: sem
+    aliases:
+      - société d'économie mixte
+  - normal: sep
+    aliases:
+      - société en participation
+  - normal: sf
+    aliases:
+      - sameignarfélag
+  - normal: sgr
+    aliases:
+      - sociedad de garantia reciproca
+      - sociedad de garantía reciproca
+  - normal: sh.a
+    aliases:
+      - shoqëri aksionere
+  - normal: shpk
+    aliases:
+      - sh.p.k
+      - shoqëri me përgjegjësi të kufizuar
+  - normal: sia
+    aliases:
+      - sabiedrība ar ierobežotu atbildību
+      - Sabiedrība ar ierobežotu atbildību
+      - сиа
+  - normal: sicaf
+    aliases:
+      - société d'investissement à capital fixe
+  - normal: sicav
+    aliases:
+      - société d'investissement à capital variable
+  - normal: sjsc # ?
+    aliases:
+      - дат
+      - державне акціонерне товариство
+  - normal: sll
+    aliases:
+      - sociedad limitada laboral
+  - normal: slne
+    aliases:
+      - s.l.n.e.
+      - sociedad limitada nueva empresa
+  - normal: sm pte ltd.
+    aliases:
+      - single member private limited company
+  - normal: smba
+    aliases:
+      - selskab med begrænset ansvar
+  - normal: snc
+    aliases:
+      - société en nom collectif
+  - normal: snt
+    aliases:
+      - садоводческое некоммерческое товарищество
+  - normal: sp
+    aliases:
+      - s.p.
+      - samostalni preduzetnik
+      - sole proprietorship
+      - státní podnik
+  - normal: spa
+    aliases:
+      - società per azioni
+  - normal: spe
+    aliases:
+      - societas privata europaea
+  - normal: spf
+    aliases:
+      - stichting particulier fonds
+  - normal: sprl
+    aliases:
+      - société privée à responsabilité limitée
+      - société privée à responsabilité limitée unipersonnelle
+  - normal: spzoo
+    aliases:
+      - sp zoo
+      - sp. z o.o.
+      - sp. z o.o. sp.k
+      - sp. z oo
+      - sp. zoo
+      - spolka z ograniczona odpowiedzialnoscia
+      - spółka z ograniczoną odpowiedzialnością
+  - normal: srl
+    aliases:
+      - intreprinderea cu responsabilitate limitata
+      - s.r.l
+      - s.r.l.
+      - sicietatea de raspundere limitata
+      - sociedad de responsabilidad limitada
+      - societata cu raspundere limitata
+      - societate cu rasponbilitate limitata
+      - societate cu raspundere limitata
+      - societate cu responsabilitate limiiata
+      - societate cu responsabilitate limitata
+      - societate cu răspundere limitată
+      - societate cu răspundre limitată
+      - societatea cu rasdpundere limitata
+      - societatea cu rasponsabilitate limitata
+      - societatea cu raspundere
+      - societatea cu raspundere limitata
+      - societatea cu raspundere limitate
+      - societatea cu responsabilitate limitata
+      - societatea cu responsabilitatea limitata
+      - societatea cu respundere limitata
+      - societatea cu răspundere
+      - societatea cu răspundere limitată
+      - societatii cu raspunderea limitata
+      - societete cu răspundere limitată
+      - società a responsabilità limitata
+      - socitate cu responsabilitate limitata
+  - normal: sro
+    aliases:
+      - s.r.o
+      - společnost s ručením omezeným
+  - normal: StG
+    aliases:
+      - stille gesellschaft
+  - normal: sti
+    aliases:
+      - sirketi
+  - normal: suarl
+    aliases:
+      - شّركة فردية ذات مسؤوليّات محدودة
+  - normal: t:mi
+    aliases:
+      - oiminimi
+  - normal: tes
+    aliases:
+      - tesisat
+  - normal: tes tek dis
+    aliases:
+      - tes.tek.dis
+  - normal: tic
+    aliases:
+      - ticaret
+  - normal: tic as
+    aliases:
+      - tic.a.s.
+  - normal: tic ltd sti
+    aliases:
+      - tic.ltd.sti
+  - normal: tk
+    aliases:
+      - tokumei kumiai
+      - 匿名組合
+  - normal: too
+    aliases:
+      - товарищество с ограниченной ответственностью
+  - normal: tpb
+    aliases:
+      - corporația de rachete balistice tactice
+      - društvo za taktičke projektile
+      - tactical missile company
+      - tactical missile corporation
+      - takticheskoe raketnoe vooruzhenie
+      - тактическое ракетное вооружение
+      - тактичне ракетне озброєння
+  - normal: tü
+    aliases:
+      - täisühing
+  - normal: uab
+    aliases:
+      - uždaroji akcinė bendrovė
+      - uždarosios akcinės bendrovės
+  - normal: ud
+    aliases:
+      - usaha dagang
+  - normal: uk
+    aliases:
+      - unitar korxona
+      - унитар корхона
+  - normal: Ultd
+    aliases:
+      - unlimited
+      - unlimited company
+      - unlimited proprietary
+      - unltd
+      - 無限公司
+  - normal: up
+    generic: SOE
+    aliases:
+      - consorzio statale
+      - den føderale statsejede budgetinstitution
+      - empresa orçamental do estado federal
+      - empresa unitaria estatal de la
+      - empresa unitária estatal
+      - entità statali
+      - entreprise unitaire d’état
+      - federal state budgetary enterprise
+      - federal state budgetary institution
+      - federal state institution
+      - federal state unitary enterprise
+      - federalna budżetowa instytucja
+      - federalnoe gosudarstvennoe byudzhetnoe uchrezhdenie
+      - föderales staatseigenes unternehmen
+      - gosudarstvennoe unitarnoe predpriyatie
+      - impresa unitaria statale
+      - staatliches einheitsunternehmen
+      - staatskonzern
+      - state concern
+      - state enterprise
+      - state unitary enterprise
+      - state unitary enterprise of the
+      - státní jednotný podnik
+      - státní koncern
+      - unitarnoe predpriyatie
+      - unіtarnae pradpryemstva
+      - štátny unitárny podnik
+      - государственного унитарного предприятия
+      - государственное унитарное предприятие
+      - гп
+      - гуп
+      - державного унітарного підприємства
+      - унитарное предприятие
+      - унітарнае прадпрыемства
+      - уп
+  - normal: uü
+    aliases:
+      - usaldusühing
+  - normal: vof
+    aliases:
+      - vennootschap onder firma
+  - normal: vos
+    aliases:
+      - veřejná obchodní společnost
+  - normal: vzw
+    aliases:
+      - internationale vereniging zonder winstoogmerk
+      - ivzw
+      - vereinigung ohne gewinnerzielungsabsicht
+      - vereniging zonder winstoogmerk
+      - vog
+  - normal: xk
+    aliases:
+      - xususiy korxona
+      - хусусий корхона
+  - normal: xt
+    aliases:
+      - xususiy tadbirkorlik
+      - хусусий тадбиркорлик
+  - normal: yk
+    aliases:
+      - 有限会社
+  - normal: yoaj
+    aliases:
+      - yopiq aksiyadorlik jamiyati
+      - ёпиқ акциядорлик жамияти
+  - normal: yu
+    aliases:
+      - (yu)
+      - (유)
+      - yuhanhoesa
+      - 유한회사
+  - normal: zao
+    aliases:
+      - cjsc
+      - closed joint stock company
+      - zakrytoe akcionernoe obshchestvo
+      - zaо
+      - закрите акціонерне товариство
+      - закрытое акционерное общество
+      - зао
+  - normal: zat
+    aliases:
+      - zakritaye aktsiyanernaye tavaristva
+      - zakrytae akcyyanernae tavarystva
+      - закрытае акцыянернае таварыства
+      - зат
+  - normal: zs
+    aliases:
+      - z.s.
+      - zapsaný spolek
+  - normal: şb
+    aliases:
+      - şube
+  - normal: пуп
+    aliases:
+      - прыватнае унітарнае прадпрыемства
+  - normal: тda
+    aliases:
+      - tavarystva z dadatkovaj adkaznascyu
+      - таварыства з дадатковай адказнасцю
+      - тда
+  - normal: таа
+    aliases:
+      - tavarystva z abmezhavanaj adkaznascyu
+      - таварыства з абмежаванай адказнасцю
+  - normal: тбб
+    aliases:
+      - төрийн бус байгууллага
+  - normal: тсж
+    aliases:
+      - товарищество собственников жилья
+      - товарищество собственников недвижимости
+  - normal: хк
+    aliases:
+      - хувьцаат компани
+  - normal: ххк
+    aliases:
+      - хязгаарлагдмал хариуцлагатай компани
+
+  - normal: ОТДЕЛ ГПС
+    aliases:
+      - ОТДЕЛ ГОСУДАРСТВЕННОЙ ПРОТИВОПОЖАРНОЙ СЛУЖБЫ # DEPARTMENT OF THE STATE FIRE SERVICE
+
+  - normal: Д/С
+    aliases:
+      - ДЕТСКИЙ САД # KINDERGARTEN
+
+  - normal: МОУ # муниципальное образовательное учреждение
+    aliases:
+      - МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # MUNICIPAL EDUCATIONAL INSTITUTION
+
+  - normal: МАУ # муниципальное автономное учреждение
+    aliases:
+      - МУНИЦИПАЛЬНОЕ АВТОНОМНОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # MUNICIPAL AUTONOMOUS PRESCHOOL EDUCATIONAL INSTITUTION
+
+  - normal: МБОУ # муниципальное бюджетное общеобразовательное учреждение
+    aliases:
+      - МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ ОБЩЕОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # MUNICIPAL BUDGETARY GENERAL EDUCATIONAL INSTITUTION
+      - МУНИЦИПАЛЬНОЕ ОБЩЕОБРАЗОВАТЕЛЬНОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ # MUNICIPAL GENERAL EDUCATIONAL BUDGETARY INSTITUTION
+      - МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ
+
+  - normal: МБДОУ # муниципальное бюджетное дошкольное образовательное учреждение
+    aliases:
+      - МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # MUNICIPAL BUDGETARY PRESCHOOL EDUCATIONAL INSTITUTION
+
+  - normal: МБУ ДО
+    aliases:
+      - МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ОБРАЗОВАНИЯ # MUNICIPAL BUDGETARY ADDITIONAL EDUCATION INSTITUTION
+
+  - normal: МК ДОУ
+    aliases:
+      - МУНИЦИПАЛЬНОЕ КАЗЕННОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # MUNICIPAL TREASURY PRESCHOOL EDUCATIONAL INSTITUTION
+
+  - normal: ГУ # государственное учреждение
+    broader: SOE
+    aliases:
+      - ГОСУДАРСТВЕННОЕ УЧРЕЖДЕНИЕ # STATE INSTITUTION
+
+  - normal: ОГУ # окружное государственное учреждение
+    aliases:
+      - ОКРУЖНОЕ ГОСУДАРСТВЕННОЕ УЧРЕЖДЕНИЕ # DISTRICT STATE INSTITUTION
+
+  - normal: ГОУ # государственное образовательное учреждение
+    aliases:
+      - ГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # STATE EDUCATIONAL INSTITUTION
+      - ГОСУДАРСТВЕННОЕ ОБЩЕОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # STATE GENERAL EDUCATIONAL INSTITUTION
+
+  - normal: ГБОУ # государственное бюджетное общеобразовательное учреждение
+    aliases:
+      - ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБЩЕОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # STATE BUDGET GENERAL EDUCATIONAL INSTITUTION
+
+  - normal: ГКОУ
+    aliases:
+      - ГОСУДАРСТВЕННОЕ КАЗЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # STATE TREASURY EDUCATIONAL INSTITUTION
+
+  - normal: ГО ШК-Инт
+    aliases:
+      - ГОСУДАРСТВЕННАЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА-ИНТЕРНАТ # STATE GENERAL EDUCATIONAL BOARDING SCHOOL
+
+  - normal: ГОУ ДДМШВ
+    aliases:
+      - ГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДЛЯ ДЕТЕЙ ДОШКОЛЬНОГО И МЛАДШЕГО ШКОЛЬНОГО ВОЗРАСТА
+
+  - normal: ГАУСО
+    aliases:
+      - ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ УЧРЕЖДЕНИЕ СОЦИАЛЬНОГО ОБСЛУЖИВАНИЯ
+
+  - normal: ГБСКОУ # государственное бюджетное образовательное учреждение
+    aliases:
+      - ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ СПЕЦИАЛЬНОЕ (КОРРЕКЦИОННОЕ) ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДЛЯ ОБУЧАЮЩИХСЯ, ВОСПИТАННИКОВ С ОГРАНИЧЕННЫМИ ВОЗМОЖНОСТЯМИ ЗДОРОВЬЯ # STATE BUDGET SPECIAL (CORRECTIONAL) EDUCATIONAL INSTITUTION FOR STUDENTS, TRAINEES WITH DISABILITIES
+
+  - normal: ГСКОУ
+    aliases:
+      - ГОСУДАРСТВЕННОЕ СПЕЦИАЛЬНОЕ (КОРРЕКЦИОННОЕ) ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ
+      - ГОСУДАРСТВЕННОЕ СПЕЦИАЛЬНОЕ (КОРРЕКЦИОННОЕ) ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДЛЯ ОБУЧАЮЩИХСЯ С ОТКЛОНЕНИЯМИ В РАЗВИТИИ
+      - ГОСУДАРСТВЕННОЕ СПЕЦИАЛЬНОЕ (КОРРЕКЦИОННОЕ) ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДЛЯ ОБУЧАЮЩИХСЯ С ОТКЛОНЕНИЯМИ В РАЗВИТИИ -
+
+  - normal: ГДОУ # государственное дошкольное образовательное учреждение
+    aliases:
+      - ГОСУДАРСТВЕННОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # STATE PRESCHOOL EDUCATIONAL INSTITUTION
+
+  - normal: ГДОУ - Д/С # государственное дошкольное образовательное учреждение - детский сад
+    aliases:
+      - ГОСУДАРСТВЕННОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ - ДЕТСКИЙ САД # STATE PRESCHOOL EDUCATIONAL INSTITUTION - KINDERGARTEN
+
+  - normal: ГКУ # государственное казенное учреждение
+    aliases:
+      - ГОСУДАРСТВЕННОЕ КАЗЁННОЕ УЧРЕЖДЕНИЕ # STATE TREASURY INSTITUTION
+
+  - normal: ГКС(к)ОУ # государственное казённое специальное (коррекционное) образовательное учреждение
+    aliases:
+      - ГОСУДАРСТВЕННОЕ АЗЕННОЕ СПЕЦИАЛЬНОЕ (КОРРЕКЦИОННОЕ) ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # STATE TREASURY SPECIAL (CORRECTIONAL) EDUCATIONAL INSTITUTION
+
+  - normal: ГНУ # государственное научное учреждение
+    aliases:
+      - ГОСУДАРСТВЕННОЕ НАУЧНОЕ УЧРЕЖДЕНИЕ # STATE SCIENTIFIC INSTITUTION
+
+  - normal: ГОУ ВПО # can also be ГОУ ДПО in this case
+    aliases:
+      - ГОУ ДПО
+      - ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ
+      - ГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ # STATE EDUCATIONAL INSTITUTION OF HIGHER PROFESSIONAL EDUCATION
+
+  - normal: ОУ ДПО # образовательное учреждение дополнительного профессионального образования
+    aliases:
+      - ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ # ADDITIONAL PROFESSIONAL EDUCATION INSTITUTION
+
+  - normal: ГОУ ДПО # государственное образовательное учреждение дополнительного профессионального образования
+    aliases:
+      - ГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ (ПОВЫШЕНИЯ КВАЛИФИКАЦИИ) СПЕЦИАЛИСТОВ # STATE EDUCATIONAL INSTITUTION OF FURTHER PROFESSIONAL EDUCATION (QUALIFICATION IMPROVEMENT)
+
+  - normal: НОЧУ ДПО # негосударственное образовательное частное учреждение дополнительного профессионального образования
+    aliases:
+      - НЕГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ ЧАСТНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ
+
+  - normal: ПОУ
+    aliases:
+      - ПРОФЕССИОНАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ
+
+  - normal: ГУП # государственное унитарное предприятие
+    aliases:
+      - ГОСУДАРСТВЕННОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ # SUBSIDIARY STATE UNITARY ENTERPRISE
+
+  - normal: ДГУП
+    aliases:
+      - ДОЧЕРНЕЕ ГОСУДАРСТВЕННОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ # SUBSIDIARY STATE UNITARY ENTERPRISE
+      - ДОЧЕРНЕЕ ГОСУДАРСТВЕНОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ
+
+  - normal: ГУСП
+    aliases:
+      - ГОСУДАРСТВЕННОЕ УНИТАРНОЕ СЕЛЬСКОХОЗЯЙСТВЕННОЕ ПРЕДПРИЯТИЕ # STATE UNITARY AGRICULTURAL ENTERPRISE
+
+  - normal: ГУДП
+    aliases:
+      - ГОСУДАРСТВЕННОЕ УНИТАРНОЕ ДОЧЕРНЕЕ ПРЕДПРИЯТИЕ # STATE UNITARY SUBSIDIARY ENTERPRISE
+      - ГОСУДАРСТВЕННОЕ УНИТАРНОЕ (ДОЧЕРНЕЕ) ПРЕДПРИЯТИЕ
+
+  - normal: ФГНУ # федеральное государственное научное учреждение
+    aliases:
+      - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ НАУЧНОЕ УЧРЕЖДЕНИЕ # FEDERAL STATE SCIENTIFIC INSTITUTION
+
+  - normal: ФГУП # федеральное государственное унитарное предприятие
+    aliases:
+      - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ # FEDERAL STATE UNITARY ENTERPRISE
+
+  - normal: ДОЧЕРНЕЕ ФГУП
+    aliases:
+      - ФЕДЕРАЛЬНОЕ ДОЧЕРНЕЕ ГОСУДАРСТВЕННОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ # FEDERAL SUBSIDIARY STATE UNITARY ENTERPRISE
+      - ФЕДЕРАЛЬНОЕ ДОЧЕРНЕЕ ГОСУДАРСТВЕННОЕ  УНИТАРНОЕ ПРЕДПРИЯТИЕ
+
+  - normal: ФГБДОУ
+    aliases:
+      - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # FEDERAL STATE BUDGETARY PRESCHOOL EDUCATIONAL INSTITUTION
+
+  - normal: ФГБОУ ДПО # федеральное государственное бюджетное образовательное учреждение
+    aliases:
+      - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ # FEDERAL STATE BUDGETARY EDUCATIONAL INSTITUTION OF FURTHER PROFESSIONAL EDUCATION
+
+  - normal: ФГАОУ ДПО
+    aliases:
+      - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ
+
+  - normal: ФГБОУ ВО # федеральное государственное бюджетное образовательное учреждение высшего образования
+    aliases:
+      - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ # FEDERAL STATE BUDGETARY EDUCATIONAL INSTITUTION OF HIGHER EDUCATION
+      - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ
+      - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ  ВЫСШЕГО ОБРАЗОВАНИЯ
+      - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ  БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ
+
+  - normal: ФГОУ ВПО # федеральное государственное образовательное учреждение высшего профессионального образования
+    aliases:
+      - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ # FEDERAL STATE EDUCATIONAL INSTITUTION OF HIGHER PROFESSIONAL EDUCATION
+
+  - normal: ФГКВОУ ВПО # федеральное государственное казенное военное образовательное учреждение высшего образования
+    aliases:
+      - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ КАЗЕННОЕ ВОЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ # FEDERAL STATE TREASURY MILITARY EDUCATIONAL INSTITUTION OF HIGHER EDUCATION
+
+  - normal: МАОУ # муниципальное автономное общеобразовательное учреждение
+    aliases:
+      - МУНИЦИПАЛЬНОЕ АВТОНОМНОЕ ОБЩЕОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ МУНИЦИПАЛЬНОГО ОБРАЗОВАНИЯ ГОРОД КРАСНОДАР # MUNICIPAL AUTONOMOUS GENERAL EDUCATIONAL INSTITUTION OF THE CITY OF KRASNODAR
+
+  - normal: МКУ # муниципальное казенное учреждение
+    aliases:
+      - МУНИЦИПАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ # MUNICIPAL TREASURY INSTITUTION
+      - МУНИЦИПАЛЬНОЕ КАЗЕННОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # MUNICIPAL TREASURY PRESCHOOL EDUCATIONAL INSTITUTION
+
+  - normal: МРО
+    aliases:
+      - МЕСТНАЯ ПРАВОСЛАВНАЯ РЕЛИГИОЗНАЯ ОРГАНИЗАЦИЯ # LOCAL ORTHODOX RELIGIOUS ORGANIZATION
+      - МЕСТНАЯ РЕЛИГИОЗНАЯ ОРГАНИЗАЦИЯ # LOCAL RELIGIOUS ORGANIZATION
+
+  - normal: ЦРО # центральная религиозная организация
+    aliases:
+      - ЦЕНТРАЛЬНАЯ РЕЛИГИОЗНАЯ ОРГАНИЗАЦИЯ # CENTRAL RELIGIOUS ORGANIZATION
+
+  - normal: РО # религиозная организация
+    aliases:
+      - РЕЛИГИОЗНАЯ ОРГАНИЗАЦИЯ # RELIGIOUS ORGANIZATION
+
+  - normal: ФГУ # федеральное государственное учреждение
+    aliases:
+      - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ УЧРЕЖДЕНИЕ # FEDERAL STATE INSTITUTION
+
+  - normal: ФКУ # федеральное казенное учреждение
+    aliases:
+      - ФЕДЕРАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ # FEDERAL TREASURY INSTITUTION
+
+  - normal: ФГБВОУ ВО # федеральное государственное бюджетное военное образовательное учреждение высшего образования
+    aliases:
+      - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ВОЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ # FEDERAL STATE BUDGETARY MILITARY EDUCATIONAL INSTITUTION OF HIGHER EDUCATION
+
+  - normal: ФГКВОУ
+    aliases:
+      - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ КАЗЕННОЕ ВОЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ # FEDERAL STATE TREASURY MILITARY EDUCATIONAL INSTITUTION OF HIGHER EDUCATION
+
+  - normal: ФГКОУ ДПО # федеральное государственное казенное образовательное учреждение
+    aliases:
+      - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ КАЗЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ (ПЕРЕПОДГОТОВКИ И ПОВЫШЕНИЯ КВАЛИФИКАЦИИ)
+
+  - normal: ФГОУ ДПО # федеральное государственное казенное образовательное учреждение высшего профессионального образования
+    aliases:
+      - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ СПЕЦИАЛИСТОВ # FEDERAL STATE EDUCATIONAL INSTITUTION OF FURTHER PROFESSIONAL EDUCATION (SPECIALISTS)
+
+  - normal: ФГДОУ # федеральное государственное дошкольное образовательное учреждение
+    aliases:
+      - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # FEDERAL STATE PRESCHOOL EDUCATIONAL INSTITUTION
+
+  - normal: ФГБУ # федеральное государственное бюджетное учреждение
+    aliases:
+      - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ # FEDERAL STATE BUDGETARY INSTITUTION
+
+  - normal: ФГБУ ДПО
+    aliases:
+      - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ
+
+  - normal: ОППО
+    aliases:
+      - ОБЪЕДИНЕННАЯ ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ
+      - ОБЪЕДИНЕННАЯ (ТЕРРИТОРИАЛЬНАЯ) ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ
+
+  - normal: ППО # первичная профсоюзная организация
+    aliases:
+      - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ # PRIMARY TRADE UNION ORGANIZATION
+      - ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ РАБОТНИКОВ # TRADE UNION ORGANIZATION OF WORKERS
+
+  - normal: ППО ООО # первичная профсоюзная организация общества с ограниченной ответственностью
+    aliases:
+      - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ # PRIMARY TRADE UNION ORGANIZATION OF LIMITED LIABILITY COMPANY
+
+  - normal: ППО ДОЧЕРНЕГО ООО
+    aliases:
+      - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ РАБОТНИКОВ ДОЧЕРНЕГО ОБЩЕСТВА С ОГРАНИЧЕНОЙ ОТВЕТСТВЕННОСТЬЮ # PRIMARY TRADE UNION ORGANIZATION OF WORKERS OF A SUBSIDIARY LIMITED LIABILITY COMPANY
+
+  - normal: ППО ОАО # первичная профсоюзная организация открытого акционерного общества
+    aliases:
+      - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ОТКРЫТОГО АКЦИОНЕРНОГО ОБЩЕСТВА # PRIMARY TRADE UNION ORGANIZATION OF AN OPEN JOINT-STOCK COMPANY
+      - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ РАБОТНИКОВ ОТКРЫТОГО АКЦИОНЕРНОГО ОБЩЕСТВА # PRIMARY TRADE UNION ORGANIZATION OF WORKERS OF AN OPEN JOINT-STOCK COMPANY
+
+  - normal: ППО ГОУСПО # первичная профсоюзная организация государственного образовательного учреждения
+    aliases:
+      - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ГОСУДАРСТВЕННОГО ОБРАЗОВАТЕЛЬНОГО УЧРЕЖДЕНИЯ СРЕДНЕГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ
+      - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ГОСУДАРСТВЕННОГО УЧРЕЖДЕНИЯ СРЕДНЕГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ
+
+  - normal: ППО ФГБУ # первичная профсоюзная организация федерального государственного бюджетного учреждения
+    aliases:
+      - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ФЕДЕРАЛЬНОГО ГОСУДАРСТВЕННОГО БЮДЖЕТНОГО УЧРЕЖДЕНИЯ # PRIMARY TRADE UNION ORGANIZATION OF THE FEDERAL STATE BUDGETARY INSTITUTION
+
+  - normal: ППО ФГБОУ ВО
+    aliases:
+      - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ФЕДЕРАЛЬНОГО ГОСУДАРСТВЕННОГО БЮДЖЕТНОГО ОБРАЗОВАТЕЛЬНОГО УЧРЕЖДЕНИЯ ВЫСШЕГО ОБРАЗОВАНИЯ # PRIMARY TRADE UNION ORGANIZATION OF THE FEDERAL STATE BUDGETARY EDUCATIONAL INSTITUTION OF HIGHER EDUCATION
+      - ПЕРВИЧНАЯ ОРГАНИЗАЦИЯ ПРОФСОЮЗА СОТРУДНИКОВ ФЕДЕРАЛЬНОГО ГОСУДАРСТВЕННОГО БЮДЖЕТНОГО ОБРАЗОВАТЕЛЬНОГО УЧРЕЖДЕНИЯ ВЫСШЕГО ОБРАЗОВАНИЯ
+
+  - normal: ППО ФКУ # первичная профсоюзная организация федерального казенного учреждения
+    aliases:
+      - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ФЕДЕРАЛЬНОГО КАЗЕННОГО УЧРЕЖДЕНИЯ # PRIMARY TRADE UNION ORGANIZATION OF THE FEDERAL TREASURY INSTITUTION
+
+  - normal: ППО ГБУ
+    aliases:
+      - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ
+      - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ГОСУДАРСТВЕННОГО БЮДЖЕТНОГО УЧРЕЖДЕНИЯ # PRIMARY TRADE UNION ORGANIZATION OF THE STATE BUDGETARY INSTITUTION
+
+  - normal: ППО ГБОУ # первичная профсоюзная организация государственного бюджетного образовательного учреждения
+    aliases:
+      - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ГОСУДАРСТВЕННОГО БЮДЖЕТНОГО ОБРАЗОВАТЕЛЬНОГО УЧРЕЖДЕНИЯ # PRIMARY TRADE UNION ORGANIZATION OF THE STATE BUDGETARY EDUCATIONAL INSTITUTION
+
+  - normal: ППО ФБУ
+    aliases:
+      - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ФЕДЕРАЛЬНОГО БЮДЖЕТНОГО УЧРЕЖДЕНИЯ # PRIMARY TRADE UNION ORGANIZATION OF THE FEDERAL BUDGETARY INSTITUTION
+
+  - normal: ППО ФГУП # первичная профсоюзная организация федерального государственного унитарного предприятия
+    aliases:
+      - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ СОТРУДНИКОВ ФЕДЕРАЛЬНОГО ГОСУДАРСТВЕННОГО УНИТАРНОГО ПРЕДПРИЯТИЯ # PRIMARY TRADE UNION ORGANIZATION OF THE FEDERAL STATE UNITARY ENTERPRISE
+
+  - normal: ППО ГУП # первичная профсоюзная организация государственного унитарного предприятия
+    aliases:
+      - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ГОСУДАРСТВЕННОГО УНИТАРНОГО ПРЕДПРИЯТИЯ # PRIMARY TRADE UNION ORGANIZATION OF THE STATE UNITARY ENTERPRISE
+
+  - normal: ППО ПСРЗ
+    aliases:
+      - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ПРОФСОЮЗА РАБОТНИКОВ ЗДРАВООХРАНЕНИЯ # PRIMARY TRADE UNION ORGANIZATION OF THE HEALTHCARE WORKERS UNION
+      - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ПРОФЕССИОНАЛЬНОГО СОЮЗА РАБОТНИКОВ ЗДРАВООХРАНЕНИЯ
+      - ПЕРВИЧНАЯ ОРГАНИЗАЦИЯ ПРОФЕССИОНАЛЬНОГО СОЮЗА РАБОТНИКОВ ЗДРАВООХРАНЕНИЯ
+
+  - normal: ППОО # первичная профсоюзная общественная организация
+    aliases:
+      - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОБЩЕСТВЕННАЯ ОРГАНИЗАЦИЯ # PRIMARY TRADE UNION PUBLIC ORGANIZATION
+
+  - normal: ППОО АО # первичная профсоюзная общественная организация акционерного общества
+    aliases:
+      - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОБЩЕСТВЕННАЯ ОРГАНИЗАЦИЯ АКЦИОНЕРНОГО ОБЩЕСТВА # PRIMARY TRADE UNION PUBLIC ORGANIZATION OF THE JOINT-STOCK COMPANY
+
+  - normal: ПОП ОБГУЗ # первичная организация профсоюза областного бюджетного учреждения здравоохранения
+    aliases:
+      - ПЕРВИЧНАЯ ОРГАНИЗАЦИЯ ПРОФСОЮЗА ОБЛАСТНОГО БЮДЖЕТНОГО УЧРЕЖДЕНИЯ ЗДРАВООХРАНЕНИЯ # PRIMARY TRADE UNION ORGANIZATION OF THE REGIONAL BUDGETARY HEALTHCARE INSTITUTION
+
+  - normal: ПОПРЗ
+    aliases:
+      - ПЕРВИЧНАЯ ОРГАНИЗАЦИЯ ПРОФСОЮЗА РАБОТНИКОВ ЗДРАВООХРАНЕНИЯ # PRIMARY TRADE UNION ORGANIZATION OF HEALTHCARE WORKERS
+
+  - normal: ОГКОУ # областное государственное казенное образовательное учреждение
+    aliases:
+      - ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ КАЗЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # REGIONAL STATE TREASURY EDUCATIONAL INSTITUTION
+      - ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ КАЗЁННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # REGIONAL STATE TREASURY EDUCATIONAL INSTITUTION
+      - ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ КАЗЁННОЕ ОБЩЕОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ
+
+  - normal: МОО # местная общественная организация
+    aliases:
+      - МЕСТНАЯ ОБЩЕСТВЕННАЯ ОРГАНИЗАЦИЯ # LOCAL PUBLIC ORGANIZATION
+      - МЕСТНАЯ ОБЩЕСТВЕННАЯ ОРГАНИЗАЦИЯ - # LOCAL PUBLIC ORGANIZATION
+
+  - normal: МОО - ППО # местная общественная организация - первичная профсоюзная организация
+    aliases:
+      - МЕСТНАЯ ОБЩЕСТВЕННАЯ ОРГАНИЗАЦИЯ - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ # LOCAL PUBLIC ORGANIZATION - PRIMARY TRADE UNION
+      - МЕСТНАЯ ОБЩЕСТВЕННАЯ ОРГАНИЗАЦИЯ ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ # LOCAL PUBLIC ORGANIZATION PRIMARY TRADE UNION
+      - МЕСТНАЯ ОБЩЕСТВЕННАЯ ОРГАНИЗАЦИЯ-ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ # LOCAL PUBLIC ORGANIZATION-PRIMARY TRADE UNION
+      - МЕСТНАЯ ОБЩЕСТВЕННАЯ ОРГАНИЗАЦИЯ – ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ # LOCAL PUBLIC ORGANIZATION-PRIMARY TRADE UNION ORGANIZATION
+
+  - normal: МОО - ППО ГУП # местная общественная организация - первичная профсоюзная организация государственного унитарного предприятия
+    aliases:
+      - МЕСТНАЯ ОБЩЕСТВЕННАЯ ОРГАНИЗАЦИЯ-ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ГОСУДАРСТВЕННОГО УНИТАРНОГО ПРЕДПРИЯТИЯ # LOCAL PUBLIC ORGANIZATION PRIMARY TRADE UNION ORGANIZATION OF THE STATE UNITARY ENTERPRISE
+
+  - normal: ОО # неправительственная организация
+    aliases:
+      - ОБЩЕСТВЕННАЯ ОРГАНИЗАЦИЯ # NGO
+
+  - normal: НОУ ДПО # негосударственное образовательное учреждение дополнительного профессионального образования
+    aliases:
+      - НЕГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ # NON-STATE EDUCATIONAL INSTITUTION OF FURTHER PROFESSIONAL EDUCATION
+      - НЕГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ НАЧАЛЬНОГО И ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ # NON-STATE EDUCATIONAL INSTITUTION OF INITIAL AND FURTHER PROFESSIONAL EDUCATION
+      - НЕГОСУДАРСТВЕНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ (ПОВЫШЕНИЯ КВАЛИФИКАЦИИ) СПЕЦИАЛИСТОВ # NON-STATE EDUCATIONAL INSTITUTION OF FURTHER PROFESSIONAL EDUCATION (QUALIFICATION IMPROVEMENT) FOR SPECIALISTS
+
+  - normal: ЗАО # закрытое акционерное общество
+    broader: CJSC
+    aliases:
+      - ЗАКРЫТОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО # CLOSED JOINT-STOCK COMPANY
+      - АКЦИОНЕНОЕ ОБЩЕСТВО ЗАКРЫТОГО ТИПА
+      - АКЦИОНЕРОЕ ОБЩЕСТВО ЗАКРЫТОГО ТИПА
+      - АКЦОИНЕРНОЕ ОБЩЕСТВО ЗАКРЫТОГО ТИПА
+      - АКЦИОНЕРОЕ ОБЩЕСТВО ЗАКРЫТОГО ТИПА
+      - АКЦИОНРНОЕ ОБЩЕСТВО ЗАКРЫТОГО ТИПА
+      - АКЦИОНЕРНЫЕ ОБЩЕСТВА ЗАКРЫТОГО ТИПА
+      - АКЦИОНЕРОЕ ОБЩЕСТВО ЗАКРЫТОГО ТИПА
+      - АКЦИОНЕРНОЕ ОБШЕСТВО ЗАКРЫТОГО ТИПА
+      - АКЦИОНЕРНЕ ОБЩЕСТВО ЗАКРЫТОГО ТИПА
+      - АКЦОНЕРНОЕ ОБЩЕСТВО ЗАКРЫТОГО ТИПА
+      - АКЦИОНЕРНОГО ОБЩЕСТВА ЗАКРЫТОГО ТИПА
+      - АКЦИОНЕРОНОЕ ОБЩЕСТВО ЗАКРЫТОГО ТИПА
+
+  - normal: ОАО # открытое акционерное общество
+    aliases:
+      - ОТКРЫТОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО # OPEN JOINT-STOCK COMPANY
+      - АКЦИОНЕPНОЕ ОБЩЕСТВО ОТКPЫТОГО ТИПА
+      - АКЦОНЕРНОЕ ОБЩЕСТВО ОТКРЫТОГО ТИПА # PUBLIC JOINT-STOCK COMPANY
+
+  - normal: АО # акционерное общество
+    aliases:
+      - АКЦИОНЕРНОЕ ОБЩЕСТВО # JOINT-STOCK COMPANY
+      - АКЦИОНЕРНЫЕ ОБЩЕСТВА
+
+  - normal: ПАО # публичное акционерное общество
+    aliases:
+      - ПУБЛИЧНОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО # PUBLIC JOINT-STOCK COMPANY
+
+  - normal: НАО # некоммерческое акционерное общество
+    aliases:
+      - НЕПУБЛИЧНОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО # NON-PUBLIC JOINT-STOCK COMPANY
+
+  - normal: СПК # сельскохозяйственный производственный кооператив
+    aliases:
+      - СЕЛЬСКОХОЗЯЙСТВЕННЫЙ ПРОИЗВОДСТВЕННЫЙ КООПЕРАТИВ # AGRICULTURAL PRODUCTION COOPERATIVE
+
+  - normal: МУП # муниципальное унитарное предприятие
+    aliases:
+      - МУНИЦИПАЛЬНОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ # MUNICIPAL UNITARY ENTERPRISE
+
+  - normal: АНО # автономная некоммерческая организация
+    aliases:
+      - АВТОНОМНАЯ НЕКОММЕРЧЕСКАЯ ОРГАНИЗАЦИЯ # AUTONOMOUS NON-COMMERCIAL ORGANIZATION
+
+  - normal: КФХ # крестьянское (фермерское) хозяйство
+    aliases:
+      - КРЕСТЬЯНСКОЕ (ФЕРМЕРСКОЕ) ХОЗЯЙСТВО # FARM (FARMING) HOUSEHOLD
+      - КРЕСТЬЯНСКОЕ ФЕРМЕРСКОЕ ХОЗЯЙСТВО
+      - КРЕСТЬЯНСКОЕ ХОЗЯЙСТВО
+
+  - normal: ООП # партнёрство с ограниченной ответственностью
+    aliases:
+      - ПАРТНЁРСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+
+  - normal: ПТ # полное товарищество
+    aliases:
+      - ПОЛНОЕ ТОВАРИЩЕСТВО # FULL PARTNERSHIP
+
+  - normal: ДОУ # дошкольное образовательное учреждение
+    aliases:
+      - ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # PRESCHOOL EDUCATIONAL INSTITUTION
+
+  - normal: ПКООП # потребительский кооператив
+    aliases:
+      - ПОТРЕБИТЕЛЬСКИЙ КООПЕРАТИВ # CONSUMER COOPERATIVE
+
+  - normal: ПК # производственный кооператив
+    aliases:
+      - ПРОИЗВОДСТВЕННЫЙ КООПЕРАТИВ # PRODUCTION COOPERATIVE
+
+  - normal: НЦ # научный центр
+    aliases:
+      - НАУЧНЫЙ ЦЕНТР # SCIENTIFIC CENTER
+
+  - normal: ОЮЛ # oбъединение юридических лиц
+    aliases:
+      - ОБЪЕДИНЕНИЕ ЮРИДИЧЕСКИХ ЛИЦ # ASSOCIATION OF LEGAL ENTITIES
+
+  - normal: НП # некоммерческое партнёрство
+    aliases:
+      - НЕКОММЕРЧЕСКОЕ ПАРТНЁРСТВО # NON-COMMERCIAL PARTNERSHIP
+
+  - normal: НОУДО # негосударственное образовательное учреждение дополнительного образования
+    aliases:
+      - НЕГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ОБРАЗОВАНИЯ # NON-STATE EDUCATIONAL INSTITUTION OF ADDITIONAL EDUCATION
+      - НЕГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ОБРАЗОВАНИЯ ДЕТЕЙ # NON-STATE EDUCATIONAL INSTITUTION OF ADDITIONAL EDUCATION FOR CHILDREN
+
+  - normal: ОНОСС
+    aliases:
+      - ОРГАНИЗАЦИЯ НАУЧНОГО ОБСЛУЖИВАНИЯ И СОЦИАЛЬНОЙ СФЕРЫ
+
+  - normal: ООО # общество с ограниченной ответственностью
+    generic: LLC
+    aliases:
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ # LIMITED LIABILITY COMPANY
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - Общество с ограниченной ответственностью
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОРГАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕСТВЕННОСТЬЮ
+      - ОБШЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕСТВТЕННСОТЬЮ
+      - ОБЩЕСТВЛ С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕНОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕНОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕНООСТЬ
+      - ОБЩЕСТВО С ОГРАГИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ГОРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОИ ОТВЕТСТВЕННОСТЬЮ
+      - Общества с ограниченной ответственностью
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮИ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРВНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОЧТЬЮ
+      - ОБЩЕСТВО С ОРГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРНИЧЕННОЙ ОТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕСТТВЕННОСТЬЮ
+      - ОБЩЕСИВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОВТЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТТСТВЕННОСТЬЮ
+      - ОБЩЕСТВР С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОЙ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТВТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРНАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОЛТЬЮ
+      - ОБЩЕСТВО С ОГРАНИСЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧУННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННРЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТЕВТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТВТСЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТАЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАГНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕКННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЮ
+      - ОБЩЕСТВО С ОГРАНТЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОГСТЬЮ
+      - ОБЩЕСТВО С ОГРАНМЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕНТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮВ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТИЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕТСВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОТРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТЕТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТВЕТСТВЕННОСТЬЮ
+      - "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ:"
+      - ОБЩЕСТВО С ОГРАНГИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕНОНСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВУЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГАРНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВУЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТСВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСЬТЮ
+      - ОБЩЕСТВО С ОГРНАИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОЛТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОРГАНИЧЕННОЙ ОТВЕТСТВЕННОВСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТЧТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАННИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕНОЙ ОТВЕТСТВЕЕНОСТЬЮ
+      - ОБЩЕСТВО С ОГРАИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧННОЙ ОТВЕСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТИ
+      - ОБЩЕСТВО С ОГРАИНЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕНОССТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ЛТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВОГ С ОГРАНИЧЕННОЙ ОТВЕСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВТЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕНОЙ ОТВЕТСТВЕНОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕЕНОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВНТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОТСЬЮ
+      - ОБЩЕСТВО С ГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧННОЙ ОТВЕТСТВННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬБ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВОЬ С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРОРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИСЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ.
+      - ОБЩЕСТВО С ОГРАНИЧЕЕНОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕНСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТСЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНЧИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННЙО ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮТ
+      - ОБЩЕСТВО С ОГРАНЕЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТССТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОГТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮБ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННСОТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТСВЕЕНОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВТЕТСВЕННОСТЬЮ
+      - ОБЩЕСТВО СТ ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОСВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОМТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕНООСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОВТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕТНОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ТОВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕТСВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕНООЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕЕЕНОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕНЕНОСТЬЮ
+      - ОБЩЕСТВО С ОГРАГИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГPАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕНННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТ
+      - ОБЩЕСТВО СОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРОНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕНННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННООСТЬЮ
+      - ОБЩЕСТВО С ОТРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ТОВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТИ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОВСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧИННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ,
+      - ОБЩЕСТВО СОГРАНИЧЕНОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСВЕННОССТЬ
+      - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННРОСТЬЮ
+      - ОБЩЕСТВО С ОГРА НИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - Общество с ограниченной ответственность
+      - Общество с ограниченной ответственостью
+      - Общество с дополнительной ответственностью
+      - Общество с ограниченной ответственностьюм
+      - Общество с Ограниченной Ответственностью
+      - общество с ограниченной ответственностью
