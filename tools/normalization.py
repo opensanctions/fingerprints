@@ -27,7 +27,7 @@ try:
             # if i >= 5000:  # Stop after processing x rows
             #     break
             for row in reader:
-                if row["prop"] == "name" and row["schema"] in [
+                if row["prop_type"] == "name" and row["schema"] in [
                     "Company",
                     "Organization",
                 ]:
