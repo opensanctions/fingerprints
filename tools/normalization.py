@@ -10,7 +10,7 @@ try:
 
         # Open the output CSV file for writing
         with open(output_file_path, mode='w', newline='', encoding='utf-8') as output_file:
-            fieldnames = ['value','original_value' 'lang']  # Define the output CSV column headers
+            fieldnames = ['value', 'original_value', 'lang']  # Define the output CSV column headers
             writer = csv.DictWriter(output_file, fieldnames=fieldnames)
 
             # Write header to the output CSV file
@@ -23,8 +23,8 @@ try:
                 if row["prop"] == "name" and row["schema"] in ["Company", "Organization"]:
                     # Write the filtered row to the output CSV file
                     writer.writerow({'value': row['value'], 
-                                     'original_value': row['original_value'],
-                                        'lang': row['lang']})
+                            'original_value': row['original_value'],
+                                     'lang': row['lang']})
 
     print(f"Filtered results have been saved to {output_file_path}")
 
