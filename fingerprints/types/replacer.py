@@ -20,8 +20,9 @@ class Replacer(object):
         if remove:
             forms.update(self.replacements.values())
         forms_sorted = sorted(forms, key=lambda ct: -1 * len(ct))
+        forms_sorted = [re.escape(f) for f in forms_sorted]
         forms_regex = "\\b(%s)\\b" % "|".join(forms_sorted)
-        self.matcher = re.compile(forms_regex, re.U)
+        self.matcher = re.compile(forms_regex, re.U | re.I)
 
     def get_canonical(self, match: Match[str]) -> str:
         if self.remove:

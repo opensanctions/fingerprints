@@ -1,6 +1,5 @@
-from types import NoneType
-from unittest import loader
 import yaml
+from types import NoneType
 from typing import Any, Dict, List, Optional, Set
 
 from fingerprints.util import DATA_PATH
