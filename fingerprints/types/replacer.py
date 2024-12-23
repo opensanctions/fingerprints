@@ -13,7 +13,15 @@ ReplaceFunc = Callable[[Optional[str]], Optional[str]]
 
 
 class Replacer(object):
-    def __init__(self, replacements: Dict[str, str], remove: bool = False) -> None:
+    def __init__(
+        self,
+        replacements: Dict[str, str],
+        remove: bool = False,
+        ignore_case: bool = True,
+    ) -> None:
+        self.ignore_case = ignore_case
+        if ignore_case:
+            replacements = {k.lower(): v for k, v in replacements.items()}
         self.replacements = replacements
         self.remove = remove
         forms = set(self.replacements.keys())
@@ -22,12 +30,15 @@ class Replacer(object):
         forms_sorted = sorted(forms, key=lambda ct: -1 * len(ct))
         forms_sorted = [re.escape(f) for f in forms_sorted]
         forms_regex = "\\b(%s)\\b" % "|".join(forms_sorted)
-        self.matcher = re.compile(forms_regex, re.U | re.I)
+        flags = re.U | re.I if ignore_case else re.U
+        self.matcher = re.compile(forms_regex, flags)
 
     def get_canonical(self, match: Match[str]) -> str:
         if self.remove:
             return WS
-        return self.replacements.get(match.group(1), match.group(1))
+        value = match.group(1)
+        lookup = value.lower() if self.ignore_case else value
+        return self.replacements.get(lookup, value)
 
     def __call__(self, text: Optional[str]) -> Optional[str]:
         if text is None:

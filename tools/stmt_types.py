@@ -1,6 +1,7 @@
 import csv
 import yaml
 import logging
+from pprint import pprint
 from types import NoneType
 from typing import Any, Dict, List, Optional, Set
 import click
@@ -19,7 +20,7 @@ def display_norm(text: str) -> str:
 
 
 def compare_norm(text: str) -> Optional[str]:
-    return clean_name_ascii(text)
+    return clean_name_ascii(text) or ""
 
 
 class CompanyType(object):
@@ -45,9 +46,8 @@ def load_replacers() -> Dict[str, Replacer]:
     for ct in cts:
         if ct.display is None:
             continue
-        aliases = set([display_norm(a) for a in ct.aliases])
-        for alias in aliases:
-            lalias = alias.lower()
+        for alias in ct.aliases:
+            lalias = display_norm(alias).lower()
             norm = display_norm(ct.display)
             if alias in display_replacements and display_replacements[lalias] != norm:
                 log.warning(
@@ -58,6 +58,9 @@ def load_replacers() -> Dict[str, Replacer]:
                 )
             else:
                 display_replacements[lalias] = norm
+    # example = "limited liability company"
+    # assert example not in display_replacements, display_replacements[example]
+    # pprint(display_replacements)
 
     compare_replacements: Dict[str, str] = {}
     compare_norms: Set[str] = set()
@@ -70,17 +73,19 @@ def load_replacers() -> Dict[str, Replacer]:
             compare_norms.add(norm)
             if alias in compare_replacements and compare_replacements[alias] != norm:
                 log.warning(
-                    "Duplicate compare alias [%r/%r]: %r",
+                    "Duplicate compare alias [%r/%r]: %r %r",
                     compare_replacements[alias],
                     ct.compare,
                     alias,
+                    ct.aliases,
                 )
             else:
                 compare_replacements[alias] = norm
+
     log.info("Comparison types (normalised): %r", sorted(compare_norms))
 
     return {
-        "display": Replacer(display_replacements),
+        "display": Replacer(display_replacements, ignore_case=True),
         "compare": Replacer(compare_replacements),
     }
 

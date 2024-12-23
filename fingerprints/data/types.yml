@@ -24,6 +24,9 @@ company_types:
     compare: LP
     aliases:
       - Shoqëri komandite
+      - Sh.K.
+      - ShK.
+      - Sh K.
   - compare: Fdn
     aliases:
       - Foundation
@@ -38,10 +41,11 @@ company_types:
     aliases:
       - S.C.S.
       - Sociedad en Comandita Simple
-  - display: S.C.p.A.
+  - display: SCpA
     compare: LP
     aliases:
       - S.C.p.A.
+      - SCpA
       - Sociedad en Comandita por Acciones
   - display: Soc.Col.
     generic: GP
@@ -101,25 +105,9 @@ company_types:
     aliases:
       - National Trust and Savings Association
   - display: NL
+    compare: ""
     aliases:
       - No liability
-  - display: Pty. Ltd.
-    broader: Ltd
-    aliases:
-      - Proprietary Limited Company
-      - Proprietary Limited
-  - display: Pty.
-    broader: GP
-    aliases:
-      - Unlimited Proprietary
-  - display: ААТ
-    broader: OJSC
-    aliases:
-      - Адкрытае акцыянернае таварыства
-  - display: ЗАТ
-    broader: CJSC
-    aliases:
-      - Закрытае акцыянернае таварыства
   - display: ІП
     generic: SP
     aliases:
@@ -127,10 +115,6 @@ company_types:
   - display: ПУП
     aliases:
       - Прыватнае унітарнае прадпрыемства
-  - display: ТАА
-    generic: Ltd
-    aliases:
-      - Таварыства з абмежаванай адказнасцю
   - display: d.d.
     generic: PLC
     aliases:
@@ -170,23 +154,12 @@ company_types:
   - display: LP
     aliases:
       - Limited Partnership
-  - display: SM Pte Ltd.
-    broader: Pte Ltd.
-    aliases:
-      - Single Member Private Limited Company
-  - display: Pte Ltd.
-    broader: Ltd
-    aliases:
-      - Private Limited Company
   - display: PEEC
     aliases:
       - Public Establishment with Economic characteristics
   - display: SP
     aliases:
       - Sole Proprietorship
-  - display: GP
-    aliases:
-      - General Partnership
   - display: LP
     aliases:
       - Limited Partnership
@@ -294,10 +267,12 @@ company_types:
   - display: 3AT
     aliases:
       - закрытае ацыянернае таварыства
-  - display: AAT
+  - display: ААТ
+    compare: OJSC
     aliases:
       - adkritaye aktsiyanernaye tavaristva
       - adkrytae akcyyanernae tavarystva
+      - AAT
       - аат
       - адкрытае акцыянернае таварыства
   - display: AB
@@ -359,26 +334,6 @@ company_types:
     aliases:
       - Public Stock Company
       - public stock company (PJSC)
-  - display: AO
-    compare: JSC
-    aliases:
-      - aktsionernoe obschestvo
-      - anonim ortaklık
-      - акционерная компания с ограниченной ответственностью
-      - акционерное общество
-  - display: OAO
-    compare: JSC
-    aliases:
-      - otkrytoe aktsionernoe obshchestvo
-      - открытое акционерное общество
-      - Vidkryte aktsionerne tovarystvo
-      - Відкрите акціонерне товариство
-      - atviroji akcinė bendrovė
-      - avatud aktsiaselts
-      - avoin osakeyhtiö
-      - cuideachta comhstoic oscailte
-      - otkrytoe akcionernoe obshchestvo
-      - otkrytoe aktsionernoe obshchestvo
   - display: OJSC
     compare: OJSC
     aliases:
@@ -390,7 +345,6 @@ company_types:
       - offene aktiengesellschaft
       - open joint stock company
       - veřejná akciová společnost
-      - відкрите акціонерне товариство
   - display: AT
     compare: JSC
     aliases:
@@ -437,10 +391,18 @@ company_types:
   - display: ca
     aliases:
       - compañía anónima
-  - display: co
+  - compare: co
     aliases:
       - company
+      - kompania
       - компания
+  - compare: intl
+    aliases:
+      - international
+      - internationale
+      - інтернейшнл
+      - internazionale
+      - internazionali
   - display: Co Ltd
     compare: Ltd
     aliases:
@@ -506,10 +468,6 @@ company_types:
   - display: dnnn
     aliases:
       - doanh nghiệp nhà nước
-  - display: dno
-    aliases:
-      - d.n.o.
-      - društvo s neograničenom solidarnom odgovornošću
   - display: dntn
     aliases:
       - doanh nghiệp tư nhân
@@ -652,9 +610,6 @@ company_types:
       - scientific and production enterprise
       - государственное научно-производственное предприятие
       - державне науково-виробниче підприємство
-  - display: gp
-    aliases:
-      - general partnership
   - display: gs
     aliases:
       - gensidigt selskab
@@ -719,11 +674,6 @@ company_types:
   - display: ins oto san tic
     aliases:
       - ins.oto.san.tic
-  - display: Intl
-    aliases:
-      - international
-      - internationale
-      - інтернейшнл
   - display: IS
     generic: SOE
     aliases:
@@ -786,9 +736,6 @@ company_types:
       - korlatolt felelossegu tarsasag
       - korlátolt felelősségü társaság, organizační složka
       - korlátolt felelősségű társaság
-  - display: kg
-    aliases:
-      - kommanditgesellschaft
   - display: kk
     aliases:
       - 株式会社
@@ -809,13 +756,20 @@ company_types:
   - display: ky
     aliases:
       - kommandiittiyhtiö
-  - compare: Ltd
+  - display: ТОВ
+    compare: LLC
+    aliases:
+      - товариство з обмеженою відповідальністю
+      - тов
+      - тзов
+  - display: TOV
+    compare: LLC
+    aliases:
+      - tovarystvo z obmezhenoyu vidpovidalnistyu
+      - Tovarystvo z obmezhenoiu vidpovidalnistiu
+  - compare: LLC
     aliases:
       - tavaristva z abmezhavanaj adkaznastsiu
-      - tob
-      - тзов
-      - тов
-      - товариство з обмеженою відповідальністю
   - display: lo
     aliases:
       - limited ortaklık
@@ -825,6 +779,8 @@ company_types:
   - display: LP
     aliases:
       - limited partnership
+      - L.P.
+      - L.P
       - 兩合公司
   - display: LLC
     compare: Ltd
@@ -887,9 +843,6 @@ company_types:
     aliases:
       - nin'i kumiai
       - 任意組合
-  - display: nl
-    aliases:
-      - no liability
   - display: нп
     aliases:
       - некоммерческое партнерство
@@ -1008,6 +961,8 @@ company_types:
       - proprietary limited
       - proprietary limited company
       - pty ltd
+      - Pty. Ltd.
+      - Pty. Ltd
       - Pty Limited
   - display: qk
     aliases:
@@ -1048,10 +1003,10 @@ company_types:
     compare: JSC
     aliases:
       - s.a.
+      - S.A.
       - sarf
       - sociedad anonima
       - sociedad anónima
-      - sociedad en comandita por acciones
       - sociedad por acciones
       - sociedada anonima
       - sociedade anónima
@@ -1173,15 +1128,6 @@ company_types:
       - sociedad de garantía reciproca
       - Sociedad de Garantia Reciproca
       - S.G.R.
-  - display: sh.a
-    compare: Ltd
-    aliases:
-      - shoqëri aksionere
-      - sh.a
-  - display: shpk
-    aliases:
-      - sh.p.k
-      - shoqëri me përgjegjësi të kufizuar
   - display: SIA
     compare: Ltd
     aliases:
@@ -1194,20 +1140,20 @@ company_types:
   - display: sicav
     aliases:
       - société d'investissement à capital variable
-  - display: sjsc # ?
-    aliases:
-      - дат
-      - державне акціонерне товариство
   - display: sll
     aliases:
       - sociedad limitada laboral
   - display: slne
+    compare: Ltd
     aliases:
       - s.l.n.e.
       - sociedad limitada nueva empresa
-  - display: sm pte ltd.
+  - display: Pte Ltd
+    compare: Ltd
     aliases:
-      - single member private limited company
+      - Pte. Ltd.
+      - Pte Ltd
+      - Single Member Private Limited Company
   - display: smba
     aliases:
       - selskab med begrænset ansvar
@@ -1341,13 +1287,15 @@ company_types:
     aliases:
       - unitar korxona
       - унитар корхона
-  - display: Ultd
+  - display: Pty
+    compare: Pty
     aliases:
       - unlimited
       - unlimited company
       - unlimited proprietary
       - unltd
       - 無限公司
+      - Unlimited Proprietary
   - display: up
     generic: SOE
     aliases:
@@ -1463,7 +1411,8 @@ company_types:
       - tavarystva z dadatkovaj adkaznascyu
       - таварыства з дадатковай адказнасцю
       - тда
-  - display: таа
+  - display: ТАА
+    compare: Ltd
     aliases:
       - tavarystva z abmezhavanaj adkaznascyu
       - таварыства з абмежаванай адказнасцю
@@ -1853,15 +1802,35 @@ company_types:
   - display: ОАО # открытое акционерное общество
     compare: PJSC
     aliases:
-      - ОТКРЫТОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО # OPEN JOINT-STOCK COMPANY
+      - ОТКРЫТОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО
       - АКЦИОНЕPНОЕ ОБЩЕСТВО ОТКPЫТОГО ТИПА
-      - АКЦОНЕРНОЕ ОБЩЕСТВО ОТКРЫТОГО ТИПА # PUBLIC JOINT-STOCK COMPANY
-
+      - АКЦОНЕРНОЕ ОБЩЕСТВО ОТКРЫТОГО ТИПА
+      - otkrytoe aktsionernoe obshchestvo
+      - открытое акционерное общество
+      - Vidkryte aktsionerne tovarystvo
+      - відкрите акціонерне товариство
+      - Відкрите акціонерне товариство
+      - otkrytoe akcionernoe obshchestvo
+      - otkrytoe aktsionernoe obshchestvo
+  - compare: PJSC
+    aliases:
+      - atviroji akcinė bendrovė
+      - atviroji akcinė bendrovė
+      - avatud aktsiaselts
+      - avoin osakeyhtiö
+      - cuideachta comhstoic oscailte
   - display: АО # акционерное общество
     compare: JSC
     aliases:
       - АКЦИОНЕРНОЕ ОБЩЕСТВО # JOINT-STOCK COMPANY
       - АКЦИОНЕРНЫЕ ОБЩЕСТВА
+      - Акционерное общество
+      - акционерная компания с ограниченной ответственностью
+  - display: AO
+    compare: JSC
+    aliases:
+      - aktsionernoe obschestvo
+      - anonim ortaklık
 
   - display: ПАО # публичное акционерное общество
     compare: PJSC
@@ -1931,6 +1900,12 @@ company_types:
   - display: ОНОСС
     aliases:
       - ОРГАНИЗАЦИЯ НАУЧНОГО ОБСЛУЖИВАНИЯ И СОЦИАЛЬНОЙ СФЕРЫ
+
+  - display: OOO # latin
+    compare: LLC
+    aliases:
+      - Obshchestvo s ohranychennoi otvetstvennostiu
+      - obshchestvo s ogranichennoj otvetstvennost'yu
 
   - display: ООО # общество с ограниченной ответственностью
     compare: LLC
@@ -2089,7 +2064,6 @@ company_types:
       - Общество с ограниченной ответственностьюм
       - Общество с Ограниченной Ответственностью
       - общество с ограниченной ответственностью
-      - obshchestvo s ogranichennoj otvetstvennost'yu
       - oсoo
       - ликвидационная комиссия общества с ограниченной ответственностью
       - ликвидационная комиссия общество с ограниченной ответственностью
