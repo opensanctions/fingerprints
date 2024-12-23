@@ -145,9 +145,10 @@ company_types:
     generic: Ltd
     aliases:
       - Empresa Individual de Responsabilidade Limitada
-  - display: SP
+  - compare: SP
     aliases:
       - Sole Proprietorship
+      - Private Enterprise
   - display: GP
     aliases:
       - General Partnership
@@ -157,9 +158,6 @@ company_types:
   - display: PEEC
     aliases:
       - Public Establishment with Economic characteristics
-  - display: SP
-    aliases:
-      - Sole Proprietorship
   - display: LP
     aliases:
       - Limited Partnership
@@ -338,6 +336,7 @@ company_types:
     compare: OJSC
     aliases:
       - otwarta spółka akcyjna
+      - Open Joint-Stock Company
       - openbare aandelenvennootschap
       - sociedad limitada por acciones abierta
       - sociedade por ações aberta
@@ -783,7 +782,7 @@ company_types:
       - L.P
       - 兩合公司
   - display: LLC
-    compare: Ltd
+    compare: LLC
     aliases:
       - Limited Liability Company
       - limited liability company
@@ -931,9 +930,14 @@ company_types:
       - 股份有限公司
   - display: plt
     aliases: []
-  - display: pp
+  - display: ПП
+    compare: SP
     aliases:
       - приватне підприємство
+  - display: PP
+    compare: SP
+    aliases:
+      - Pryvatne pidpryiemstvo
   - display: pr
     aliases:
       - preduzetnik
@@ -1163,11 +1167,10 @@ company_types:
   - display: snt
     aliases:
       - садоводческое некоммерческое товарищество
-  - display: sp
+  - compare: SP
     aliases:
       - s.p.
       - samostalni preduzetnik
-      - sole proprietorship
       - státní podnik
   - display: SpA
     compare: JSC
@@ -1376,14 +1379,7 @@ company_types:
     aliases:
       - cjsc
       - closed joint stock company
-  - display: ЗАО
-    compare: CJSC
-    aliases:
-      - zaо
-      - закрите акціонерне товариство
-      - закрытое акционерное общество
-      - ЗАКРЫТОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО
-      - зао
+
   - display: ZAO
     compare: CJSC
     aliases:
@@ -1785,6 +1781,10 @@ company_types:
   - display: ЗАО # закрытое акционерное общество
     broader: CJSC
     aliases:
+      - закрите акціонерне товариство
+      - закрытое акционерное общество
+      - ЗАКРЫТОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО
+      - зао
       - ЗАКРЫТОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО # CLOSED JOINT-STOCK COMPANY
       - АКЦИОНЕНОЕ ОБЩЕСТВО ЗАКРЫТОГО ТИПА
       - АКЦИОНЕРОЕ ОБЩЕСТВО ЗАКРЫТОГО ТИПА
@@ -1803,6 +1803,7 @@ company_types:
     compare: PJSC
     aliases:
       - ОТКРЫТОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО
+      - ОТКРЫТОЕ АКЦИОНЕРГОЕ ОБЩЕСТВО
       - АКЦИОНЕPНОЕ ОБЩЕСТВО ОТКPЫТОГО ТИПА
       - АКЦОНЕРНОЕ ОБЩЕСТВО ОТКРЫТОГО ТИПА
       - otkrytoe aktsionernoe obshchestvo
@@ -1865,6 +1866,7 @@ company_types:
       - ПАРТНЁРСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
 
   - display: ПТ # полное товарищество
+    compare: GP
     aliases:
       - ПОЛНОЕ ТОВАРИЩЕСТВО # FULL PARTNERSHIP
 
