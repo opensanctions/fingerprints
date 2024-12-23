@@ -9,6 +9,10 @@ company_types:
       - Public Ltd. Co.
       - Public Limited Company
       - Plc. Ltd.
+  - compare: JSC
+    aliases:
+      - ሃላፊነቱ የተወሰነ የግል ማህበር
+      - 股份有限公司
   - display: Sh.p.k.
     compare: Ltd
     aliases:
@@ -37,7 +41,7 @@ company_types:
     aliases:
       - Stiftung
   - display: SCS
-    generic: LP
+    compare: LP
     aliases:
       - S.C.S.
       - Sociedad en Comandita Simple
@@ -48,14 +52,14 @@ company_types:
       - SCpA
       - Sociedad en Comandita por Acciones
   - display: Soc.Col.
-    generic: GP
+    compare: GP
     aliases:
       - Sociedad Colectiva
   - display: S.C.e I.
     aliases:
       - Sociedad de Capital e Industria
   - display: S.E.
-    generic: SOE
+    compare: SOE
     aliases:
       - Sociedad del Estado
   - display: SGR
@@ -63,11 +67,11 @@ company_types:
       - S.G.R.
       - Sociedad de Garantía Reciproca
   - display: SAS
-    generic: Ltd
+    compare: Ltd
     aliases:
       - Sociedad por Acciones Simplificada
   - display: SAU
-    generic: JSDC
+    compare: SP
     aliases:
       - Sociedad Anónima Unipersonal
   - display: S.A.I.C.A.
@@ -86,6 +90,13 @@ company_types:
     compare: JSC
     aliases:
       - Sociedad Anónima, Comercial, Industrial, Financiera, Inmobiliaria y Agropecuaria
+  - display: SA de CV
+    compare: JSC
+    aliases:
+      - Sociedad Anónima de Capital Variable
+      - S.A. DE C.V.
+      - S.A. DE C.V
+      - S.A DE C.V
   - display: LLP
     compare: LLP
     aliases:
@@ -109,25 +120,23 @@ company_types:
     aliases:
       - No liability
   - display: ІП
-    generic: SP
+    compare: SP
     aliases:
       - Індывідуальны прадпрымальнік
   - display: ПУП
     aliases:
       - Прыватнае унітарнае прадпрыемства
   - display: d.d.
-    generic: PLC
     aliases:
       - dioničko društvo
   - display: a.d.
-    generic: PLC
     aliases:
       - akcionarsko društvo
   - display: d.n.o.
     aliases:
       - društvo s neograničenom solidarnom odgovornošću
   - display: d.o.o.
-    generic: Ltd
+    compare: Ltd
     aliases:
       - društvo s ograničenom odgovornošću
   - display: k.d.
@@ -136,13 +145,8 @@ company_types:
   - display: s.p.
     aliases:
       - samostalni preduzetnik
-
-  - display: S.A.
-    generic: PLC
-    aliases:
-      - Sociedade anônima
   - display: EIRELI
-    generic: Ltd
+    compare: Ltd
     aliases:
       - Empresa Individual de Responsabilidade Limitada
   - compare: SP
@@ -164,6 +168,9 @@ company_types:
   - display: SpA
     aliases:
       - Sociedad por acciones
+  - display: SPA
+    aliases:
+      - S.P.A.
   - display: EIRL
     compare: EI
     aliases:
@@ -180,10 +187,11 @@ company_types:
     generic: Publicly traded partnership
     aliases:
       - Comandita por Acciones
-  - display: E.U.
-    generic: SP
+  - compare: SP
     aliases:
       - Empresa Unipersonal
+      - eingetragenes einzelunternehmen
+      - empresa unipersonal
   - display: C. por A.
     generic: PLC
     aliases:
@@ -192,12 +200,8 @@ company_types:
     generic: SP
     aliases:
       - Empresa Individual de Responsabilidad Limitada
-  - display: SAS
-    compare: PLC
-    aliases:
-      - Sociedad por Acciones Simplificada
   - display: EP
-    generic: SOE
+    compare: SOE
     aliases:
       - Empresa Pública
   - display: GmbH
@@ -220,7 +224,6 @@ company_types:
       - gGmbH
       - gemeinnützige GmbH
   - display: UG
-    # broader: GmbH
     compare: Ltd
     aliases:
       - UG (haftungsbeschränkt)
@@ -241,7 +244,7 @@ company_types:
       - AG & Co. KG
       - AG & Co KG
   - display: KG
-    generic: LP
+    compare: LP
     aliases:
       - Kommanditgesellschaft
   - display: e.K.
@@ -251,7 +254,7 @@ company_types:
   - display: KGaA
     compare: KG
   - display: Sp. z o.o.
-    generic: Ltd
+    compare: Ltd
     aliases:
       - spzoo
       - sp zoo
@@ -327,6 +330,7 @@ company_types:
       - Joint Stock Company
       - Joint-Stock Company
       - Joint-stock Company
+      - JointStock Company
   - display: PJSC
     compare: PJSC
     aliases:
@@ -365,6 +369,8 @@ company_types:
       - aktieselskabet
       - aktsiaselts
       - anonim şirket
+      - A. S.
+      - A.S.
   - display: ASBL
     aliases:
       - aisbl
@@ -517,7 +523,7 @@ company_types:
     aliases:
       - einkahlutafélag
   - display: ei
-    generic: SP
+    compare: SP
     aliases:
       - entreprise individuelle
   - display: eireli
@@ -534,9 +540,6 @@ company_types:
       - evropeysko kooperativno druzhestvo
       - eвропейско кооперативно дружество
       - екд
-  - broader: Company
-    aliases:
-      - enterprise
   - display: eood
     aliases:
       - ednolichno druzhestvo s ogranichena otgovornost
@@ -553,21 +556,16 @@ company_types:
       - ednolichen targovets
       - едноличен търговец
       - ет
-  - display: EU
-    generic: SP
-    aliases:
-      - eingetragenes einzelunternehmen
-      - empresa unipersonal
   - display: eurl
     aliases:
       - entreprise unipersonnelle à responsabilité limitée
-  - display: ev
+  - display: e.V.
     aliases:
       - eingetragener verein
-  - broader: Exp.
+  - compare: Exp
     aliases:
       - export
-  - broader: exp corp
+  - compare: exp corp
     aliases:
       - exp.corp
   - display: f:ma
@@ -586,7 +584,7 @@ company_types:
     aliases:
       - free zone establishment
   - display: GbR
-    generic: SP
+    compare: SP
     aliases:
       - gesbr
       - gesellschaft des bürgerlichen rechts
@@ -619,7 +617,7 @@ company_types:
     aliases:
       - halka açık anonim ortaklık
   - display: Hf.
-    broader: Ltd
+    compare: Ltd
     aliases:
       - hlutafélag
   - display: htx
@@ -674,7 +672,7 @@ company_types:
     aliases:
       - ins.oto.san.tic
   - display: IS
-    generic: SOE
+    compare: SOE
     aliases:
       - interessentskab
       - intreprindere de stat alimentatiei publice
@@ -693,7 +691,7 @@ company_types:
       - јавно предузеће
       - јп
   - display: JSCB
-    broader: JSC
+    compare: JSC
     aliases:
       - joint stock commercial bank
   - display: jtd
@@ -810,10 +808,12 @@ company_types:
       - private limited company
       - private limited liability company
       - pte ltd.
+      - pte. ltd.
       - sociedada limitada
       - sociedade limitada
       - компания с ограниченной ответственностью
       - лимитед
+      - Лімітед
       - בע"מ
       - 有限公司
   - display: Ltd Sti
@@ -848,6 +848,7 @@ company_types:
       - некоммерческое партнёрство
       - нп
   - display: NV
+    compare: JSC
     aliases:
       - N.V.
       - naamloze vennootschap
@@ -923,11 +924,6 @@ company_types:
   - display: peec
     aliases:
       - public establishment with economic characteristics
-  - compare: PLC
-    aliases:
-      - public limited company
-      - ሃላፊነቱ የተወሰነ የግል ማህበር
-      - 股份有限公司
   - display: plt
     aliases: []
   - display: ПП
@@ -980,14 +976,6 @@ company_types:
     aliases:
       - qapalı səhmdar cəmiyyəti
       - qapalı tipli səhmdar cəmiyyəti
-  - display: rao
-    aliases:
-      - pao
-      - pjsc
-      - private joint stock company
-      - пао
-      - приватне акціонерне товариство
-      - публичное акционерное общество
   - display: rp
     aliases:
       - rekisteröity puolue
@@ -1011,7 +999,6 @@ company_types:
       - sarf
       - sociedad anonima
       - sociedad anónima
-      - sociedad por acciones
       - sociedada anonima
       - sociedade anónima
       - sociedade anônima
@@ -1300,7 +1287,7 @@ company_types:
       - 無限公司
       - Unlimited Proprietary
   - display: up
-    generic: SOE
+    compare: SOE
     aliases:
       - consorzio statale
       - den føderale statsejede budgetinstitution
@@ -1379,7 +1366,7 @@ company_types:
     aliases:
       - cjsc
       - closed joint stock company
-
+      - CLOSED JOINT-STOCK COMPANY
   - display: ZAO
     compare: CJSC
     aliases:
@@ -1461,7 +1448,7 @@ company_types:
       - МУНИЦИПАЛЬНОЕ КАЗЕННОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # MUNICIPAL TREASURY PRESCHOOL EDUCATIONAL INSTITUTION
 
   - display: ГУ # государственное учреждение
-    broader: SOE
+    compare: SOE
     aliases:
       - ГОСУДАРСТВЕННОЕ УЧРЕЖДЕНИЕ # STATE INSTITUTION
 
@@ -1779,7 +1766,7 @@ company_types:
       - НЕГОСУДАРСТВЕНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ (ПОВЫШЕНИЯ КВАЛИФИКАЦИИ) СПЕЦИАЛИСТОВ # NON-STATE EDUCATIONAL INSTITUTION OF FURTHER PROFESSIONAL EDUCATION (QUALIFICATION IMPROVEMENT) FOR SPECIALISTS
 
   - display: ЗАО # закрытое акционерное общество
-    broader: CJSC
+    compare: CJSC
     aliases:
       - закрите акціонерне товариство
       - закрытое акционерное общество
@@ -1832,11 +1819,15 @@ company_types:
     aliases:
       - aktsionernoe obschestvo
       - anonim ortaklık
+      - ao
 
   - display: ПАО # публичное акционерное общество
     compare: PJSC
     aliases:
       - ПУБЛИЧНОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО # PUBLIC JOINT-STOCK COMPANY
+      - пао
+      - приватне акціонерне товариство
+      - публичное акционерное общество
 
   - display: НАО # некоммерческое акционерное общество
     compare: CJSC
@@ -1908,6 +1899,8 @@ company_types:
     aliases:
       - Obshchestvo s ohranychennoi otvetstvennostiu
       - obshchestvo s ogranichennoj otvetstvennost'yu
+      - Obshchestvo s ogranichennoy otvetstvennostyu
+      - OBSHCHESTVO S OGRANICHENNOI OTVETSTVENNOSTYU
 
   - display: ООО # общество с ограниченной ответственностью
     compare: LLC
@@ -1915,6 +1908,7 @@ company_types:
       - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ # LIMITED LIABILITY COMPANY
       - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
       - ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      - Общество C Ограниченной Ответственностью
       - Общество с ограниченной ответственностью
       - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОТЬЮ
       - ОБЩЕСТВО С ОГРАНИЕННОЙ ОТВЕТСТВЕННОСТЬЮ
