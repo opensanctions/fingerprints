@@ -31,6 +31,14 @@ company_types:
       - Sh.K.
       - ShK.
       - Sh K.
+  - display: FZE
+    compare: LLC
+    aliases:
+      - Free Zone Establishment
+  - display: FZCO
+    compare: LLC
+    aliases:
+      - Free Zone Company
   - compare: Fdn
     aliases:
       - Foundation
@@ -96,7 +104,13 @@ company_types:
       - Sociedad Anónima de Capital Variable
       - S.A. DE C.V.
       - S.A. DE C.V
+      - SA de CV
       - S.A DE C.V
+  - display: S DE RL DE CV
+    compare: LLC
+    aliases:
+      - S. DE R.L. DE C.V.
+      - Sociedad de Responsabilidad Limitada de Capital Variable
   - display: LLP
     compare: LLP
     aliases:
@@ -336,6 +350,8 @@ company_types:
     aliases:
       - Public Stock Company
       - public stock company (PJSC)
+      - Public Joint-Stock Company
+      - Public joint stock company
   - display: OJSC
     compare: OJSC
     aliases:
@@ -355,6 +371,10 @@ company_types:
       - Aktsionerne tovarystvo
       - акціонерного товариства
       - Акціонерне товариство
+  - display: КБ
+    compare: КБ
+    aliases:
+      - Коммерческий банк
   - display: ApS
     compare: Ltd
     aliases:
@@ -778,6 +798,8 @@ company_types:
       - limited partnership
       - L.P.
       - L.P
+      - Л.П.
+      - Л.П
       - 兩合公司
   - display: LLC
     compare: LLC
@@ -851,6 +873,7 @@ company_types:
     compare: JSC
     aliases:
       - N.V.
+      - N.V
       - naamloze vennootschap
   - display: oaj
     aliases:
@@ -996,6 +1019,7 @@ company_types:
     aliases:
       - s.a.
       - S.A.
+      - S.A
       - sarf
       - sociedad anonima
       - sociedad anónima
@@ -1012,7 +1036,8 @@ company_types:
       - société anonyme
       - société par actions de régime fédéral
       - société par actions par loi sur les sociétés par actions
-      #- spółka akcyjna
+      - spółka akcyjna
+      - SPÓŁKA AKCYJNA
       - شركة خفية الإسم
   - display: SAD
     compare: JSC
@@ -1163,6 +1188,7 @@ company_types:
     compare: JSC
     aliases:
       - società per azioni
+      - SOCIETA' PER AZIONI
   - display: spe
     aliases:
       - societas privata europaea
@@ -1286,7 +1312,7 @@ company_types:
       - unltd
       - 無限公司
       - Unlimited Proprietary
-  - display: up
+  - display: FSUE
     compare: SOE
     aliases:
       - consorzio statale
@@ -1818,8 +1844,13 @@ company_types:
     compare: JSC
     aliases:
       - aktsionernoe obschestvo
+      - AKTSIONERNOE OBSHCHESTVO
       - anonim ortaklık
       - ao
+  - display: PAO
+    compare: PJSC
+    aliases:
+      - Publichne aktsionerne tovarystvo
 
   - display: ПАО # публичное акционерное общество
     compare: PJSC
@@ -1828,6 +1859,10 @@ company_types:
       - пао
       - приватне акціонерне товариство
       - публичное акционерное общество
+  - display: ПАТ # публічне акціонерне товариство
+    compare: PJSC
+    aliases:
+      - Публічне акціонерне товариство
 
   - display: НАО # некоммерческое акционерное общество
     compare: CJSC
