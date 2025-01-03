@@ -12,11 +12,6 @@ try:
         with open(
             output_file_path, mode="w", newline="", encoding="utf-8"
         ) as output_file:
-            # fieldnames = [
-            #     "value",
-            #     "original_value",
-            #     "lang",
-            # ]  # Define the output CSV column headers
             fieldnames = [
                 "entity_id",
                 "prop",
@@ -40,14 +35,6 @@ try:
                     "Company",
                     "Organization",
                 ]:
-                    # Write the filtered row to the output CSV file
-                    # writer.writerow(
-                    #     {
-                    #         "value": row["value"],
-                    #         "original_value": row["original_value"],
-                    #         "lang": row["lang"],
-                    #     }
-                    # )
                     writer.writerow(
                         {
                             "entity_id": row["entity_id"],

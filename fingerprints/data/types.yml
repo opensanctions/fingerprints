@@ -1642,10 +1642,18 @@ company_types:
   - display: ФГУ # федеральное государственное учреждение
     aliases:
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ УЧРЕЖДЕНИЕ # FEDERAL STATE INSTITUTION
+  
+  - display: ФГКУ # федеральное государственное казенное учреждение
+    aliases:
+      - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ # FEDERAL STATE TREASURY INSTITUTION
 
   - display: ФКУ # федеральное казенное учреждение
     aliases:
       - ФЕДЕРАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ # FEDERAL TREASURY INSTITUTION
+  
+  - display: ФКП # федеральное казенное предприятие
+    aliases:
+      - ФЕДЕРАЛЬНОЕ КАЗЕННОЕ ПРЕДПРИЯТИЕ
 
   - display: ФГБВОУ ВО # федеральное государственное бюджетное военное образовательное учреждение высшего образования
     aliases:
@@ -1759,6 +1767,10 @@ company_types:
     aliases:
       - ПЕРВИЧНАЯ ОРГАНИЗАЦИЯ ПРОФСОЮЗА РАБОТНИКОВ ЗДРАВООХРАНЕНИЯ # PRIMARY TRADE UNION ORGANIZATION OF HEALTHCARE WORKERS
 
+  - display: УПРАВЛЕНИЕ ФСБ РФ
+    aliases:
+      - УПРАВЛЕНИЕ ФЕДЕРАЛЬНОЙ СЛУЖБЫ БЕЗОПАСНОСТИ РОССИЙСКОЙ ФЕДЕРАЦИИ # FEDERAL SECURITY SERVICE OF THE RUSSIAN FEDERATION
+
   - display: ОГКОУ # областное государственное казенное образовательное учреждение
     aliases:
       - ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ КАЗЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # REGIONAL STATE TREASURY EDUCATIONAL INSTITUTION
@@ -1790,6 +1802,10 @@ company_types:
       - НЕГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ # NON-STATE EDUCATIONAL INSTITUTION OF FURTHER PROFESSIONAL EDUCATION
       - НЕГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ НАЧАЛЬНОГО И ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ # NON-STATE EDUCATIONAL INSTITUTION OF INITIAL AND FURTHER PROFESSIONAL EDUCATION
       - НЕГОСУДАРСТВЕНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ (ПОВЫШЕНИЯ КВАЛИФИКАЦИИ) СПЕЦИАЛИСТОВ # NON-STATE EDUCATIONAL INSTITUTION OF FURTHER PROFESSIONAL EDUCATION (QUALIFICATION IMPROVEMENT) FOR SPECIALISTS
+
+  - display: САК
+    aliases:
+      - СТРАХОВАЯ АКЦИОНЕРНАЯ КОМПАНИЯ # INSURANCE JOINT-STOCK COMPANY
 
   - display: ЗАО # закрытое акционерное общество
     compare: CJSC
@@ -1840,6 +1856,7 @@ company_types:
       - АКЦИОНЕРНЫЕ ОБЩЕСТВА
       - Акционерное общество
       - акционерная компания с ограниченной ответственностью
+      - АКЦИОНЕРНОГО ОБЩЕСТВА
   - display: AO
     compare: JSC
     aliases:
