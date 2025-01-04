@@ -13,10 +13,14 @@ try:
             output_file_path, mode="w", newline="", encoding="utf-8"
         ) as output_file:
             fieldnames = [
+                "entity_id",
+                "prop",
+                "prop_type",
                 "value",
-                "original_value",
                 "lang",
-            ]  # Define the output CSV column headers
+                "original_value",
+                "schema",
+            ]
             writer = csv.DictWriter(output_file, fieldnames=fieldnames)
 
             # Write header to the output CSV file
@@ -31,12 +35,15 @@ try:
                     "Company",
                     "Organization",
                 ]:
-                    # Write the filtered row to the output CSV file
                     writer.writerow(
                         {
+                            "entity_id": row["entity_id"],
+                            "prop": row["prop"],
+                            "prop_type": row["prop_type"],
                             "value": row["value"],
-                            "original_value": row["original_value"],
                             "lang": row["lang"],
+                            "original_value": row["original_value"],
+                            "schema": row["schema"],
                         }
                     )
 

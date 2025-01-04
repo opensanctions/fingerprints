@@ -1613,6 +1613,10 @@ company_types:
       - ПОУ
       - ПРОФЕССИОНАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ
 
+  - display: ГП
+    aliases:
+      - ГОСУДАРСТВЕННОЕ ПРЕДПРИЯТИЕ # STATE ENTERPRISE
+      - Государственное предприятие
   - display: ГУП # государственное унитарное предприятие
     compare: ГУП
     aliases:
@@ -1734,12 +1738,20 @@ company_types:
     aliases:
       - ФГУ
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ УЧРЕЖДЕНИЕ # FEDERAL STATE INSTITUTION
+  
+  - display: ФГКУ # федеральное государственное казенное учреждение
+    aliases:
+      - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ # FEDERAL STATE TREASURY INSTITUTION
 
   - display: ФКУ # федеральное казенное учреждение
     compare: ФКУ
     aliases:
       - ФКУ
       - ФЕДЕРАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ # FEDERAL TREASURY INSTITUTION
+  
+  - display: ФКП # федеральное казенное предприятие
+    aliases:
+      - ФЕДЕРАЛЬНОЕ КАЗЕННОЕ ПРЕДПРИЯТИЕ
 
   - display: ФГБВОУ ВО # федеральное государственное бюджетное военное образовательное учреждение высшего образования
     compare: ФГБВОУ ВО
@@ -1896,6 +1908,10 @@ company_types:
       - ПОПРЗ
       - ПЕРВИЧНАЯ ОРГАНИЗАЦИЯ ПРОФСОЮЗА РАБОТНИКОВ ЗДРАВООХРАНЕНИЯ # PRIMARY TRADE UNION ORGANIZATION OF HEALTHCARE WORKERS
 
+  - display: УПРАВЛЕНИЕ ФСБ РФ
+    aliases:
+      - УПРАВЛЕНИЕ ФЕДЕРАЛЬНОЙ СЛУЖБЫ БЕЗОПАСНОСТИ РОССИЙСКОЙ ФЕДЕРАЦИИ # FEDERAL SECURITY SERVICE OF THE RUSSIAN FEDERATION
+
   - display: ОГКОУ # областное государственное казенное образовательное учреждение
     aliases:
       - ОГКОУ
@@ -1936,6 +1952,10 @@ company_types:
       - НЕГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ # NON-STATE EDUCATIONAL INSTITUTION OF FURTHER PROFESSIONAL EDUCATION
       - НЕГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ НАЧАЛЬНОГО И ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ # NON-STATE EDUCATIONAL INSTITUTION OF INITIAL AND FURTHER PROFESSIONAL EDUCATION
       - НЕГОСУДАРСТВЕНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ (ПОВЫШЕНИЯ КВАЛИФИКАЦИИ) СПЕЦИАЛИСТОВ # NON-STATE EDUCATIONAL INSTITUTION OF FURTHER PROFESSIONAL EDUCATION (QUALIFICATION IMPROVEMENT) FOR SPECIALISTS
+
+  - display: САК
+    aliases:
+      - СТРАХОВАЯ АКЦИОНЕРНАЯ КОМПАНИЯ # INSURANCE JOINT-STOCK COMPANY
 
   - display: ЗАО # закрытое акционерное общество
     compare: CJSC
@@ -1985,7 +2005,9 @@ company_types:
       - АКЦИОНЕРНОЕ ОБЩЕСТВО # JOINT-STOCK COMPANY
       - АКЦИОНЕРНЫЕ ОБЩЕСТВА
       - Акционерное общество
+      - Aкционерное общество # different ''A'' character
       - акционерная компания с ограниченной ответственностью
+      - АКЦИОНЕРНОГО ОБЩЕСТВА
   - display: AO
     compare: JSC
     aliases:
