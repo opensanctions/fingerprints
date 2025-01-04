@@ -1073,8 +1073,9 @@ company_types:
   - display: sapa
     aliases:
       - società in accomandita per azioni
-  - display: sarl
+  - display: SARL
     aliases:
+      - S.A.R.L.
       - société à responsabilité limitée
       - شّركة ذات مسؤوليّات محدودة ش.م.م
   - display: SAS
@@ -1107,12 +1108,13 @@ company_types:
   - display: scpa
     aliases:
       - sociedad civil privada
-  - display: scs
+  - display: SCS
     aliases:
       - secs
+      - s.c.s.
       - sociedad en comandita simple
       - société en commandite simple
-  - display: sd
+  - display: SD
     aliases:
       - s-ie
       - sabiratelno druzhestvo (sd)/sadruzhie
@@ -1125,7 +1127,7 @@ company_types:
     aliases:
       - Sdn. Bhd.
       - sendirian berhad
-  - display: se
+  - display: SE
     aliases:
       - sociedad del estado
       - societas europaea
@@ -1153,13 +1155,13 @@ company_types:
   - display: sicaf
     aliases:
       - société d'investissement à capital fixe
-  - display: sicav
+  - display: SICAV
     aliases:
       - société d'investissement à capital variable
-  - display: sll
+  - display: SLL
     aliases:
       - sociedad limitada laboral
-  - display: slne
+  - display: SLNE
     compare: Ltd
     aliases:
       - s.l.n.e.
@@ -1189,7 +1191,7 @@ company_types:
     aliases:
       - società per azioni
       - SOCIETA' PER AZIONI
-  - display: spe
+  - display: SPE
     aliases:
       - societas privata europaea
   - display: spf
@@ -1312,8 +1314,7 @@ company_types:
       - unltd
       - 無限公司
       - Unlimited Proprietary
-  - display: FSUE
-    compare: SOE
+  - compare: SOE
     aliases:
       - consorzio statale
       - den føderale statsejede budgetinstitution
@@ -1444,348 +1445,493 @@ company_types:
       - ОТДЕЛ ГОСУДАРСТВЕННОЙ ПРОТИВОПОЖАРНОЙ СЛУЖБЫ # DEPARTMENT OF THE STATE FIRE SERVICE
 
   - display: Д/С
+    compare: ДС
     aliases:
+      - Д/С
       - ДЕТСКИЙ САД # KINDERGARTEN
 
   - display: МОУ # муниципальное образовательное учреждение
+    compare: МОУ
     aliases:
+      - МОУ
       - МУНИЦИПАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # MUNICIPAL EDUCATIONAL INSTITUTION
 
   - display: МАУ # муниципальное автономное учреждение
+    compare: МАУ
     aliases:
+      - МАУ
       - МУНИЦИПАЛЬНОЕ АВТОНОМНОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # MUNICIPAL AUTONOMOUS PRESCHOOL EDUCATIONAL INSTITUTION
 
   - display: МБОУ # муниципальное бюджетное общеобразовательное учреждение
+    compare: МБОУ
     aliases:
+      - МБОУ
       - МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ ОБЩЕОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # MUNICIPAL BUDGETARY GENERAL EDUCATIONAL INSTITUTION
       - МУНИЦИПАЛЬНОЕ ОБЩЕОБРАЗОВАТЕЛЬНОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ # MUNICIPAL GENERAL EDUCATIONAL BUDGETARY INSTITUTION
       - МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ
 
   - display: МБДОУ # муниципальное бюджетное дошкольное образовательное учреждение
+    compare: МБДОУ
     aliases:
+      - МБДОУ
       - МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # MUNICIPAL BUDGETARY PRESCHOOL EDUCATIONAL INSTITUTION
 
   - display: МБУ ДО
+    compare: МБУ ДО
     aliases:
+      - МБУ ДО
       - МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ОБРАЗОВАНИЯ # MUNICIPAL BUDGETARY ADDITIONAL EDUCATION INSTITUTION
 
   - display: МК ДОУ
+    compare: МК ДОУ
     aliases:
+      - МК ДОУ
       - МУНИЦИПАЛЬНОЕ КАЗЕННОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # MUNICIPAL TREASURY PRESCHOOL EDUCATIONAL INSTITUTION
 
   - display: ГУ # государственное учреждение
-    compare: SOE
+    compare: ГУ
     aliases:
+      - ГУ
       - ГОСУДАРСТВЕННОЕ УЧРЕЖДЕНИЕ # STATE INSTITUTION
 
   - display: ОГУ # окружное государственное учреждение
+    compare: ОГУ
     aliases:
+      - ОГУ
       - ОКРУЖНОЕ ГОСУДАРСТВЕННОЕ УЧРЕЖДЕНИЕ # DISTRICT STATE INSTITUTION
 
   - display: ГОУ # государственное образовательное учреждение
+    compare: ГОУ
     aliases:
+      - ГОУ
       - ГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # STATE EDUCATIONAL INSTITUTION
       - ГОСУДАРСТВЕННОЕ ОБЩЕОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # STATE GENERAL EDUCATIONAL INSTITUTION
 
   - display: ГБОУ # государственное бюджетное общеобразовательное учреждение
+    compare: ГБОУ
     aliases:
+      - ГБОУ
       - ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБЩЕОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # STATE BUDGET GENERAL EDUCATIONAL INSTITUTION
 
   - display: ГКОУ
+    compare: ГКОУ
     aliases:
+      - ГКОУ
       - ГОСУДАРСТВЕННОЕ КАЗЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # STATE TREASURY EDUCATIONAL INSTITUTION
 
   - display: ГО ШК-Инт
+    compare: ГО ШК-Инт
     aliases:
+      - ГО ШК-Инт
       - ГОСУДАРСТВЕННАЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА-ИНТЕРНАТ # STATE GENERAL EDUCATIONAL BOARDING SCHOOL
 
   - display: ГОУ ДДМШВ
+    compare: ГОУ ДДМШВ
     aliases:
+      - ГОУ ДДМШВ
       - ГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДЛЯ ДЕТЕЙ ДОШКОЛЬНОГО И МЛАДШЕГО ШКОЛЬНОГО ВОЗРАСТА
 
   - display: ГАУСО
+    compare: ГАУСО
     aliases:
+      - ГАУСО
       - ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ УЧРЕЖДЕНИЕ СОЦИАЛЬНОГО ОБСЛУЖИВАНИЯ
 
   - display: ГБСКОУ # государственное бюджетное образовательное учреждение
+    compare: ГБСКОУ
     aliases:
+      - ГБСКОУ
       - ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ СПЕЦИАЛЬНОЕ (КОРРЕКЦИОННОЕ) ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДЛЯ ОБУЧАЮЩИХСЯ, ВОСПИТАННИКОВ С ОГРАНИЧЕННЫМИ ВОЗМОЖНОСТЯМИ ЗДОРОВЬЯ # STATE BUDGET SPECIAL (CORRECTIONAL) EDUCATIONAL INSTITUTION FOR STUDENTS, TRAINEES WITH DISABILITIES
 
   - display: ГСКОУ
+    compare: ГСКОУ
     aliases:
+      - ГСКОУ
       - ГОСУДАРСТВЕННОЕ СПЕЦИАЛЬНОЕ (КОРРЕКЦИОННОЕ) ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ
       - ГОСУДАРСТВЕННОЕ СПЕЦИАЛЬНОЕ (КОРРЕКЦИОННОЕ) ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДЛЯ ОБУЧАЮЩИХСЯ С ОТКЛОНЕНИЯМИ В РАЗВИТИИ
       - ГОСУДАРСТВЕННОЕ СПЕЦИАЛЬНОЕ (КОРРЕКЦИОННОЕ) ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДЛЯ ОБУЧАЮЩИХСЯ С ОТКЛОНЕНИЯМИ В РАЗВИТИИ -
 
   - display: ГДОУ # государственное дошкольное образовательное учреждение
+    compare: ГДОУ
     aliases:
+      - ГДОУ
       - ГОСУДАРСТВЕННОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # STATE PRESCHOOL EDUCATIONAL INSTITUTION
 
   - display: ГДОУ - Д/С # государственное дошкольное образовательное учреждение - детский сад
+    compare: ГДОУ
     aliases:
+      - ГДОУ - Д/С
       - ГОСУДАРСТВЕННОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ - ДЕТСКИЙ САД # STATE PRESCHOOL EDUCATIONAL INSTITUTION - KINDERGARTEN
 
   - display: ГКУ # государственное казенное учреждение
+    compare: ГКУ
     aliases:
+      - ГКУ
       - ГОСУДАРСТВЕННОЕ КАЗЁННОЕ УЧРЕЖДЕНИЕ # STATE TREASURY INSTITUTION
 
   - display: ГКС(к)ОУ # государственное казённое специальное (коррекционное) образовательное учреждение
+    compare: ГКС
     aliases:
+      - ГКС(к)ОУ
       - ГОСУДАРСТВЕННОЕ АЗЕННОЕ СПЕЦИАЛЬНОЕ (КОРРЕКЦИОННОЕ) ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # STATE TREASURY SPECIAL (CORRECTIONAL) EDUCATIONAL INSTITUTION
 
   - display: ГНУ # государственное научное учреждение
+    compare: ГНУ
     aliases:
+      - ГНУ
       - ГОСУДАРСТВЕННОЕ НАУЧНОЕ УЧРЕЖДЕНИЕ # STATE SCIENTIFIC INSTITUTION
 
   - display: ГОУ ВПО # can also be ГОУ ДПО in this case
+    compare: ГОУ ВПО
     aliases:
       - ГОУ ДПО
+      - ГОУ ВПО
       - ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ
       - ГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ # STATE EDUCATIONAL INSTITUTION OF HIGHER PROFESSIONAL EDUCATION
 
   - display: ОУ ДПО # образовательное учреждение дополнительного профессионального образования
+    compare: ОУ ДПО
     aliases:
+      - ОУ ДПО
       - ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ # ADDITIONAL PROFESSIONAL EDUCATION INSTITUTION
 
   - display: ГОУ ДПО # государственное образовательное учреждение дополнительного профессионального образования
+    compare: ГОУ ДПО
     aliases:
+      - ГОУ ДПО
       - ГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ (ПОВЫШЕНИЯ КВАЛИФИКАЦИИ) СПЕЦИАЛИСТОВ # STATE EDUCATIONAL INSTITUTION OF FURTHER PROFESSIONAL EDUCATION (QUALIFICATION IMPROVEMENT)
 
   - display: НОЧУ ДПО # негосударственное образовательное частное учреждение дополнительного профессионального образования
+    compare: НОЧУ ДПО
     aliases:
+      - НОЧУ ДПО
       - НЕГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ ЧАСТНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ
 
   - display: ПОУ
+    compare: ПОУ
     aliases:
+      - ПОУ
       - ПРОФЕССИОНАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ
 
   - display: ГУП # государственное унитарное предприятие
+    compare: ГУП
     aliases:
+      - ГУП
       - ГОСУДАРСТВЕННОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ # SUBSIDIARY STATE UNITARY ENTERPRISE
 
   - display: ДГУП
+    compare: ДГУП
     aliases:
+      - ДГУП
       - ДОЧЕРНЕЕ ГОСУДАРСТВЕННОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ # SUBSIDIARY STATE UNITARY ENTERPRISE
       - ДОЧЕРНЕЕ ГОСУДАРСТВЕНОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ
 
   - display: ГУСП
+    compare: ГУСП
     aliases:
+      - ГУСП
       - ГОСУДАРСТВЕННОЕ УНИТАРНОЕ СЕЛЬСКОХОЗЯЙСТВЕННОЕ ПРЕДПРИЯТИЕ # STATE UNITARY AGRICULTURAL ENTERPRISE
 
   - display: ГУДП
+    compare: ГУДП
     aliases:
+      - ГУДП
       - ГОСУДАРСТВЕННОЕ УНИТАРНОЕ ДОЧЕРНЕЕ ПРЕДПРИЯТИЕ # STATE UNITARY SUBSIDIARY ENTERPRISE
       - ГОСУДАРСТВЕННОЕ УНИТАРНОЕ (ДОЧЕРНЕЕ) ПРЕДПРИЯТИЕ
 
   - display: ФГНУ # федеральное государственное научное учреждение
+    compare: ФГНУ
     aliases:
+      - ФГНУ
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ НАУЧНОЕ УЧРЕЖДЕНИЕ # FEDERAL STATE SCIENTIFIC INSTITUTION
 
   - display: ФГУП # федеральное государственное унитарное предприятие
+    compare: ФГУП
     aliases:
+      - ФГУП
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ # FEDERAL STATE UNITARY ENTERPRISE
 
   - display: ДОЧЕРНЕЕ ФГУП
+    compare: ФГУП
     aliases:
+      - ДОЧЕРНЕЕ ФГУП
       - ФЕДЕРАЛЬНОЕ ДОЧЕРНЕЕ ГОСУДАРСТВЕННОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ # FEDERAL SUBSIDIARY STATE UNITARY ENTERPRISE
       - ФЕДЕРАЛЬНОЕ ДОЧЕРНЕЕ ГОСУДАРСТВЕННОЕ  УНИТАРНОЕ ПРЕДПРИЯТИЕ
 
   - display: ФГБДОУ
+    compare: ФГБДОУ
     aliases:
+      - ФГБДОУ
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # FEDERAL STATE BUDGETARY PRESCHOOL EDUCATIONAL INSTITUTION
 
   - display: ФГБОУ ДПО # федеральное государственное бюджетное образовательное учреждение
+    compare: ФГБОУ ДПО
     aliases:
+      - ФГБОУ ДПО
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ # FEDERAL STATE BUDGETARY EDUCATIONAL INSTITUTION OF FURTHER PROFESSIONAL EDUCATION
 
   - display: ФГАОУ ДПО
+    compare: ФГАОУ ДПО
     aliases:
+      - ФГАОУ ДПО
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ
 
   - display: ФГБОУ ВО # федеральное государственное бюджетное образовательное учреждение высшего образования
+    compare: ФГБОУ ВО
     aliases:
+      - ФГБОУ ВО
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ # FEDERAL STATE BUDGETARY EDUCATIONAL INSTITUTION OF HIGHER EDUCATION
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ  ВЫСШЕГО ОБРАЗОВАНИЯ
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ  БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ
 
   - display: ФГОУ ВПО # федеральное государственное образовательное учреждение высшего профессионального образования
+    compare: ФГОУ ВПО
     aliases:
+      - ФГОУ ВПО
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ # FEDERAL STATE EDUCATIONAL INSTITUTION OF HIGHER PROFESSIONAL EDUCATION
 
   - display: ФГКВОУ ВПО # федеральное государственное казенное военное образовательное учреждение высшего образования
+    compare: ФГКВОУ ВПО
     aliases:
+      - ФГКВОУ ВПО
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ КАЗЕННОЕ ВОЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ # FEDERAL STATE TREASURY MILITARY EDUCATIONAL INSTITUTION OF HIGHER EDUCATION
 
   - display: МАОУ # муниципальное автономное общеобразовательное учреждение
+    compare: МАОУ
     aliases:
+      - МАОУ
       - МУНИЦИПАЛЬНОЕ АВТОНОМНОЕ ОБЩЕОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ МУНИЦИПАЛЬНОГО ОБРАЗОВАНИЯ ГОРОД КРАСНОДАР # MUNICIPAL AUTONOMOUS GENERAL EDUCATIONAL INSTITUTION OF THE CITY OF KRASNODAR
 
   - display: МКУ # муниципальное казенное учреждение
+    compare: МКУ
     aliases:
+      - МКУ
       - МУНИЦИПАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ # MUNICIPAL TREASURY INSTITUTION
       - МУНИЦИПАЛЬНОЕ КАЗЕННОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # MUNICIPAL TREASURY PRESCHOOL EDUCATIONAL INSTITUTION
 
   - display: МРО
+    compare: МРО
     aliases:
+      - МРО
       - МЕСТНАЯ ПРАВОСЛАВНАЯ РЕЛИГИОЗНАЯ ОРГАНИЗАЦИЯ # LOCAL ORTHODOX RELIGIOUS ORGANIZATION
       - МЕСТНАЯ РЕЛИГИОЗНАЯ ОРГАНИЗАЦИЯ # LOCAL RELIGIOUS ORGANIZATION
 
   - display: ЦРО # центральная религиозная организация
+    compare: ЦРО
     aliases:
+      - ЦРО
       - ЦЕНТРАЛЬНАЯ РЕЛИГИОЗНАЯ ОРГАНИЗАЦИЯ # CENTRAL RELIGIOUS ORGANIZATION
 
   - display: РО # религиозная организация
+    compare: РО
     aliases:
+      - РО
       - РЕЛИГИОЗНАЯ ОРГАНИЗАЦИЯ # RELIGIOUS ORGANIZATION
 
   - display: ФГУ # федеральное государственное учреждение
+    compare: ФГУ
     aliases:
+      - ФГУ
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ УЧРЕЖДЕНИЕ # FEDERAL STATE INSTITUTION
 
   - display: ФКУ # федеральное казенное учреждение
+    compare: ФКУ
     aliases:
+      - ФКУ
       - ФЕДЕРАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ # FEDERAL TREASURY INSTITUTION
 
   - display: ФГБВОУ ВО # федеральное государственное бюджетное военное образовательное учреждение высшего образования
+    compare: ФГБВОУ ВО
     aliases:
+      - ФГБВОУ ВО
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ВОЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ # FEDERAL STATE BUDGETARY MILITARY EDUCATIONAL INSTITUTION OF HIGHER EDUCATION
 
   - display: ФГКВОУ
+    compare: ФГКВОУ
     aliases:
+      - ФГКВОУ
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ КАЗЕННОЕ ВОЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ # FEDERAL STATE TREASURY MILITARY EDUCATIONAL INSTITUTION OF HIGHER EDUCATION
 
   - display: ФГКОУ ДПО # федеральное государственное казенное образовательное учреждение
+    compare: ФГКОУ ДПО
     aliases:
+      - ФГКОУ ДПО
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ КАЗЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ (ПЕРЕПОДГОТОВКИ И ПОВЫШЕНИЯ КВАЛИФИКАЦИИ)
 
   - display: ФГОУ ДПО # федеральное государственное казенное образовательное учреждение высшего профессионального образования
+    compare: ФГОУ ДПО
     aliases:
+      - ФГОУ ДПО
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ СПЕЦИАЛИСТОВ # FEDERAL STATE EDUCATIONAL INSTITUTION OF FURTHER PROFESSIONAL EDUCATION (SPECIALISTS)
 
   - display: ФГДОУ # федеральное государственное дошкольное образовательное учреждение
+    compare: ФГДОУ
     aliases:
+      - ФГДОУ
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # FEDERAL STATE PRESCHOOL EDUCATIONAL INSTITUTION
 
   - display: ФГБУ # федеральное государственное бюджетное учреждение
+    compare: ФГБУ
     aliases:
+      - ФГБУ
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ # FEDERAL STATE BUDGETARY INSTITUTION
 
   - display: ФГБУ ДПО
+    compare: ФГБУ
     aliases:
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ
 
   - display: ОППО
+    compare: ППО
     aliases:
       - ОБЪЕДИНЕННАЯ ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ
       - ОБЪЕДИНЕННАЯ (ТЕРРИТОРИАЛЬНАЯ) ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ
 
   - display: ППО # первичная профсоюзная организация
+    compare: ППО
     aliases:
       - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ # PRIMARY TRADE UNION ORGANIZATION
       - ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ РАБОТНИКОВ # TRADE UNION ORGANIZATION OF WORKERS
 
   - display: ППО ООО # первичная профсоюзная организация общества с ограниченной ответственностью
+    compare: LLC
     aliases:
       - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ # PRIMARY TRADE UNION ORGANIZATION OF LIMITED LIABILITY COMPANY
 
   - display: ППО ДОЧЕРНЕГО ООО
+    compare: LLC
     aliases:
       - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ РАБОТНИКОВ ДОЧЕРНЕГО ОБЩЕСТВА С ОГРАНИЧЕНОЙ ОТВЕТСТВЕННОСТЬЮ # PRIMARY TRADE UNION ORGANIZATION OF WORKERS OF A SUBSIDIARY LIMITED LIABILITY COMPANY
 
   - display: ППО ОАО # первичная профсоюзная организация открытого акционерного общества
+    compare: OJSC
     aliases:
+      - ППО ОАО
       - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ОТКРЫТОГО АКЦИОНЕРНОГО ОБЩЕСТВА # PRIMARY TRADE UNION ORGANIZATION OF AN OPEN JOINT-STOCK COMPANY
       - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ РАБОТНИКОВ ОТКРЫТОГО АКЦИОНЕРНОГО ОБЩЕСТВА # PRIMARY TRADE UNION ORGANIZATION OF WORKERS OF AN OPEN JOINT-STOCK COMPANY
 
   - display: ППО ГОУСПО # первичная профсоюзная организация государственного образовательного учреждения
+    compare: ППО
     aliases:
+      - ППО ГОУСПО
       - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ГОСУДАРСТВЕННОГО ОБРАЗОВАТЕЛЬНОГО УЧРЕЖДЕНИЯ СРЕДНЕГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ
       - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ГОСУДАРСТВЕННОГО УЧРЕЖДЕНИЯ СРЕДНЕГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ
 
   - display: ППО ФГБУ # первичная профсоюзная организация федерального государственного бюджетного учреждения
+    compare: ППО
     aliases:
+      - ППО ФГБУ
       - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ФЕДЕРАЛЬНОГО ГОСУДАРСТВЕННОГО БЮДЖЕТНОГО УЧРЕЖДЕНИЯ # PRIMARY TRADE UNION ORGANIZATION OF THE FEDERAL STATE BUDGETARY INSTITUTION
 
   - display: ППО ФГБОУ ВО
+    compare: ППО
     aliases:
+      - ППО ФГБОУ ВО
       - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ФЕДЕРАЛЬНОГО ГОСУДАРСТВЕННОГО БЮДЖЕТНОГО ОБРАЗОВАТЕЛЬНОГО УЧРЕЖДЕНИЯ ВЫСШЕГО ОБРАЗОВАНИЯ # PRIMARY TRADE UNION ORGANIZATION OF THE FEDERAL STATE BUDGETARY EDUCATIONAL INSTITUTION OF HIGHER EDUCATION
       - ПЕРВИЧНАЯ ОРГАНИЗАЦИЯ ПРОФСОЮЗА СОТРУДНИКОВ ФЕДЕРАЛЬНОГО ГОСУДАРСТВЕННОГО БЮДЖЕТНОГО ОБРАЗОВАТЕЛЬНОГО УЧРЕЖДЕНИЯ ВЫСШЕГО ОБРАЗОВАНИЯ
 
   - display: ППО ФКУ # первичная профсоюзная организация федерального казенного учреждения
+    compare: ППО
     aliases:
+      - ППО ФКУ
       - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ФЕДЕРАЛЬНОГО КАЗЕННОГО УЧРЕЖДЕНИЯ # PRIMARY TRADE UNION ORGANIZATION OF THE FEDERAL TREASURY INSTITUTION
 
   - display: ППО ГБУ
+    compare: ППО
     aliases:
+      - ППО ГБУ
       - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ
       - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ГОСУДАРСТВЕННОГО БЮДЖЕТНОГО УЧРЕЖДЕНИЯ # PRIMARY TRADE UNION ORGANIZATION OF THE STATE BUDGETARY INSTITUTION
 
   - display: ППО ГБОУ # первичная профсоюзная организация государственного бюджетного образовательного учреждения
+    compare: ППО
     aliases:
+      - ППО ГБОУ
       - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ГОСУДАРСТВЕННОГО БЮДЖЕТНОГО ОБРАЗОВАТЕЛЬНОГО УЧРЕЖДЕНИЯ # PRIMARY TRADE UNION ORGANIZATION OF THE STATE BUDGETARY EDUCATIONAL INSTITUTION
 
   - display: ППО ФБУ
+    compare: ППО
     aliases:
+      - ППО ФБУ
       - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ФЕДЕРАЛЬНОГО БЮДЖЕТНОГО УЧРЕЖДЕНИЯ # PRIMARY TRADE UNION ORGANIZATION OF THE FEDERAL BUDGETARY INSTITUTION
 
   - display: ППО ФГУП # первичная профсоюзная организация федерального государственного унитарного предприятия
+    compare: ППО
     aliases:
+      - ППО ФГУП
       - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ СОТРУДНИКОВ ФЕДЕРАЛЬНОГО ГОСУДАРСТВЕННОГО УНИТАРНОГО ПРЕДПРИЯТИЯ # PRIMARY TRADE UNION ORGANIZATION OF THE FEDERAL STATE UNITARY ENTERPRISE
 
   - display: ППО ГУП # первичная профсоюзная организация государственного унитарного предприятия
+    compare: ППО
     aliases:
+      - ППО ГУП
       - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ГОСУДАРСТВЕННОГО УНИТАРНОГО ПРЕДПРИЯТИЯ # PRIMARY TRADE UNION ORGANIZATION OF THE STATE UNITARY ENTERPRISE
 
   - display: ППО ПСРЗ
+    compare: ППО
     aliases:
+      - ППО ПСРЗ
       - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ПРОФСОЮЗА РАБОТНИКОВ ЗДРАВООХРАНЕНИЯ # PRIMARY TRADE UNION ORGANIZATION OF THE HEALTHCARE WORKERS UNION
       - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ПРОФЕССИОНАЛЬНОГО СОЮЗА РАБОТНИКОВ ЗДРАВООХРАНЕНИЯ
       - ПЕРВИЧНАЯ ОРГАНИЗАЦИЯ ПРОФЕССИОНАЛЬНОГО СОЮЗА РАБОТНИКОВ ЗДРАВООХРАНЕНИЯ
 
   - display: ППОО # первичная профсоюзная общественная организация
     aliases:
+      - ППОО
       - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОБЩЕСТВЕННАЯ ОРГАНИЗАЦИЯ # PRIMARY TRADE UNION PUBLIC ORGANIZATION
 
   - display: ППОО АО # первичная профсоюзная общественная организация акционерного общества
     aliases:
+      - ППОО АО
       - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОБЩЕСТВЕННАЯ ОРГАНИЗАЦИЯ АКЦИОНЕРНОГО ОБЩЕСТВА # PRIMARY TRADE UNION PUBLIC ORGANIZATION OF THE JOINT-STOCK COMPANY
 
   - display: ПОП ОБГУЗ # первичная организация профсоюза областного бюджетного учреждения здравоохранения
     aliases:
+      - ПОП ОБГУЗ
       - ПЕРВИЧНАЯ ОРГАНИЗАЦИЯ ПРОФСОЮЗА ОБЛАСТНОГО БЮДЖЕТНОГО УЧРЕЖДЕНИЯ ЗДРАВООХРАНЕНИЯ # PRIMARY TRADE UNION ORGANIZATION OF THE REGIONAL BUDGETARY HEALTHCARE INSTITUTION
 
   - display: ПОПРЗ
     aliases:
+      - ПОПРЗ
       - ПЕРВИЧНАЯ ОРГАНИЗАЦИЯ ПРОФСОЮЗА РАБОТНИКОВ ЗДРАВООХРАНЕНИЯ # PRIMARY TRADE UNION ORGANIZATION OF HEALTHCARE WORKERS
 
   - display: ОГКОУ # областное государственное казенное образовательное учреждение
     aliases:
+      - ОГКОУ
       - ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ КАЗЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # REGIONAL STATE TREASURY EDUCATIONAL INSTITUTION
       - ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ КАЗЁННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # REGIONAL STATE TREASURY EDUCATIONAL INSTITUTION
       - ОБЛАСТНОЕ ГОСУДАРСТВЕННОЕ КАЗЁННОЕ ОБЩЕОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ
 
   - display: МОО # местная общественная организация
+    compare: МОО
     aliases:
+      - МОО
       - МЕСТНАЯ ОБЩЕСТВЕННАЯ ОРГАНИЗАЦИЯ # LOCAL PUBLIC ORGANIZATION
       - МЕСТНАЯ ОБЩЕСТВЕННАЯ ОРГАНИЗАЦИЯ - # LOCAL PUBLIC ORGANIZATION
 
   - display: МОО - ППО # местная общественная организация - первичная профсоюзная организация
+    compare: МОО
     aliases:
+      - МОО - ППО
       - МЕСТНАЯ ОБЩЕСТВЕННАЯ ОРГАНИЗАЦИЯ - ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ # LOCAL PUBLIC ORGANIZATION - PRIMARY TRADE UNION
       - МЕСТНАЯ ОБЩЕСТВЕННАЯ ОРГАНИЗАЦИЯ ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ # LOCAL PUBLIC ORGANIZATION PRIMARY TRADE UNION
       - МЕСТНАЯ ОБЩЕСТВЕННАЯ ОРГАНИЗАЦИЯ-ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ # LOCAL PUBLIC ORGANIZATION-PRIMARY TRADE UNION
       - МЕСТНАЯ ОБЩЕСТВЕННАЯ ОРГАНИЗАЦИЯ – ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ # LOCAL PUBLIC ORGANIZATION-PRIMARY TRADE UNION ORGANIZATION
 
   - display: МОО - ППО ГУП # местная общественная организация - первичная профсоюзная организация государственного унитарного предприятия
+    compare: МОО
     aliases:
+      - МОО - ППО ГУП
       - МЕСТНАЯ ОБЩЕСТВЕННАЯ ОРГАНИЗАЦИЯ-ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ГОСУДАРСТВЕННОГО УНИТАРНОГО ПРЕДПРИЯТИЯ # LOCAL PUBLIC ORGANIZATION PRIMARY TRADE UNION ORGANIZATION OF THE STATE UNITARY ENTERPRISE
 
   - display: ОО # неправительственная организация
+    compare: ОО
     aliases:
       - ОБЩЕСТВЕННАЯ ОРГАНИЗАЦИЯ # NGO
 
   - display: НОУ ДПО # негосударственное образовательное учреждение дополнительного профессионального образования
+    compare: ANO
     aliases:
       - НЕГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ # NON-STATE EDUCATIONAL INSTITUTION OF FURTHER PROFESSIONAL EDUCATION
       - НЕГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ НАЧАЛЬНОГО И ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ # NON-STATE EDUCATIONAL INSTITUTION OF INITIAL AND FURTHER PROFESSIONAL EDUCATION
@@ -1870,25 +2016,32 @@ company_types:
       - НЕПУБЛИЧНОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО # NON-PUBLIC JOINT-STOCK COMPANY
 
   - display: СПК # сельскохозяйственный производственный кооператив
+    compare: СПК
     aliases:
       - СЕЛЬСКОХОЗЯЙСТВЕННЫЙ ПРОИЗВОДСТВЕННЫЙ КООПЕРАТИВ # AGRICULTURAL PRODUCTION COOPERATIVE
 
   - display: МУП # муниципальное унитарное предприятие
+    compare: ППО ОАО
     aliases:
       - МУНИЦИПАЛЬНОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ # MUNICIPAL UNITARY ENTERPRISE
 
   - display: АНО # автономная некоммерческая организация
+    compare: ANO
     aliases:
+      - АНО
       - АВТОНОМНАЯ НЕКОММЕРЧЕСКАЯ ОРГАНИЗАЦИЯ # AUTONOMOUS NON-COMMERCIAL ORGANIZATION
 
   - display: КФХ # крестьянское (фермерское) хозяйство
+    compare: КФХ
     aliases:
       - КРЕСТЬЯНСКОЕ (ФЕРМЕРСКОЕ) ХОЗЯЙСТВО # FARM (FARMING) HOUSEHOLD
       - КРЕСТЬЯНСКОЕ ФЕРМЕРСКОЕ ХОЗЯЙСТВО
       - КРЕСТЬЯНСКОЕ ХОЗЯЙСТВО
 
   - display: ООП # партнёрство с ограниченной ответственностью
+    compare: ООП
     aliases:
+      - ООП
       - ПАРТНЁРСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
 
   - display: ПТ # полное товарищество
@@ -1897,36 +2050,50 @@ company_types:
       - ПОЛНОЕ ТОВАРИЩЕСТВО # FULL PARTNERSHIP
 
   - display: ДОУ # дошкольное образовательное учреждение
+    compare: ДОУ
     aliases:
+      - ДОУ
       - ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # PRESCHOOL EDUCATIONAL INSTITUTION
 
   - display: ПКООП # потребительский кооператив
+    compare: ПКООП
     aliases:
+      - ПКООП
       - ПОТРЕБИТЕЛЬСКИЙ КООПЕРАТИВ # CONSUMER COOPERATIVE
 
   - display: ПК # производственный кооператив
+    compare: ПК
     aliases:
       - ПРОИЗВОДСТВЕННЫЙ КООПЕРАТИВ # PRODUCTION COOPERATIVE
 
   - display: НЦ # научный центр
+    compare: НЦ
     aliases:
+      - НЦ
       - НАУЧНЫЙ ЦЕНТР # SCIENTIFIC CENTER
 
   - display: ОЮЛ # oбъединение юридических лиц
+    compare: ОЮЛ
     aliases:
+      - ОЮЛ
       - ОБЪЕДИНЕНИЕ ЮРИДИЧЕСКИХ ЛИЦ # ASSOCIATION OF LEGAL ENTITIES
 
   - display: НП # некоммерческое партнёрство
+    compare: НП
     aliases:
       - НЕКОММЕРЧЕСКОЕ ПАРТНЁРСТВО # NON-COMMERCIAL PARTNERSHIP
 
   - display: НОУДО # негосударственное образовательное учреждение дополнительного образования
+    compare: НОУДО
     aliases:
+      - НОУДО
       - НЕГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ОБРАЗОВАНИЯ # NON-STATE EDUCATIONAL INSTITUTION OF ADDITIONAL EDUCATION
       - НЕГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ОБРАЗОВАНИЯ ДЕТЕЙ # NON-STATE EDUCATIONAL INSTITUTION OF ADDITIONAL EDUCATION FOR CHILDREN
 
   - display: ОНОСС
+    compare: ОНОСС
     aliases:
+      - ОНОСС
       - ОРГАНИЗАЦИЯ НАУЧНОГО ОБСЛУЖИВАНИЯ И СОЦИАЛЬНОЙ СФЕРЫ
 
   - display: OOO # latin
