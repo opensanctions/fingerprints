@@ -64,8 +64,12 @@ company_types:
     aliases:
       - Sociedad Colectiva
   - display: S.C.e I.
+    compare: scei
     aliases:
+      - S.C.e I.
+      - scei
       - Sociedad de Capital e Industria
+      - sociedad de capital e industria
   - display: S.E.
     compare: SOE
     aliases:
@@ -141,11 +145,25 @@ company_types:
     aliases:
       - Прыватнае унітарнае прадпрыемства
   - display: d.d.
+    compare: dd
     aliases:
       - dioničko društvo
+      - d.d.
   - display: a.d.
+    compare: ad
     aliases:
       - akcionarsko društvo
+      - a.d
+      - a.d.
+      - akcionarsko društvo
+      - aktsionerno druzhestvo
+  - display: а.д.
+    compare: ad
+    aliases:
+      - а.д
+      - ад
+      - акционарско друштво
+      - акционерно дружество
   - display: d.n.o.
     aliases:
       - društvo s neograničenom solidarnom odgovornošću
@@ -154,8 +172,18 @@ company_types:
     aliases:
       - društvo s ograničenom odgovornošću
   - display: k.d.
+    compare: kd
     aliases:
       - komanditno društvo
+      - k.d.
+      - komanditno druzhestvo
+      - komanditno društvo
+  - display: к.д.
+    compare: kd
+    aliases:
+      - кд
+      - командитно дружество
+      - командитно друштво
   - display: s.p.
     aliases:
       - samostalni preduzetnik
@@ -189,18 +217,25 @@ company_types:
     compare: EI
     aliases:
       - Empresa Individual de Responsabilidad Limitada
+      - empresa individual de responsabilidad limitada
   - display: S.C.
     generic: GP
     aliases:
       - Sociedad Colectiva
+      - compania comerciala si de productie societatea cu responsabilitate limitata
+      - sociedad colectiva
+      - societatea comercială
+      - አክሲዩን ማህበር
   - display: S. en C.
     generic: LP
     aliases:
       - Comandita Simple
   - display: S.C.A.
-    generic: Publicly traded partnership
+    compare: JSC
     aliases:
       - Comandita por Acciones
+      - comandita por acciones
+      - société en commandite par actions
   - compare: SP
     aliases:
       - Empresa Unipersonal
@@ -210,14 +245,11 @@ company_types:
     generic: PLC
     aliases:
       - Compañía por Acciones
-  - display: EIRL
-    generic: SP
-    aliases:
-      - Empresa Individual de Responsabilidad Limitada
   - display: EP
     compare: SOE
     aliases:
       - Empresa Pública
+      - empresa pública
   - display: GmbH
     compare: Ltd
     aliases:
@@ -298,16 +330,6 @@ company_types:
   - display: abv
     aliases:
       - aandeelhouder-bestuurde vennootschap
-  - display: ad
-    aliases:
-      - a.d
-      - a.d.
-      - akcionarsko društvo
-      - aktsionerno druzhestvo
-      - а.д
-      - ад
-      - акционарско друштво
-      - акционерно дружество
   - display: adsic
     aliases:
       - adsitz
@@ -483,10 +505,6 @@ company_types:
   - display: cía
     aliases:
       - compañía
-  - display: dd
-    aliases:
-      - d.d.
-      - dioničko društvo
   - display: dis tic ltd
     aliases:
       - dis.tic.ltd
@@ -546,12 +564,6 @@ company_types:
     compare: SP
     aliases:
       - entreprise individuelle
-  - display: eireli
-    aliases:
-      - empresa individual de responsabilidade limitada
-  - display: eirl
-    aliases:
-      - empresa individual de responsabilidad limitada
   - display: ek. för.
     aliases:
       - ekonomisk förening
@@ -565,9 +577,6 @@ company_types:
       - ednolichno druzhestvo s ogranichena otgovornost
       - еднолично дружество с ограничена отговорност
       - еоод
-  - display: ep
-    aliases:
-      - empresa pública
   - display: esv
     aliases:
       - economisch samenwerkingsverband
@@ -730,15 +739,6 @@ company_types:
   - display: kb
     aliases:
       - kommanditbolag
-  - display: kd
-    aliases:
-      - k.d.
-      - komanditno druzhestvo
-      - komanditno društvo
-      - к.д
-      - кд
-      - командитно дружество
-      - командитно друштво
   - display: kda
     aliases:
       - komanditno druzhestvo s aktsii
@@ -944,9 +944,6 @@ company_types:
   - display: pe
     aliases:
       - የመንግስት ልማት ድርጅቶች
-  - display: peec
-    aliases:
-      - public establishment with economic characteristics
   - display: plt
     aliases: []
   - display: ПП
@@ -1008,9 +1005,6 @@ company_types:
   - display: ry
     aliases:
       - rekisteröity yhdistys
-  - display: s. en c.
-    aliases:
-      - comandita simple
   - display: s.cra.
     aliases:
       - sociedad comanditaria
@@ -1083,25 +1077,12 @@ company_types:
     aliases:
       - sociedades por acciones simplificada
       - société par actions simplifiée
-  - display: sc
-    aliases:
-      - compania comerciala si de productie societatea cu responsabilitate limitata
-      - sociedad colectiva
-      - societatea comercială
-      - አክሲዩን ማህበር
-  - display: sca
-    aliases:
-      - comandita por acciones
-      - société en commandite par actions
   - display: scc
     aliases:
       - société commerciale canadienne
   - display: sce
     aliases:
       - societas cooperativa europaea
-  - display: scei
-    aliases:
-      - sociedad de capital e industria
   - display: scop
     aliases:
       - société coopérative de production
@@ -1129,7 +1110,6 @@ company_types:
       - sendirian berhad
   - display: SE
     aliases:
-      - sociedad del estado
       - societas europaea
   - display: sem
     aliases:
@@ -1344,9 +1324,7 @@ company_types:
       - unіtarnae pradpryemstva
       - štátny unitárny podnik
       - государственного унитарного предприятия
-      - государственное унитарное предприятие
       - гп
-      - гуп
       - державного унітарного підприємства
       - унитарное предприятие
       - унітарнае прадпрыемства
@@ -1413,9 +1391,6 @@ company_types:
   - display: şb
     aliases:
       - şube
-  - display: пуп
-    aliases:
-      - прыватнае унітарнае прадпрыемства
   - display: тda
     aliases:
       - tavarystva z dadatkovaj adkaznascyu
@@ -1584,7 +1559,6 @@ company_types:
   - display: ГОУ ВПО # can also be ГОУ ДПО in this case
     compare: ГОУ ВПО
     aliases:
-      - ГОУ ДПО
       - ГОУ ВПО
       - ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ
       - ГОСУДАРСТВЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ # STATE EDUCATIONAL INSTITUTION OF HIGHER PROFESSIONAL EDUCATION
@@ -1712,7 +1686,6 @@ company_types:
     aliases:
       - МКУ
       - МУНИЦИПАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ # MUNICIPAL TREASURY INSTITUTION
-      - МУНИЦИПАЛЬНОЕ КАЗЕННОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # MUNICIPAL TREASURY PRESCHOOL EDUCATIONAL INSTITUTION
 
   - display: МРО
     compare: МРО
@@ -1738,7 +1711,7 @@ company_types:
     aliases:
       - ФГУ
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ УЧРЕЖДЕНИЕ # FEDERAL STATE INSTITUTION
-  
+
   - display: ФГКУ # федеральное государственное казенное учреждение
     aliases:
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ # FEDERAL STATE TREASURY INSTITUTION
@@ -1748,7 +1721,7 @@ company_types:
     aliases:
       - ФКУ
       - ФЕДЕРАЛЬНОЕ КАЗЕННОЕ УЧРЕЖДЕНИЕ # FEDERAL TREASURY INSTITUTION
-  
+
   - display: ФКП # федеральное казенное предприятие
     aliases:
       - ФЕДЕРАЛЬНОЕ КАЗЕННОЕ ПРЕДПРИЯТИЕ
