@@ -92,21 +92,25 @@ def load_replacers() -> Dict[str, Replacer]:
 
 def transform_row(
     replacers: Dict[str, Replacer], stmt: Dict[str, str]
-) -> Dict[str, str]:
+) -> Optional[Dict[str, str]]:
     name = stmt["value"]
     display_name = display_norm(name)
     display_out = replacers["display"](display_name)
 
     compare_name = compare_norm(name)
     compare_out = replacers["compare"](compare_name)
-
-    return {
-        "name": name,
-        "lang": stmt["lang"],
-        "display": display_out,
-        "compare": compare_out,
-        "entity": stmt["entity_id"],
-    }
+    # Testing mode
+    if display_name == display_out and compare_name == compare_out:
+        # If both the display and compare outputs are the same as original, indicate that it's unadjusted
+        return {
+            "name": name,
+            "lang": stmt["lang"],
+            "display": display_out,
+            "compare": compare_out,
+            "entity": stmt["entity_id"],
+        }
+    # If there's any change, return None to indicate this row has been adjusted
+    return None
 
 
 @click.command()
@@ -134,7 +138,8 @@ def parse(stmt_csv: Path, out_csv: Path):
                 if stmt["prop_type"] != "name":
                     continue
                 out = transform_row(replacers, stmt)
-                writer.writerow(out)
+                if out is not None:
+                    writer.writerow(out)
 
 
 if __name__ == "__main__":

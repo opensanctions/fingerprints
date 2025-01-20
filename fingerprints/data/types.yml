@@ -1047,6 +1047,7 @@ company_types:
       - société anonyme
       - société par actions de régime fédéral
       - société par actions par loi sur les sociétés par actions
+      - société par actions
       - spółka akcyjna
       - SPÓŁKA AKCYJNA
       - شركة خفية الإسم
@@ -1352,6 +1353,8 @@ company_types:
       - государственного унитарного предприятия
       - гп
       - державного унітарного підприємства
+      - державне унітарне підприємство
+      - федеральне державне унітарне підприємство
       - унитарное предприятие
       - унітарнае прадпрыемства
       - уп
