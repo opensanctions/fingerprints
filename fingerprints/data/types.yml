@@ -115,6 +115,10 @@ company_types:
     aliases:
       - S. DE R.L. DE C.V.
       - Sociedad de Responsabilidad Limitada de Capital Variable
+  - display: Ε.Π.Ε.
+    compare: LLC
+    aliases: 
+      - εταιρία περιορισμένης ευθύνης
   - display: LLP
     compare: LLP
     aliases:
@@ -171,6 +175,7 @@ company_types:
     compare: Ltd
     aliases:
       - društvo s ograničenom odgovornošću
+      - družba z omejeno odgovornostjo
   - display: k.d.
     compare: kd
     aliases:
@@ -413,6 +418,9 @@ company_types:
       - anonim şirket
       - A. S.
       - A.S.
+      - Anonim Sirket
+      - Anonim Ortaklık
+      - anonim şirketi
   - display: ASBL
     aliases:
       - aisbl
@@ -846,6 +854,11 @@ company_types:
       - Ltd. Sti.
       - limited şirket
       - ltd.sti
+      - Limited Şirket
+      - Ltd. Şti.
+      - Ltd Sti
+      - Ltd. Sti
+      - limited sti
   - display: mchj
     aliases:
       - mas'uliyati cheklangan jamiyat
@@ -908,8 +921,10 @@ company_types:
     aliases:
       - organização não governamental
   - display: ood
+    compare: LLC
     aliases:
       - drujestvo s ogranichena otgovornost
+      - druzestvo s ogranicena otgovornost
       - druzhestvo s ogranichena otgovornost
       - дружество с ограничена отговорност
       - оод
@@ -1235,24 +1250,6 @@ company_types:
     aliases:
       - oiminimi
 
-  - display: A.Ş.
-    compare: JSC
-    aliases:
-      - anonim şirket
-      - Anonim Sirket
-      - Anonim Ortaklık
-      - anonim şirketi
-
-  - display: Ltd Şti
-    compare: LLC
-    aliases:
-      - Limited Şirket
-      - Ltd. Şti.
-      - Ltd Sti
-      - Ltd. Sti
-      - ltd.sti
-      - limited sti
-
   - compare: tes
     aliases:
       - tesisat
@@ -1450,6 +1447,7 @@ company_types:
   - display: ТАА
     compare: Ltd
     aliases:
+      - tavarystva z abmezhavanay adkaznastsyu
       - tavarystva z abmezhavanaj adkaznascyu
       - таварыства з абмежаванай адказнасцю
 
@@ -1605,13 +1603,18 @@ company_types:
     compare: ГКС
     aliases:
       - ГКС(к)ОУ
-      - ГОСУДАРСТВЕННОЕ АЗЕННОЕ СПЕЦИАЛЬНОЕ (КОРРЕКЦИОННОЕ) ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # STATE TREASURY SPECIAL (CORRECTIONAL) EDUCATIONAL INSTITUTION
+      - ГОСУДАРСТВЕННОЕ КАЗЕННОЕ СПЕЦИАЛЬНОЕ (КОРРЕКЦИОННОЕ) ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ # STATE TREASURY SPECIAL (CORRECTIONAL) EDUCATIONAL INSTITUTION
 
   - display: ГНУ # государственное научное учреждение
     compare: ГНУ
     aliases:
       - ГНУ
       - ГОСУДАРСТВЕННОЕ НАУЧНОЕ УЧРЕЖДЕНИЕ # STATE SCIENTIFIC INSTITUTION
+
+  - display: ГосНИИ
+    compare: ГНУ
+    aliases: 
+      - ГОСУДАРСТВЕННЫЙ НАУЧНО-ИССЛЕДОВАТЕЛЬСКИЙ ИНСТИТУТ # STATE RESEARCH INSTITUTE
 
   - display: ГОУ ВПО # can also be ГОУ ДПО in this case
     compare: ГОУ
@@ -1714,7 +1717,7 @@ company_types:
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДОПОЛНИТЕЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ
 
   - display: ФГБОУ ВО # федеральное государственное бюджетное образовательное учреждение высшего образования
-    compare: ФГОУ
+    compare: ФГОУ ВО
     aliases:
       - ФГБОУ ВО
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ # FEDERAL STATE BUDGETARY EDUCATIONAL INSTITUTION OF HIGHER EDUCATION
@@ -1786,16 +1789,21 @@ company_types:
       - ФЕДЕРАЛЬНОЕ КАЗЕННОЕ ПРЕДПРИЯТИЕ
 
   - display: ФГБВОУ ВО # федеральное государственное бюджетное военное образовательное учреждение высшего образования
-    compare: ФГБВОУ ВО
+    compare: ФГОУ ВО
     aliases:
       - ФГБВОУ ВО
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ВОЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ # FEDERAL STATE BUDGETARY MILITARY EDUCATIONAL INSTITUTION OF HIGHER EDUCATION
 
-  - display: ФГКВОУ
-    compare: ФГКВОУ
+  - display: ФГКВОУ ВО
+    compare: ФГОУ ВО
     aliases:
       - ФГКВОУ
       - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ КАЗЕННОЕ ВОЕННОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ # FEDERAL STATE TREASURY MILITARY EDUCATIONAL INSTITUTION OF HIGHER EDUCATION
+
+  - display: ФГАОУ ВО
+    compare: ФГОУ ВО
+    aliases: 
+    - ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ # FEDERAL STATE AUTONOMOUS EDUCATIONAL INSTITUTION OF HIGHER EDUCATION
 
   - display: ФГКОУ ДПО # федеральное государственное казенное образовательное учреждение
     compare: ФГКОУ ДПО
@@ -1975,6 +1983,19 @@ company_types:
       - МОО - ППО ГУП
       - МЕСТНАЯ ОБЩЕСТВЕННАЯ ОРГАНИЗАЦИЯ-ПЕРВИЧНАЯ ПРОФСОЮЗНАЯ ОРГАНИЗАЦИЯ ГОСУДАРСТВЕННОГО УНИТАРНОГО ПРЕДПРИЯТИЯ # LOCAL PUBLIC ORGANIZATION PRIMARY TRADE UNION ORGANIZATION OF THE STATE UNITARY ENTERPRISE
 
+  - display: МЧС России 
+    aliases:
+      - МЧС РОССИИ
+      - МИНИСТЕРСТВО РОССИЙСКОЙ ФЕДЕРАЦИИ ПОДЕЛАМ ГРАЖДАНСКОЙ ОБОРОНЫ, ЧРЕЗВЫЧАЙНЫМ СИТУАЦИЯМ И ЛИКВИДАЦИИ ПОСЛЕДСТВИЙ СИХИЙНЫХ БЕДСТВИЙ
+      - МИНИСТЕРСТВО РОССИЙСКОЙ ФЕДЕРАЦИИ ПО ДЕЛАМ ГРАЖДАНСКОЙ ОБОРОНЫ, ЧРЕЗВЫЧАЙНЫМ СИТУАЦИЯМ И ЛИКЫИДАЦИИ ПОСЛЕДСТВИЙ СТИХИЙНЫХ БЕДСТВИЙ
+      - МИНИСТЕРСТВО РОССИЙСКОЙ ФЕДЕРАЦИИ ПО ДЕЛАМ ГРАЖДАНСКОЙ ОБОРОНЫ. ЧРЕЗВЫЧАЙНЫМ СИТУАЦИЯМ И ЛИКВИДАЦИИ ПОСЛЕДСТВИЙ СТИХИЙНЫХ БЕДСТВИЙ
+      - МИНИСТЕРСТВО РОССИЙСКОЙ ФЕДЕРАЦИИ ПО ДЕЛАМ ГРАЖДАНСКОЙ ОБОРОНЫ,ЧРЕЗВЫЧАЙНЫМ СИТУАЦИЯМ И ЛИКВИДАЦИИ ПОСЛЕДСТВИЙ СТИХИЙНЫХ БЕДСТВИЙП
+      - МИНИСТЕРСТВА РОССИЙСКОЙ ФЕДЕРАЦИИ ПО ДЕЛАМ ГРАЖДАНСКОЙ ОБОРОНЫ, ЧРЕЗВЫЧАЙНЫМ СИТУАЦИЯМ И ЛИКВИДАЦИИ ПОСЛЕДСТВИЙ СТИХИЙНЫХ БЕДСТВИЙ
+      - МИНИСТЕРСТВА РОССИЙСКОЙ ФЕДЕРАЦИИ ПО ДЕЛАМ ГРАЖДАНСКОЙ ОБОРОНЫ, ЧРЕЗВЫЧАЙНЫМ СИТУАЦИЯМ И ЛИКВИДАЦИИ ПОСЛЕДСТВИЙ СТИХИЙНЫХ БЕДСТВИЙ
+      - МИНИСТЕРСТВО РОССИЙСКОЙ ФЕДЕРАЦИИ ПО ДЕЛАМ ГРАЖДАНСКОЙ ОБОРОНЫ , ЧРЕЗВЫЧАЙНЫМ СИТУАЦИЯМ И ЛИКВАДАЦИИ ПОСЛЕДСТВИЙ СТИХИЙНЫХ БЕДСТВИЙ
+      - МИНИСТЕРСТВО РОССИЙСКОЙ ФЕДЕРАЦИИ ПО ДЕЛАМ ГРАЖДАНСКОЙ ОБОРОНЫ, ЧРЕЗВЧАЙНЫМ СИТУАЦИЯМ И ЛИКВИДАЦИИ ПОСЛЕДСТВИЙ СТИХИЙНЫХ БЕДСТВИЙ
+      - МИНИСТЕРСТВО РОССИЙСКОЙ ФЕДЕРАЦИИ ПО ДЕЛАМ ГРАЖДАНСКОЙ ОБОРОНЫ, ЧРЕЗВЫЧАЙНЫХ СИТУАЦИЙ И ЛИКВИДАЦИИ ПОСЛЕДСТВИЙ СТИХИЙНИХ БЕДСТВИЙ
+
   - display: ОО # неправительственная организация
     compare: ОО
     aliases:
@@ -1991,6 +2012,7 @@ company_types:
     compare: JSC
     aliases:
       - СТРАХОВАЯ АКЦИОНЕРНАЯ КОМПАНИЯ # INSURANCE JOINT-STOCK COMPANY
+      - СТРАХОВАЯ АКЦИОНЕР.КОМПАНИЯ
 
   - display: ЗАО # закрытое акционерное общество
     compare: CJSC
@@ -2076,6 +2098,11 @@ company_types:
     aliases:
       - СЕЛЬСКОХОЗЯЙСТВЕННЫЙ ПРОИЗВОДСТВЕННЫЙ КООПЕРАТИВ # AGRICULTURAL PRODUCTION COOPERATIVE
 
+  - display: СУ СК РФ
+    compare: СУ СК
+    aliases:
+      - СЛЕДСТВЕННОЕ УПРАВЛЕНИЕ СЛЕДСТВЕННОГО КОМИТЕТА РОССИЙСКОЙ ФЕДЕРАЦИИ
+
   - display: МУП # муниципальное унитарное предприятие
     compare: UP
     aliases:
@@ -2159,6 +2186,7 @@ company_types:
       - obshchestvo s ogranichennoj otvetstvennost'yu
       - Obshchestvo s ogranichennoy otvetstvennostyu
       - OBSHCHESTVO S OGRANICHENNOI OTVETSTVENNOSTYU
+      - obshchestvo s ogranichennoi otvetstvennostiu
 
   - display: ООО # общество с ограниченной ответственностью
     compare: LLC
