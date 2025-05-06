@@ -1,6 +1,6 @@
 # fingerprints
 
-![package](https://github.com/opensanctions/fingerprints/workflows/package/badge.svg)
+**UPDATE 2025-05: the next generation of the `fingerprints` codebase is now included in `rigour`. See the documentation here: https://opensanctions.github.io/rigour/names/. This library is now UNMAINTAINED.**
 
 This library helps with the generation of fingerprints for entity data. A fingerprint
 in this context is understood as a simplified entity identifier, derived from it's
