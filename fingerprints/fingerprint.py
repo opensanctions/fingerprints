@@ -1,6 +1,6 @@
 import logging
 from typing import Optional
-from normality import collapse_spaces, stringify
+from normality import squash_spaces, stringify
 
 from fingerprints.constants import WS
 from fingerprints.types import replace_types
@@ -26,16 +26,18 @@ def fingerprint(
 
     # Super hard-core string scrubbing
     text = clean_name_ascii(text)
+    if text is None:
+        return None
     text = replace_types(text)
 
     if keep_order:
-        text = collapse_spaces(text)
-    elif text is not None:
+        text = squash_spaces(text)
+    else:
         # final manicure, based on openrefine algo
         parts = [p for p in text.split(WS) if len(p)]
         text = WS.join(sorted(set(parts)))
 
-    if text is None or not len(text):
+    if not len(text):
         return None
 
     return text

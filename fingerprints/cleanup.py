@@ -2,7 +2,7 @@ import re
 import logging
 from typing import Optional
 from functools import lru_cache
-from normality import collapse_spaces, ascii_text, category_replace
+from normality import squash_spaces, ascii_text, category_replace
 
 from fingerprints.constants import WS, BRACKETED
 
@@ -68,23 +68,23 @@ def clean_name_ascii(text: Optional[str]) -> Optional[str]:
     It transliterates the text to ASCII, removes punctuation and symbols, converts the
     text to lowercase, replaces certain character categories, and collapses consecutive
     spaces.
-    
+
     Args:
         text (Optional[str]): The input text to be cleaned.
-    
+
     Returns:
         Optional[str]: The cleaned text, or None if the cleaned text is empty or too short.
     """
     # transliterate to ascii
-    text = ascii_text(text)
     if text is None:
         return None
+    text = ascii_text(text)
     # replace punctuation and symbols
     text = CHARACTERS_REMOVE_RE.sub("", text)
     text = text.lower()
     cleaned = category_replace(text)
-    cleaned = collapse_spaces(cleaned)
-    if cleaned is None or len(cleaned) < 2:
+    cleaned = squash_spaces(cleaned)
+    if len(cleaned) < 2:
         return None
     return cleaned
 
@@ -96,7 +96,7 @@ def clean_name_light(text: str) -> Optional[str]:
     text = CHARACTERS_REMOVE_RE.sub("", text)
     text = text.lower()
     cleaned = category_replace(text)
-    cleaned = collapse_spaces(cleaned)
-    if cleaned is None or len(cleaned) < 2:
+    cleaned = squash_spaces(cleaned)
+    if len(cleaned) < 2:
         return None
     return cleaned

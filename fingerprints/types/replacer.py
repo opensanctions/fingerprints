@@ -1,15 +1,15 @@
 import re
 import logging
 from functools import lru_cache
-from typing import Callable, Optional, Dict, Match
+from typing import Callable, Dict, Match, Optional
 
 from fingerprints.types.data import TYPES
 from fingerprints.constants import WS
 from fingerprints.cleanup import clean_name_ascii
 
 log = logging.getLogger(__name__)
-NormFunc = Callable[[Optional[str]], Optional[str]]
-ReplaceFunc = Callable[[Optional[str]], Optional[str]]
+NormFunc = Callable[[str], Optional[str]]
+ReplaceFunc = Callable[[str], str]
 
 
 class Replacer(object):
@@ -28,9 +28,7 @@ class Replacer(object):
             return WS
         return self.replacements.get(match.group(1), match.group(1))
 
-    def __call__(self, text: Optional[str]) -> Optional[str]:
-        if text is None:
-            return None
+    def __call__(self, text: str) -> str:
         return self.matcher.sub(self.get_canonical, text)
 
 

@@ -17,7 +17,7 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
 ]
 requires-python = ">= 3.10"
-dependencies = ["normality >= 2.5.0, < 3.0.0"]
+dependencies = ["normality >= 3.0.1, < 4.0.0"]
 
 [project.urls]
 Documentation = "https://github.com/opensanctions/fingerprints/"
