@@ -2,9 +2,7 @@ import re
 import logging
 from typing import Optional
 from functools import lru_cache
-from normality import squash_spaces, ascii_text, category_replace
-
-from fingerprints.constants import WS, BRACKETED
+from normality import WS, squash_spaces, ascii_text, category_replace
 
 log = logging.getLogger(__name__)
 
@@ -45,6 +43,7 @@ PREFIXES_RAW = "|".join(PREFIXES_RAW_LIST)
 NAME_PATTERN_ = r"^\W*((%s)\.?\s+)*(?P<term>.*?)([\'’]s)?\W*$"
 NAME_PATTERN_ = NAME_PATTERN_ % PREFIXES_RAW
 PREFIXES = re.compile(NAME_PATTERN_, re.I | re.U)
+BRACKETED = re.compile(r"(\([^\(\)]*\)|\[[^\[\]]*\])")
 
 
 def clean_entity_prefix(name: str) -> str:

@@ -1,8 +1,7 @@
 import logging
 from typing import Optional
-from normality import squash_spaces, stringify
+from normality import WS, squash_spaces, stringify
 
-from fingerprints.constants import WS
 from fingerprints.types import replace_types
 from fingerprints.cleanup import clean_entity_prefix, clean_name_ascii
 from fingerprints.cleanup import clean_brackets
