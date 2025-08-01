@@ -2,9 +2,8 @@ import re
 import logging
 from functools import lru_cache
 from typing import Callable, Dict, Match, Optional
+from normality import WS
 
-from fingerprints.types.data import TYPES
-from fingerprints.constants import WS
 from fingerprints.cleanup import clean_name_ascii
 
 log = logging.getLogger(__name__)
@@ -33,6 +32,8 @@ class Replacer(object):
 
 
 def normalize_replacements(norm_func: NormFunc) -> Dict[str, str]:
+    from fingerprints.types.data import TYPES
+
     replacements: Dict[str, str] = {}
     for type in TYPES["types"]:
         main_norm = norm_func(type["main"])
